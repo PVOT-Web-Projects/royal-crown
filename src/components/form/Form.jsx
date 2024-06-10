@@ -18,7 +18,7 @@ const MyForm = () => {
       initialValues: initialValue,
       validationSchema: FormSchemas,
       validateOnBlur: false, 
-      validateOnChange: false, 
+      validateOnChange: true, 
       onSubmit: (values, action) => {
         console.log("value", values);
         emailjs
