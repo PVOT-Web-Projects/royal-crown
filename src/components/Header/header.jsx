@@ -7,12 +7,12 @@ const Header = () => {
       <h1>Header</h1>
       <nav>
         <ul>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href={"/about-us"}>About Us</Link></li>
-          <li><Link href={"/catalogue"}>catalogue</Link></li>
-          <li><Link href={"/laminate-library"}>Laminate Library</Link></li>
-          <li><Link href={"/products"}>Products</Link></li>
-          <li><Link href={"/whats-new"}>Whats New</Link></li>
+          <li><Link href="/" legacyBehavior>Home</Link></li>
+          <li><Link href={"/about-us"} legacyBehavior>About Us</Link></li>
+          <li><Link href={"/catalogue"} legacyBehavior>catalogue</Link></li>
+          <li><Link href={"/laminate-library"} legacyBehavior>Laminate Library</Link></li>
+          <li><Link href={"/products"} legacyBehavior>Products</Link></li>
+          <li><Link href={"/whats-new"} legacyBehavior>Whats New</Link></li>
         </ul>
       </nav>
     </>
