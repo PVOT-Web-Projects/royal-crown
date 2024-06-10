@@ -1,18 +1,33 @@
 @import "../../app/variables.scss";
 header {
-    padding: 20px 25px 0;
-    position: absolute;
-    top: 0;
-    z-index: 9;
-    width: -webkit-fill-available;
+  padding: 20px 25px 0;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  width: -webkit-fill-available;
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(max-width:991px){
+        display: none;
+    }
+    .logo {
+      img {
+        max-width: 100%;
+        display: block;
+        @media (max-width: 1199px) {
+          width: 222px;
+        }
+      }
+    }
     ul {
       display: flex;
       align-items: center;
       gap: 30px;
+      @media (max-width: 1199px) {
+        gap: 20px;
+      }
       li {
         font-size: 15px;
         font-weight: $weightRegular;
@@ -23,7 +38,7 @@ header {
           color: $black;
           position: relative;
           transition: all 0.4s;
-          &::before{
+          &::before {
             content: "";
             position: absolute;
             bottom: -5px;
@@ -33,13 +48,16 @@ header {
             transform: scale(0);
             transition: all 0.4s;
           }
-          &:hover::before{
+          &:hover::before {
             transform: scale(1);
           }
         }
       }
-      .side_logo{
+      .side_logo {
         margin-left: 20px;
+        @media (max-width: 1199px) {
+            margin-left: 10px;
+          }
       }
     }
   }
