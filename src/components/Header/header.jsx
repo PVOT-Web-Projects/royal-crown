@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Header</h1>
       <nav>
         <ul>
-          <li><Link href={"/"} legacyBehavior><a>Home</a></Link></li>
+          <li><Link href={"/"}>Home</Link></li>
           <li><Link href={"/about-us"}>About Us</Link></li>
           <li><Link href={"/catalogue"}>catalogue</Link></li>
           <li><Link href={"/laminate-library"}>Laminate Library</Link></li>
