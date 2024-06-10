@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Header</h1>
       <nav>
         <ul>
-          <li><Link href="/" legacyBehavior>Home</Link></li>
+          <li><Link href="/products" legacyBehavior>Home</Link></li>
           <li><Link href={"/about-us"} legacyBehavior>About Us</Link></li>
           <li><Link href={"/catalogue"} legacyBehavior>catalogue</Link></li>
           <li><Link href={"/laminate-library"} legacyBehavior>Laminate Library</Link></li>
