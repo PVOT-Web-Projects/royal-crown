@@ -1,0 +1,98 @@
+.form {
+  background-color: #1c211e;
+  padding: 20px;
+  margin: auto;
+  color: #fff;
+}
+
+.form_header {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.form_field_flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 20px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+.form_content {
+  flex: 1;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px 0;
+  width: 100%;
+  height: 85px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container textarea {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  background-color: transparent;
+  outline: none;
+  resize: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="email"]:focus ~ .label,
+.input-container input[type="text"].not-empty ~ .label,
+.input-container input[type="email"].not-empty ~ .label,
+.input-container textarea:focus ~ .label,
+.input-container textarea.not-empty ~ .label {
+  top: -20px;
+  font-size: 13px;
+  color: #ccc;
+}
+
+.message_field {
+  height: 100px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+.submit-button {
+  display: flex;
+  justify-content: end;
+  padding-top: 4rem;
+  .submit_button {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 50px;
+    border: 1px solid white;
+    font-size: 17px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}
