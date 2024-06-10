@@ -1,0 +1,16 @@
+@import "../../app/variables.scss" ;
+footer {
+  nav {
+    ul {
+      li {
+        a {
+          color: $white;
+          text-decoration: none;
+          &:hover {
+            color: #ff0000;
+          }
+        }
+      }
+    }
+  }
+}
