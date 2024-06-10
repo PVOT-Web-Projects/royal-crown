@@ -18,10 +18,10 @@ const SocialPage = ({socialMediaImgSrc }) => {
   return (
     <div className="socialPage">
       <div className="Footer_Logo">
-        <Image src={Footer_img} alt="Image" />
+        <Image src={Footer_img} alt="Image" className="FooterImg"/>
       </div>
       <div className="SocialMediaImg">
-        <Image src={socialMediaImgSrc} alt="Image" />
+        <Image src={socialMediaImgSrc} alt="Image" className="SocialImg"/>
       </div>
       <div className="SocialMediaMain">
       {icons.map((item, index) => (
