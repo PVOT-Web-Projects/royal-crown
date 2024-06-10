@@ -1,4 +1,16 @@
-body{
+@import "./variables.scss";
+*{
     margin: 0;
     padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg;
+  color: $white;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

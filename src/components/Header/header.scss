@@ -1,0 +1,31 @@
+@import "../../app/variables.scss";
+header {
+    padding: 20px 25px 0;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: -webkit-fill-available;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      li {
+        font-size: 15px;
+        font-weight: $weightRegular;
+        a {
+          color: $white;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $black;
+        }
+      }
+      .side_logo{
+        margin-left: 20px;
+      }
+    }
+  }
+}
