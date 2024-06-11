@@ -12,7 +12,7 @@ export default function Home() {
       <Headingwithbutton />
       <div className="Form_Page">
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
-        <Form />
+        <Form /> 
       </div>
     </main>
   );
