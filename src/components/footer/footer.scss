@@ -1,13 +1,31 @@
 @import "../../app/variables.scss" ;
 footer {
   padding: 80px 40px;
+  @media(max-width:575px){
+    padding: 50px 20px;
+  }
   nav {
     display: flex;
     justify-content: flex-end;
     gap: 60px;
+    @media(max-width:1399px){
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    @media(max-width:991px){
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    @media(max-width:767px){
+      gap: 10px;
+      justify-content: space-between;
+    }
     ul {
+      @media(max-width:991px){
+        width: 300px;
+      }
       li {
-        padding: 0 0 12px;
+        padding: 0 0 22px;
         a {
           color: $white;
           text-decoration: none;
