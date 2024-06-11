@@ -1,4 +1,3 @@
-import Link from "next/link";
 import "./footer.scss";
 import LinkHover from "../linkHover/LinkHover";
 
@@ -11,27 +10,27 @@ const footerUrls = [
   },
   {
     url1: "#",
-    url1Text: "About",
+    url1Text: "Corporate Social Responsibility",
     url2: "#",
-    url2Text: "Annual Return",
+    url2Text: "Vigil Mechanism Policy",
   },
   {
     url1: "#",
-    url1Text: "About",
+    url1Text: "Career",
     url2: "#",
-    url2Text: "Annual Return",
+    url2Text: "Privacy Policy",
   },
   {
     url1: "#",
-    url1Text: "About",
+    url1Text: "Copyright 2024",
     url2: "#",
-    url2Text: "Annual Return",
+    url2Text: "Royal Crown Laminates",
   },
   {
-    url1: "#",
-    url1Text: "About",
-    url2: "#",
-    url2Text: "Annual Return",
+    url1: "tel:9904990400",
+    url1Text: "+91 9904990400",
+    url2: "mailto:info@royalcrown.com",
+    url2Text: "info@royalcrown.com",
   },
 ];
 
@@ -39,49 +38,28 @@ const Footer = () => {
   return (
     <footer>
       <nav>
-        <ul>
-          {/* <li><Link href={"#"}>About</Link></li>
-          <li><Link href={"#"}>Annual Return</Link></li> */}
-          <LinkHover
-            url={"#"}
-            text={"About"}
-            color={"#fff"}
-            borderColor={"white"}
-            fontSize={"16px"}
-          />
-        </ul>
-        <ul>
-          <li>
-            <Link href={"#"}>Corporate Social Responsibility</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Vigil Mechanism Policy</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link href={"#"}>Career</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Privacy Policy</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link href={"#"}>Copyright 2024</Link>
-          </li>
-          <li>
-            <Link href={"#"}>Royal Crown Laminates</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link href={"#"}>+91 9904990400</Link>
-          </li>
-          <li>
-            <Link href={"#"}>info@royalcrown.com</Link>
-          </li>
-        </ul>
+        {footerUrls.map((item, index) => (
+          <ul key={index}>
+            <li>
+              <LinkHover
+                url={item.url1}
+                text={item.url1Text}
+                color={"#fff"}
+                borderColor={"white"}
+                fontSize={"16px"}
+              />
+            </li>
+            <li key={index}>
+              <LinkHover
+                url={item.url2}
+                text={item.url2Text}
+                color={"#fff"}
+                borderColor={"white"}
+                fontSize={"16px"}
+              />
+            </li>
+          </ul>
+        ))}
       </nav>
     </footer>
   );

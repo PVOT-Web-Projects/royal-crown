@@ -3,6 +3,7 @@ import logo from "@/images/svgLogos/header_logo.svg";
 import logo2 from "@/images/svgLogos/header_crown_logo.svg";
 import "./header.scss";
 import Image from "next/image";
+import LinkHover from "../linkHover/LinkHover";
 
 const Header = () => {
   return (
@@ -10,13 +11,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link href={"#"}>About Us</Link>
+            <LinkHover url={"#"} text={"About Us"} fontSize={"15px"} />
           </li>
           <li>
-            <Link href={"#"}>Products</Link>
+            <LinkHover url={"#"} text={"Products"} fontSize={"15px"} />
           </li>
           <li>
-            <Link href={"#"}>What's New</Link>
+            <LinkHover url={"#"} text={"What's New"} fontSize={"15px"} />
           </li>
         </ul>
         <div className="logo">
@@ -26,10 +27,10 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <Link href={"#"}>catalogue</Link>
+            <LinkHover url={"#"} text={"Catalogue"} fontSize={"15px"} />
           </li>
           <li>
-            <Link href={"#"}>Laminate Library</Link>
+            <LinkHover url={"#"} text={"Laminate Library"} fontSize={"15px"} />
           </li>
           <div className="side_logo">
             <Image src={logo2} alt="header_crown_logo" />

@@ -1,7 +1,6 @@
 @import "../../app/variables.scss";
 
-// .linkHover {
-a {
+a.linkHover  {
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
@@ -27,4 +26,3 @@ a {
     transform: scale(1);
   }
 }
-// }

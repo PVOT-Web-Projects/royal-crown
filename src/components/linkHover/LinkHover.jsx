@@ -5,7 +5,7 @@ const LinkHover = ({ url, text, color, borderColor, fontSize }) => {
     <Link
       href={url}
       style={{ color: color, fontSize: fontSize }}
-      className={borderColor}
+      className={`linkHover ${borderColor}`}
     >
       {text}
     </Link>
