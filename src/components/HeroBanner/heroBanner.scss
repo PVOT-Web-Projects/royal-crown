@@ -19,10 +19,18 @@
       color: $black;
       text-align: center;
       width: 425px;
+      padding: 0 20px;
+      @media(max-width:575px){
+        width: 90%;
+      }
       h2 {
         font-size: 70px;
         font-weight: $weightRegular;
         margin: 0 0 16px;
+        line-height: 70px;
+        @media(max-width:575px){
+          font-size: $font55;
+        }
       }
       p {
         font-size: 24px;
@@ -39,7 +47,7 @@
           color: $black;
           background-color: $yellow;
           display: block;
-          padding: 55px 25px;
+          padding: 44px 25px;
           border-radius: 50%;
           transition: all 0.4s;
           &:hover {

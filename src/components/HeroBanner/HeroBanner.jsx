@@ -9,7 +9,9 @@ const HeroBanner = () => {
       <div className="banner_image">
         <Image src={banner} alt="banner" />
         <div className="banner_text">
-          <h2>THE CROWN EXPERIENCE</h2>
+          <h2>
+            THE <br /> CROWN <br /> EXPERIENCE
+          </h2>
           <p>
             Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum
             dolor Lorem ipsum dolor Lorem ipsum dolor
