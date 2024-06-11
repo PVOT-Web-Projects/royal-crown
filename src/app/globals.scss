@@ -1,7 +1,8 @@
 @import "./variables.scss";
-*{
-    margin: 0;
-    padding: 0;
+@import "../fonts/fonts.scss";
+* {
+  margin: 0;
+  padding: 0;
 }
 body {
   margin: 0;
@@ -9,8 +10,39 @@ body {
   background-color: $bg;
   color: $white;
 }
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+h1 {
+  font-family: "futura_regular";
+}
+h2 {
+  font-family: "futura_regular";
+}
+h3 {
+  font-family: "futura_regular";
+}
+h4 {
+  font-family: "futura_regular";
+}
+h5 {
+  font-family: "futura_regular";
+}
+h6 {
+  font-family: "futura_regular";
+}
+a {
+  font-family: "futura_regular";
+}
+div {
+  font-family: "futura_regular";
+}
+button {
+  font-family: "futura_regular";
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "futura_regular";
+  li {
+    font-family: "futura_regular";
+  }
 }
