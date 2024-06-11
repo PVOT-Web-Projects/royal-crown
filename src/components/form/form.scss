@@ -1,9 +1,11 @@
 .form {
   background-color: #1c211e;
-  padding: 20px;
+  padding: 0 20px;
   // margin: auto;
   color: #fff;
-
+  @media screen and (max-width:575px) {
+    padding: 0px;
+  }
 }
 
 .form_header {

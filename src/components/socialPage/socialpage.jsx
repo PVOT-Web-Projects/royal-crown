@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Footer_img from "../../images/royal_Crown_footer.png";
+import Footer_img from "@/images/royal_crown_footer.png";
 import facebookIcon from "@/images/FacebookIcon.svg";
-import instagramIcon from "../../images/InstaIcon.svg";
-import youtubeIcon from "../../images/YoutubeIcon.svg";
-import whatsappIcon from "../../images/WhatsappIcon.svg";
-import linkedinIcon from "../../images/LinkedinIcon.svg";
+import instagramIcon from "@/images/InstaIcon.svg";
+import youtubeIcon from "@/images/YoutubeIcon.svg";
+import whatsappIcon from "@/images/WhatsappIcon.svg";
+import linkedinIcon from "@/images/LinkedinIcon.svg";
 import "./socialpage.scss";
 const SocialPage = ({ socialMediaImgSrc }) => {
   const icons = [
