@@ -8,3 +8,12 @@ $weightRegular:400;
 $weightMedium:500;
 $weightSemiBold:600;
 $weightBold:700;
+.Form_Page{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: #1c211e;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+    }
+}

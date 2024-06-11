@@ -10,13 +10,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link href={"/about-us"}>About Us</Link>
+            <Link href={"#"}>About Us</Link>
           </li>
           <li>
-            <Link href={"/products"}>Products</Link>
+            <Link href={"#"}>Products</Link>
           </li>
           <li>
-            <Link href={"/whats-new"}>What's New</Link>
+            <Link href={"#"}>What's New</Link>
           </li>
         </ul>
         <div className="logo">
@@ -26,10 +26,10 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <Link href={"/catalogue"}>catalogue</Link>
+            <Link href={"#"}>catalogue</Link>
           </li>
           <li>
-            <Link href={"/laminate-library"}>Laminate Library</Link>
+            <Link href={"#"}>Laminate Library</Link>
           </li>
           <div className="side_logo">
             <Image src={logo2} alt="header_crown_logo" />
