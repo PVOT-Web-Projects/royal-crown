@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import banner from "@/images/hero_banner.png";
 import "./heroBanner.scss";
+import { motion } from "framer-motion";
 
 const HeroBanner = () => {
   return (
@@ -9,9 +12,29 @@ const HeroBanner = () => {
       <div className="banner_image">
         <Image src={banner} alt="banner" />
         <div className="banner_text">
-          <h2>
-            THE <br /> CROWN <br /> EXPERIENCE
-          </h2>
+          <div className="text_effect">
+            <motion.div
+              className="card"
+              initial={{
+                opacity: 1,
+                // if odd index card,slide from right instead of left
+                y: 220,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0, // Slide in to its original position
+                transition: {
+                  duration: 1, // Animation duration
+                },
+              }}
+              viewport={{ once: true }}
+            >
+              <h2>
+                THE <br /> CROWN <br /> EXPERIENCE
+              </h2>
+            </motion.div>
+          </div>
+
           <p>
             Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum
             dolor Lorem ipsum dolor Lorem ipsum dolor
