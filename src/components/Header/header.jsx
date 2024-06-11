@@ -11,13 +11,13 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <LinkHover url={"#"} text={"About Us"} fontSize={"15px"} />
+            <LinkHover url={"#"} text={"About Us"} fontSize={"16px"} />
           </li>
           <li>
-            <LinkHover url={"#"} text={"Products"} fontSize={"15px"} />
+            <LinkHover url={"#"} text={"Products"} fontSize={"16px"} />
           </li>
           <li>
-            <LinkHover url={"#"} text={"What's New"} fontSize={"15px"} />
+            <LinkHover url={"#"} text={"What's New"} fontSize={"16px"} />
           </li>
         </ul>
         <div className="logo">
@@ -27,10 +27,10 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <LinkHover url={"#"} text={"Catalogue"} fontSize={"15px"} />
+            <LinkHover url={"#"} text={"Catalogue"} fontSize={"16px"} />
           </li>
           <li>
-            <LinkHover url={"#"} text={"Laminate Library"} fontSize={"15px"} />
+            <LinkHover url={"#"} text={"Laminate Library"} fontSize={"16px"} />
           </li>
           <div className="side_logo">
             <Image src={logo2} alt="header_crown_logo" />

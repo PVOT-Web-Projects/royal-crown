@@ -7,7 +7,10 @@ footer {
   nav {
     display: flex;
     justify-content: flex-end;
-    gap: 60px;
+    gap: 100px;
+    @media(max-width:1600px){
+      gap: 60px;
+    }
     @media(max-width:1399px){
       gap: 40px;
       flex-wrap: wrap;
@@ -24,8 +27,20 @@ footer {
       @media(max-width:991px){
         width: 300px;
       }
+      @media(max-width:767px){
+        width: 48%;
+      }
+      @media(max-width:575px){
+        width: 100%;
+      }
       li {
         padding: 0 0 22px;
+        @media(max-width:767px){
+          padding: 0 0 18px;
+        }
+        @media(max-width:575px){
+          padding: 0 0 12px;
+        }
         a {
           color: $white;
           text-decoration: none;

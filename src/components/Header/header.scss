@@ -1,4 +1,5 @@
 @import "../../app/variables.scss";
+@import "../../fonts/fonts.scss";
 header {
   padding: 20px 25px 0;
   position: absolute;
@@ -9,8 +10,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media(max-width:991px){
-        display: none;
+    @media (max-width: 991px) {
+      display: none;
     }
     .logo {
       img {
@@ -29,8 +30,7 @@ header {
         gap: 20px;
       }
       li {
-        font-size: 15px;
-        font-weight: $weightRegular;
+
         a {
           color: $white;
           text-decoration: none;
@@ -56,8 +56,8 @@ header {
       .side_logo {
         margin-left: 20px;
         @media (max-width: 1199px) {
-            margin-left: 10px;
-          }
+          margin-left: 10px;
+        }
       }
     }
   }
