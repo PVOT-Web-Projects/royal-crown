@@ -6,7 +6,21 @@ a.linkHover  {
   text-transform: uppercase;
   color: $black;
   position: relative;
-  transition: all 0.4s;
+  transition: all 0.2s;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  &:hover{
+    span{
+      transform: translateY(-20px);
+      overflow: hidden;
+    }
+  }
+  span{
+    display: block;
+    transition: all 0.5s;
+  }
   &::before {
     content: "";
     position: absolute;
