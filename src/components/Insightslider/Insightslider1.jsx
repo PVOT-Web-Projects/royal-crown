@@ -6,9 +6,10 @@ import "./abc.scss";
 import Image from "next/image";
 import demoimage from "../../images/insightslider.png";
 function ScrollSection() {
-  const sectionRef = useRef(null);
-  const triggerRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+    const sectionRef = useRef(null);
+    const triggerRef = useRef(null);
+    const counterRef = useRef(null); // Ref for the counter element
+    const [currentIndex, setCurrentIndex] = useState(0);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -40,6 +41,16 @@ function ScrollSection() {
       pin.kill();
     };
   }, []);
+
+
+  useEffect(() => {
+    if (counterRef.current) {
+      gsap.fromTo(counterRef.current, 
+        { opacity: 0 },
+        { opacity: 1, duration: 2 }
+      );
+    }
+  }, [currentIndex]);
 
   return (
     <section className="scroll-section-outer">
