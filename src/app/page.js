@@ -5,18 +5,24 @@ import SocialPage from "@/components/socialPage/socialpage";
 import SocialMediaImg from "@/images/socials-image.png";
 import "./Home.scss";
 import "./variables.scss";
+import RoyalCrownSlider from "@/components/RoyalCrownSlider/RoyalCrownSlider";
 import CircularScroll from "@/components/Circularscroll/Circularscroll";
 import Certification from "@/components/Certifications/Certification";
-import InsightSlider from "@/components/Insightslider/Insightslider"
+import PlyMarquee from "@/components/plyMarquee/PlyMarquee";
+import InsightSlider from "@/components/Insightslider/Insightslider1";
+import AboutUs from "@/components/Aboutus/Aboutus";
 export default function Home() {
   return (
     <main className="main">
       <HeroBanner />
+      <AboutUs />
       <Headingwithbutton />
+      <PlyMarquee />
+      <RoyalCrownSlider />
 
       <InsightSlider />
       <Certification />
-      <CircularScroll/>
+      <CircularScroll />
       <div className="Form_Page">
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
         <Form />

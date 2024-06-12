@@ -1,0 +1,114 @@
+.Carousel_Slider_container {
+  // padding-bottom: 0rem;
+  // padding-top: 5rem;
+  width: 500px;
+
+}
+.Carousel_Slider_container2 {
+  width: 700px;
+}
+.MainContainer{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+.mySwiper {
+  text-align: center;
+  margin: 0 auto;
+}
+.mySwiper2 {
+  text-align: center;
+  margin: 0 auto;
+
+}
+.swiper-slide {
+  text-align: center;
+}
+.third_section_content {
+  text-align: center;
+  position: relative;
+}
+.swiper2,
+.swiper3 {
+  display: flex;
+  gap: 2rem;
+}
+
+
+.third_section_overlay_text {
+  color: black;
+  text-align: center;
+  // font-family: var(--font-poppins);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.third_section_overlay_span {
+  color: #fff;
+  font-family:"Dream Avenue";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+// .Carousel_text_maincontent::before {
+//   position: absolute;
+//   content: url(../../svgs/dot1.svg);
+//   left: 0%;
+//   top: 32%;
+// }
+// .Carousel_text_maincontent::after {
+//   position: absolute;
+//   content: url(../../svgs/dot.svg);
+//   bottom: 23%;
+//   right: 8%;
+// }
+.Rc_Text_Main{
+  padding-bottom: 2rem;
+}
+.Rc_Text_MainInner{
+  color: #595959;
+  font-size: 20px;
+}
+.Text_InnerText{
+  color: #FFFFFF;
+  font-size: 45px;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+.Carousel_text_maincontent {
+  // display: flex;
+  // position: relative;
+  // justify-content: center;
+  // align-items: center;
+  // padding-top: 6rem;
+  // text-align: center;
+  // padding-bottom: 6rem;
+}
+.carousel_text_Content {
+  color: white;
+  text-align: left;
+  font-size: 28px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+@media (max-width: 500px) {
+  .carousel_text_Content {
+    width: 50%;
+  }
+  .Carousel_text_maincontent::before {
+    left: 20%;
+    top: 15%;
+  }
+  .Carousel_text_maincontent::after {
+    bottom: 15%;
+    right: 26%;
+  }
+}
