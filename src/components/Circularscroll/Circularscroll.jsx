@@ -14,7 +14,7 @@ const CircularScroll = () => {
       scrollTrigger: {
         trigger: ".gallery_box",
         start: "top center-=200px",
-        end: "bottom+=500px", // Corrected end position
+        end: "bottom bottom", // Corrected end position
         scrub: true, 
         pin: true,
         markers: true, 
