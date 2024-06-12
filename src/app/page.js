@@ -10,7 +10,6 @@ import CircularScroll from "@/components/Circularscroll/Circularscroll";
 import Certification from "@/components/Certifications/Certification";
 import PlyMarquee from "@/components/plyMarquee/PlyMarquee";
 import InsightSlider from "@/components/Insightslider/Insightslider1";
-import InsightSlider from "@/components/Insightslider/Insightslider";
 import AboutUs from "@/components/Aboutus/Aboutus";
 export default function Home() {
   return (
