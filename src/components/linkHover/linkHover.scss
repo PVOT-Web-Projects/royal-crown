@@ -6,7 +6,7 @@ a.linkHover  {
   text-transform: uppercase;
   color: $black;
   position: relative;
-  transition: all 0.2s;
+  transition: all 0.1s ease-in-out;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -21,22 +21,5 @@ a.linkHover  {
     display: block;
     transition: all 0.5s;
   }
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    width: 100%;
-    height: 1px;
-    background-color: $black;
-    transform: scale(0);
-    transition: all 0.4s;
-  }
-  &.white {
-    &::before {
-      background-color: $white;
-    }
-  }
-  &:hover::before {
-    transform: scale(1);
-  }
+ 
 }
