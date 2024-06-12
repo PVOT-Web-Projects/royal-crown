@@ -3,8 +3,9 @@ import Headingwithbutton from "@/components/Headingwithbutton/headingwithbutton"
 import Form from "@/components/form/Form";
 import SocialPage from "@/components/socialPage/socialpage";
 import SocialMediaImg from "@/images/socials-image.png";
-// import Insightslider from "@/components/InsightSlider/insightslider1";
 import "./Home.scss";
+import "./variables.scss";
+import CircularScroll from "@/components/Circularscroll/Circularscroll";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Headingwithbutton />
 
       {/* <Insightslider /> */}
+      <CircularScroll/>
       <div className="Form_Page">
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
         <Form />
