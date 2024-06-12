@@ -74,6 +74,19 @@ const Footer = () => {
             <p className="textSliderText2">07 March 2024</p>
         </div>
       </section>
+      <section className="horizontal-section">
+        <div className="textSlider">
+            <p className="textSliderText">Urban Design Trends with Royal Crown Luxury Laminates</p>
+            <p className="textSliderText2">07 March 2024</p>
+        </div>
+      </section>
+
+      <section className="horizontal-section">
+        <div className="textSlider">
+            <p className="textSliderText">Urban Design Trends with Royal Crown Luxury Laminates</p>
+            <p className="textSliderText2">07 March 2024</p>
+        </div>
+      </section>
       
     </main>
     </div>

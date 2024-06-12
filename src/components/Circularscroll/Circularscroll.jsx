@@ -17,7 +17,7 @@ const CircularScroll = () => {
         end: "bottom bottom", // Corrected end position
         scrub: true, 
         pin: true,
-        markers: true, 
+        // markers: true, 
       }
     });
 
