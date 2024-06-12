@@ -8,7 +8,6 @@ import "./variables.scss";
 import RoyalCrownSlider from "@/components/RoyalCrownSlider/RoyalCrownSlider";
 import CircularScroll from "@/components/Circularscroll/Circularscroll";
 import Certification from "@/components/Certifications/Certification";
-import InsightSlider from "@/components/Insightslider/Insightslider";
 import PlyMarquee from "@/components/plyMarquee/PlyMarquee";
 import InsightSlider from "@/components/Insightslider/Insightslider1";
 export default function Home() {
