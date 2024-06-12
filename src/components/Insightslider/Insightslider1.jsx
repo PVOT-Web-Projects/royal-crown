@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect , useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "./abc.scss";
@@ -8,7 +8,7 @@ import demoimage from "../../images/insightslider.png";
 function ScrollSection() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
-
+  const [currentIndex, setCurrentIndex] = useState(0);
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
@@ -29,6 +29,10 @@ function ScrollSection() {
           end: "2000 top",
           scrub: true,
           pin: true,
+          onUpdate: (self) => {
+            const index = Math.round(self.progress * 6); // Assuming 7 images (index 0 to 6)
+            setCurrentIndex(index);
+          },
         },
       }
     );
@@ -40,14 +44,16 @@ function ScrollSection() {
   return (
     <section className="scroll-section-outer">
       <div ref={triggerRef}>
-      <div className="InsightsTextMain">
-        <p className="InsightsText">Latest Insights</p>
-        <div className="InsightsButton">
+        <div className="InsightsTextMain">
+          <p className="InsightsText">Latest Insights</p>
+          <div className="InsightsButton">
             <button className="innerrbutton">Explore All Blogs</button>
+          </div>
         </div>
-       </div>
+        <div className="counter">{String(currentIndex + 1).padStart(2, '0')}</div>
+   
         <div ref={sectionRef} className="scroll-section-inner">
-            
+       
           <div className="scroll-section">
             <div>
               <Image src={demoimage} alt="none" className="image1" />
@@ -61,7 +67,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section">
             <div>
-              <Image src={demoimage} alt="none" className="image1"/>
+              <Image src={demoimage} alt="none" className="image1" />
               <div className="textSlider">
                 <p className="textSliderText">
                   Urban Design Trends with Royal Crown Luxury Laminates
@@ -72,7 +78,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section">
             <div>
-              <Image src={demoimage} alt="none"className="image1" />
+              <Image src={demoimage} alt="none" className="image1" />
               <div className="textSlider">
                 <p className="textSliderText">
                   Urban Design Trends with Royal Crown Luxury Laminates
@@ -83,7 +89,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section">
             <div>
-              <Image src={demoimage} alt="none"className="image1" />
+              <Image src={demoimage} alt="none" className="image1" />
               <div className="textSlider">
                 <p className="textSliderText">
                   Urban Design Trends with Royal Crown Luxury Laminates
@@ -94,7 +100,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section">
             <div>
-              <Image src={demoimage} alt="none"className="image1" />
+              <Image src={demoimage} alt="none" className="image1" />
               <div className="textSlider">
                 <p className="textSliderText">
                   Urban Design Trends with Royal Crown Luxury Laminates
@@ -105,7 +111,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section">
             <div>
-              <Image src={demoimage} alt="none" className="image1"/>
+              <Image src={demoimage} alt="none" className="image1" />
               <div className="textSlider">
                 <p className="textSliderText">
                   Urban Design Trends with Royal Crown Luxury Laminates
@@ -116,7 +122,7 @@ function ScrollSection() {
           </div>
           <div className="scroll-section">
             <div>
-              <Image src={demoimage} alt="none" className="image1"/>
+              <Image src={demoimage} alt="none" className="image1" />
               <div className="textSlider">
                 <p className="textSliderText">
                   Urban Design Trends with Royal Crown Luxury Laminates
@@ -127,7 +133,7 @@ function ScrollSection() {
           </div>
         </div>
       </div>
-    </section>
+       </section>
   );
 }
 
