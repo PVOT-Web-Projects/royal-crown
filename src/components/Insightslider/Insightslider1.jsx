@@ -50,8 +50,11 @@ function ScrollSection() {
             <button className="innerrbutton">Explore All Blogs</button>
           </div>
         </div>
-        <div className="counter">{String(currentIndex + 1).padStart(2, '0')}</div>
-   
+        <div className="fixed-counter">
+        <div>
+          <div className="counter">{String(currentIndex + 1).padStart(2, '0')}</div>
+        </div>
+      </div>
         <div ref={sectionRef} className="scroll-section-inner">
        
           <div className="scroll-section">
