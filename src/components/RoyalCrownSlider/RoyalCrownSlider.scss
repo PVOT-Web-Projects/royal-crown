@@ -1,19 +1,16 @@
 .Carousel_Slider_container {
-  padding-bottom: 0rem;
-  padding-top: 5rem;
-  width: 280px;
+  // padding-bottom: 0rem;
+  // padding-top: 5rem;
+  width: 500px;
 
 }
 .Carousel_Slider_container2 {
   width: 500px;
 }
-.abc {
+.MainContainer{
   display: flex;
-  padding-left: 10rem;
-  overflow-x: hidden;
-  padding-right: 10rem;
-  justify-content: center;
-  align-items: baseline;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
 }
 .mySwiper {
   text-align: center;
@@ -41,7 +38,7 @@
 .third_section_overlay_text {
   color: black;
   text-align: center;
-  font-family: var(--font-poppins);
+  // font-family: var(--font-poppins);
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -70,21 +67,33 @@
 //   bottom: 23%;
 //   right: 8%;
 // }
+.Rc_Text_Main{
+  padding-bottom: 2rem;
+}
+.Rc_Text_MainInner{
+  color: #595959;
+  font-size: 20px;
+}
+.Text_InnerText{
+  color: #FFFFFF;
+  font-size: 45px;
+  text-align: left;
+  padding-bottom: 2rem;
+}
 .Carousel_text_maincontent {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  padding-top: 6rem;
-  text-align: center;
-  padding-bottom: 6rem;
+  // display: flex;
+  // position: relative;
+  // justify-content: center;
+  // align-items: center;
+  // padding-top: 6rem;
+  // text-align: center;
+  // padding-bottom: 6rem;
 }
 .carousel_text_Content {
-  color: #7f7047;
-  text-align: center;
-  font-family: var(--font-poppins);
-  font-size: 15px;
-  width: 75%;
+  color: white;
+  text-align: left;
+  font-size: 28px;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
