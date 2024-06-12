@@ -5,6 +5,7 @@ import SocialPage from "@/components/socialPage/socialpage";
 import SocialMediaImg from "@/images/socials-image.png";
 import "./Home.scss";
 import "./variables.scss";
+import RoyalCrownSlider from "@/components/RoyalCrownSlider/RoyalCrownSlider";
 import CircularScroll from "@/components/Circularscroll/Circularscroll";
 import Certification from "@/components/Certifications/Certification";
 import InsightSlider from "@/components/Insightslider/Insightslider1"
@@ -13,7 +14,7 @@ export default function Home() {
     <main className="main">
       <HeroBanner />
       <Headingwithbutton />
-
+{/* <RoyalCrownSlider /> */}
       <InsightSlider />
       <Certification />
       <CircularScroll/>

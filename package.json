@@ -18,6 +18,7 @@
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",
     "react-locomotive-scroll": "^0.2.2",
+    "swiper": "^11.1.4",
     "yup": "^1.4.0"
   },
   "devDependencies": {

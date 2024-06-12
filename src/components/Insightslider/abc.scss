@@ -66,13 +66,14 @@
 .fixed-counter {
     width: 30%;
     position: fixed;
-    top: 55%;
+    top: 250px;
     left: -8%;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: #333;
+    height: 70%;
+    background: #1C211E;
 
   }
 .counter {
