@@ -14,7 +14,7 @@ const CircularScroll = () => {
       scrollTrigger: {
         trigger: ".gallery_box",
         start: "top center-=200px",
-        end: "bottom bottom", // Corrected end position
+        end: "bottom bottom", 
         scrub: true, 
         pin: true,
         // markers: true, 
@@ -27,6 +27,8 @@ const CircularScroll = () => {
       ease: "none",
     });
   }, []);
+  
+  
 
   return (
     <>
@@ -46,10 +48,7 @@ const CircularScroll = () => {
           </div>
         </div>
       </section>
-{/* 
-      <section >
-        <h1>Extra space just for demo, remove this</h1>
-      </section> */}
+
     </>
   );
 };
