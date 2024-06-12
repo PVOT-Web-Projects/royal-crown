@@ -1,11 +1,11 @@
 import Link from "next/link";
 import "./linkHover.scss";
-const LinkHover = ({ url, text, color, borderColor, fontSize }) => {
+const LinkHover = ({ url, text, color, fontSize }) => {
   return (
     <Link
       href={url}
       style={{ color: color, fontSize: fontSize }}
-      className={`linkHover ${borderColor}`}
+      className={`linkHover`}
     >
       <span> {text}</span>
       <span> {text}</span>
