@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "./sss.css";
+import "./Insightslider.scss";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

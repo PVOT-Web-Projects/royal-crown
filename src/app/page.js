@@ -7,14 +7,14 @@ import "./Home.scss";
 import "./variables.scss";
 import CircularScroll from "@/components/Circularscroll/Circularscroll";
 import Certification from "@/components/Certifications/Certification";
-
+import InsightSlider from "@/components/Insightslider/Insightslider"
 export default function Home() {
   return (
     <main className="main">
       <HeroBanner />
       <Headingwithbutton />
 
-      {/* <Insightslider /> */}
+      <InsightSlider />
       <Certification />
       <CircularScroll/>
       <div className="Form_Page">
