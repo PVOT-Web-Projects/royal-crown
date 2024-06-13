@@ -16,6 +16,8 @@ import LogoImg from "../../images/crown_light_logo.png";
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
+
+  
   return (
     <>
       <div className="MainContainer">
