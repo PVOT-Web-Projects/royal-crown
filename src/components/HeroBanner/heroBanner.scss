@@ -26,14 +26,18 @@
       }
       .text_effect {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        .card {
+          margin: 0;
+          overflow: hidden;
 
-        h2 {
-          font-size: 70px;
-          font-weight: $weightRegular;
-          margin: 0 0 16px;
-          line-height: 70px;
-          @media (max-width: 575px) {
-            font-size: $font55;
+          h2 {
+            font-size: 70px;
+            font-weight: $weightRegular;
+            margin: 0 0 16px;
+            line-height: 70px;
+            @media (max-width: 575px) {
+              font-size: $font55;
+            }
           }
         }
       }
@@ -63,10 +67,4 @@
       }
     }
   }
-}
-
-.card {
-  margin: 0;
-  overflow: hidden;
-  font-size: 22px;
 }

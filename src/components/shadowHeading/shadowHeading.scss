@@ -2,18 +2,28 @@
 @import "../../fonts/fonts.scss";
 
 .shadow_heading {
-    position: relative;
-  .shadow_heading_text {
-    font-family: "futura_medium";
-    letter-spacing: 10%;
-    &.shadow {
+  position: relative;
+
+  .wrapper {
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    .shadow_heading_text {
+      font-family: "futura_medium";
+      letter-spacing: 10%;
+      font-size: 48px;
+      line-height: 100%;
+      &.shadow {
         color: rgba(89, 89, 89, 0.35);
-    }
-    &.normal {
+      }
+      &.normal {
         color: $white;
         position: absolute;
         top: 20px;
         left: 20px;
+      }
     }
   }
+}
+.ddd {
 }
