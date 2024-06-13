@@ -11,6 +11,7 @@ import Certification from "@/components/Certifications/Certification";
 import PlyMarquee from "@/components/plyMarquee/PlyMarquee";
 import InsightSlider from "@/components/Insightslider/Insightslider1";
 import AboutUs from "@/components/Aboutus/Aboutus";
+import ShadowHeading from "@/components/shadowHeading/ShadowHeading";
 export default function Home() {
   return (
     <main className="main">
@@ -27,6 +28,7 @@ export default function Home() {
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
         <Form />
       </div>
+      <ShadowHeading text={"WHY ROYAL CROWN"} />
     </main>
   );
 }
