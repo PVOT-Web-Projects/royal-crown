@@ -10,6 +10,8 @@ import "swiper/css/pagination";
 import "./RoyalCrownSlider.scss";
 import { FreeMode, Thumbs, Autoplay } from "swiper/modules";
 import testimonial1 from "@/images/Crownsliderimg1.png";
+import ShadowHeading from "../shadowHeading/ShadowHeading";
+
 
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -18,7 +20,7 @@ export default function App() {
     <>
       <div className="MainContainer">
         <div className="abc">
-         
+         <ShadowHeading text={"Why Royal Crown"} />
           <div className="Carousel_Slider_container">
             <Swiper
               className="mySwiper"
@@ -162,6 +164,11 @@ export default function App() {
                 </div>
               </SwiperSlide>
             </Swiper>
+          </div>
+          <div className="tenExp">
+            <div className="tenExpBorder">
+              <p>10</p>
+            </div>
           </div>
         </div>
       </div>
