@@ -20,7 +20,7 @@ export default function App() {
     <>
       <div className="MainContainer">
         <div className="abc">
-         <ShadowHeading />
+         <ShadowHeading text={"Why Royal Crown"} />
           <div className="Carousel_Slider_container">
             <Swiper
               className="mySwiper"
