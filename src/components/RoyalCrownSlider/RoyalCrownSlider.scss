@@ -1,3 +1,4 @@
+@import "../../fonts/fonts.scss";
 .Carousel_Slider_container {
   // padding-bottom: 0rem;
   // padding-top: 5rem;
@@ -15,6 +16,15 @@
 .mySwiper {
   text-align: center;
   margin: 0 auto;
+}
+.third_section_image{
+  width: 100%;
+  display: block;
+}
+.aasas{
+  position: absolute;
+  top: 50%;
+  left: 80%;
 }
 .mySwiper2 {
   text-align: center;
@@ -36,15 +46,28 @@
 
 .abc{
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 .tenExpBorder{
-  padding: 20px 40px;
+  padding: 6px 10px;
   display: inline-flex;
-  border: 1px solid red;
+  border: 1px solid #FFBC37;
 }
 .tenExp{
+  display: flex;
+  align-items: center;
   margin-top: auto;
+  position: relative;
+}
+.tenExpBorderText{
+  font-size: 90px;
+}
+.tenExpBorderTextInner{
+  width: 50%;
+  padding: 0 20px;
+  font-size: 30px;
+  font-family: "futura_light";
 }
 .third_section_overlay_text {
   color: black;
@@ -90,6 +113,18 @@
   font-size: 45px;
   text-align: left;
   padding-bottom: 2rem;
+}
+.swiper-button-next{
+  top: 50%;
+  left: 100%;
+  color: #FFBC3780 !important;
+  font-weight: 900;
+}
+.swiper-button-prev{
+  top: 50%;
+  left: 90%;
+  color: #FFBC3780 !important;
+  font-weight: 900;
 }
 .Carousel_text_maincontent {
   // display: flex;
