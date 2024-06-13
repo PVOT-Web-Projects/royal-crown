@@ -1,4 +1,5 @@
 .aboutUs {
+  overflow: hidden;
   display: flex;
 
   .aboutcontainer {
@@ -17,6 +18,15 @@
       height: 100%;
       object-fit: contain;
       transform: translate(-15%, 0%);
+      @media (max-width: 1090px){
+        transform: translate(-20%, 0%);
+        
+      }
+      @media (max-width: 1024px){
+        transform: translate(-22%, 0%);
+        
+      }
+    
     }
 
     .two {
@@ -28,18 +38,78 @@
         font-size: 56px;
         letter-spacing: 10px;
         transform: translate(-20%, -136%);
+        @media (max-width: 1090px){
+          font-size: 50px;
+          transform: translate(-19%, -129%);
+          
+        }
+        @media (max-width: 1024px){
+          font-size: 50px;
+          transform: translate(-31%, -56%);
+      
+          
+        }
+        @media (max-width: 868px){
+          
+          font-size: 35px;
+          transform: translate(-31%, -56%);  
+  
+  
+
+      
+           }
       }
+    }
 
       .aboutheading2 {
         color: #80808085;
         font-size: 56px;
         letter-spacing: 10px;
         transform: translate(-23%, -51%);
+        @media (max-width: 1090px){
+          font-size: 50px;
+          transform: translate(-25%, -35%);
+          
+        }
+        @media (max-width: 1024px){
+         font-size: 50px;
+        transform: translate(-37%, 30%);
+
+          
+        }
+        @media (max-width: 868px){
+          
+          font-size: 35px;
+          transform: translate(-37%, 30%);
+  
+
+      
+           }
       }
 
       .aboutpara {
         width: 70%;
         transform: translate(-8%, -40%);
+        @media (max-width: 1200px){
+          
+          width: 93%;
+           }
+        @media (max-width: 1024px){
+          
+        width: 100%;
+        transform: translate(-11%, -7%);
+ 
+           
+         }
+         @media (max-width: 868px){
+          
+          font-size: 13px;
+        transform: translate(-12%, 11%);
+
+      
+           }
+
+    
       }
     }
 
@@ -50,15 +120,55 @@
 
       .aboutpara2 {
         width: 73%;
-        transform: translate(-2%, -30%);
+        transform: translate(0%, -32%);
+        @media (max-width: 1200px){
+          
+          width: 93%;
+          transform: translate(0%, -15%);
+           }
+        @media (max-width: 1024px){
+          
+          width: 100%;
+          transform: translate(-2%, 7%);
+   
+           }
+           @media (max-width: 868px){
+          
+            font-size: 13px;
+            width: 100%;
+            transform: translate(-2%, 7%);
+    
+        
+             }
+           
+         }
       }
 
       .crownimg {
-        transform: translate(15%, -20%);
+        transform: translate(8%, -11%);
+        @media (max-width: 1200px){
+          height: 300px;
+          width: 300px;       
+           }
+        @media (max-width: 1024px){
+          
+          transform: translate(15%, -11%);
+          height: 230px;
+          width: 230px;       
+           }
+           @media (max-width: 868px){
+          
+            transform: translate(15%, -11%);
+            height: 230px;
+            width: 200px;
+        
+             }
       }
     }
-  }
-}
+  
+
+
+
 
 
 
