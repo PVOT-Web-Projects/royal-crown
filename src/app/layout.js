@@ -1,5 +1,5 @@
 
-import Header from "../components/header/Header";
+import HeaderCopy from "../components/header copy/Header";
 import "./globals.scss";
 import Footer from "@/components/footer/Footer";
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head></head>
       <body>
-        <Header />
+        <HeaderCopy />
         {children}
         <Footer />
       </body>

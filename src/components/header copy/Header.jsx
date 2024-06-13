@@ -8,7 +8,7 @@ import Image from "next/image";
 import LinkHover from "../linkHover/LinkHover";
 import { motion } from "framer-motion";
 
-const Header = () => {
+const HeaderCopy = () => {
   return (
     <header>
       <nav>
@@ -110,4 +110,4 @@ const Header = () => {
     </header> 
   );
 };
-export default Header;
+export default HeaderCopy;
