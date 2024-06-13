@@ -45,7 +45,7 @@ const PlyMarquee = () => {
     { color: "Brown" },
     { color: "White" },
     { color: "Black" },
-    { color: "Blue" },
+    { color: "Blue" }, 
   ];
   return (
     <div className="ply_marquee">
