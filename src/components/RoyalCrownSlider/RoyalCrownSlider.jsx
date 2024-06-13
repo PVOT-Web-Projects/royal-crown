@@ -10,6 +10,8 @@ import "swiper/css/pagination";
 import "./RoyalCrownSlider.scss";
 import { FreeMode, Thumbs, Autoplay } from "swiper/modules";
 import testimonial1 from "@/images/Crownsliderimg1.png";
+import ShadowHeading from "../shadowHeading/ShadowHeading";
+
 
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -18,7 +20,7 @@ export default function App() {
     <>
       <div className="MainContainer">
         <div className="abc">
-         
+         <ShadowHeading />
           <div className="Carousel_Slider_container">
             <Swiper
               className="mySwiper"
