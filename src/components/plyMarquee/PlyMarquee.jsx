@@ -1,3 +1,5 @@
+"use client"
+
 const { default: Image } = require("next/image");
 const { default: Marquee } = require("react-fast-marquee");
 import img1 from "@/images/ply1.png";
@@ -9,8 +11,17 @@ import img6 from "@/images/ply6.png";
 import img7 from "@/images/ply7.png";
 import "./plyMarquee.scss";
 import { Dropdown } from "primereact/dropdown";
+import { useState } from "react";
 
 const PlyMarquee = () => {
+  const [getCategory, setGetCategory] = useState("");
+  const [getThickness, setGetThickness] = useState("");
+  const [getSize, setGetSize] = useState("");
+  const [getColor, setGetColor] = useState("");
+  console.log("category", getCategory);
+  console.log("thickness", getThickness);
+  console.log("size", getSize);
+  console.log("color", getColor);
   const category = [
     { cat: "Xylem" },
     { cat: "Xylem2" },
@@ -23,19 +34,19 @@ const PlyMarquee = () => {
     { thick: "2MM" },
     { thick: "3MM" },
     { thick: "4MM" },
-  ]
+  ];
   const sizes = [
     { size: "25 Sq MM" },
     { size: "25 Sq MM" },
     { size: "25 Sq MM" },
     { size: "25 Sq MM" },
-  ]
+  ];
   const colors = [
     { color: "Brown" },
     { color: "White" },
     { color: "Black" },
-    { color: "Blue" },
-  ]
+    { color: "Blue" }, 
+  ];
   return (
     <div className="ply_marquee">
       <div className="filter_wrapper">
@@ -44,6 +55,8 @@ const PlyMarquee = () => {
             options={category}
             optionLabel="cat"
             placeholder="Category"
+            onChange={(e) => setGetCategory(e.target.value)}
+            value={getCategory}
           />
         </div>
         <div className="filter">
@@ -51,16 +64,30 @@ const PlyMarquee = () => {
             options={thickness}
             optionLabel="thick"
             placeholder="Thickness"
+            onChange={(e) => setGetThickness(e.target.value)}
+            value={getThickness}
           />
         </div>
         <div className="filter">
-          <Dropdown options={sizes} optionLabel="size" placeholder="Size" />
+          <Dropdown
+            options={sizes}
+            optionLabel="size"
+            placeholder="Size"
+            onChange={(e) => setGetSize(e.target.value)}
+            value={getSize}
+          />
         </div>
         <div className="filter">
-          <Dropdown options={colors} optionLabel="color" placeholder="Colour" />
+          <Dropdown
+            options={colors}
+            optionLabel="color"
+            placeholder="Colour"
+            onChange={(e) => setGetColor(e.target.value)}
+            value={getColor}
+          />
         </div>
       </div>
-      <Marquee speed={100}>
+      <Marquee speed={50}>
         <div className="ply_list">
           <div className="ply_item">
             <div className="ply_info">
