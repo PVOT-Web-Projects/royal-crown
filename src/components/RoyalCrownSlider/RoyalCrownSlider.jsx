@@ -131,6 +131,7 @@ export default function App() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="Carousel_text_maincontent">
+                  <p className="Text_InnerText">Unparalled Services</p>
                   <p className="carousel_text_Content">
                     We are known for providing high density laminates with
                     unparalleled services in terms of quality and reliability.
@@ -141,6 +142,7 @@ export default function App() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="Carousel_text_maincontent">
+                  <p className="Text_InnerText">Unparalled Services</p>
                   <p className="carousel_text_Content">
                     We are known for providing high density laminates with
                     unparalleled services in terms of quality and reliability.
@@ -151,6 +153,7 @@ export default function App() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="Carousel_text_maincontent">
+                  <p className="Text_InnerText">Unparalled Services</p>
                   <p className="carousel_text_Content">
                     We are known for providing high density laminates with
                     unparalleled services in terms of quality and reliability.
@@ -161,6 +164,7 @@ export default function App() {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="Carousel_text_maincontent">
+                  <p className="Text_InnerText">Unparalled Services</p>
                   <p className="carousel_text_Content">
                     We are known for providing high density laminates with
                     unparalleled services in terms of quality and reliability.
