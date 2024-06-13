@@ -20,7 +20,7 @@ export default function App() {
     <>
       <div className="MainContainer">
         <div className="abc">
-          <div className="aasas">
+          <div className="LogoImg">
             <Image src={LogoImg} alt="none" />
           </div>
           <ShadowHeading text={"Why Royal Crown"} />
