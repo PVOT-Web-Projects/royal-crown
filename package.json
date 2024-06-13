@@ -23,6 +23,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "sass": "^1.77.4"
