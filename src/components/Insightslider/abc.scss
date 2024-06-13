@@ -46,6 +46,8 @@
 }
 .InsightsTextMain {
   padding: 0 100px;
+  position: relative;
+  z-index: 20;
 }
 .InsightsButton {
   padding-top: 3rem;
@@ -66,13 +68,13 @@
 .fixed-counter {
     width: 30%;
     position: fixed;
-    top: 250px;
+    top: 0;
     left: -8%;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70%;
+    height: 100%;
     background: #1C211E;
 
   }
