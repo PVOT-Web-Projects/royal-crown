@@ -34,7 +34,18 @@
   gap: 2rem;
 }
 
-
+.abc{
+  display: flex;
+  flex-direction: column;
+}
+.tenExpBorder{
+  padding: 20px 40px;
+  display: inline-flex;
+  border: 1px solid red;
+}
+.tenExp{
+  margin-top: auto;
+}
 .third_section_overlay_text {
   color: black;
   text-align: center;

@@ -163,6 +163,11 @@ export default function App() {
               </SwiperSlide>
             </Swiper>
           </div>
+          <div className="tenExp">
+            <div className="tenExpBorder">
+              <p>10</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
