@@ -11,6 +11,7 @@ import Certification from "@/components/Certifications/Certification";
 import PlyMarquee from "@/components/plyMarquee/PlyMarquee";
 import InsightSlider from "@/components/Insightslider/Insightslider1";
 import AboutUs from "@/components/Aboutus/Aboutus";
+import ThreeDSlider from "@/components/threeDSlider/ThreeDSlider";
 export default function Home() {
   return (
     <main className="main">
@@ -22,7 +23,8 @@ export default function Home() {
 
       <InsightSlider />
       <Certification />
-      <CircularScroll />
+      {/* <CircularScroll /> */}
+      <ThreeDSlider />
       <div className="Form_Page">
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
         <Form />
