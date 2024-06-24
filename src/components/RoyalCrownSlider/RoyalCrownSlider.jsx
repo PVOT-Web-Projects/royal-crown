@@ -20,12 +20,14 @@ export default function App() {
   
   return (
     <>
+    <ShadowHeading text={"Why Royal Crown"} /> 
       <div className="MainContainer">
+      
         <div className="abc">
           <div className="LogoImg">
             <Image src={LogoImg} alt="none" />
           </div>
-          <ShadowHeading text={"Why Royal Crown"} />
+          {/* <ShadowHeading text={"Why Royal Crown"} /> */}
           <div className="Carousel_Slider_container">
             <Swiper
               className="mySwiper"
@@ -189,6 +191,7 @@ export default function App() {
           </div>
         </div>
       </div>
+       
     </>
   );
 }

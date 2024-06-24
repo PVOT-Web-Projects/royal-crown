@@ -12,6 +12,7 @@ import img7 from "@/images/ply7.png";
 import "./plyMarquee.scss";
 import { Dropdown } from "primereact/dropdown";
 import { useState } from "react";
+import "./marquee.css"
 
 const PlyMarquee = () => {
   const [getCategory, setGetCategory] = useState("");
@@ -87,7 +88,7 @@ const PlyMarquee = () => {
           />
         </div>
       </div>
-      <Marquee speed={50}>
+      <Marquee class="r3f_marquee" speed={70}>
         <div className="ply_list">
           <div className="ply_item">
             <div className="ply_info">
