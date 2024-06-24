@@ -28,7 +28,13 @@
         width: 95%;
       }
     }
+
+    .r3f_marquee{
+      min-width:0 !important
+    }
   }
+
+
   .ply_list {
     padding: 150px 0 100px;
     @media (max-width: 991px) {
@@ -49,6 +55,11 @@
           transform: translateY(-20px);
           opacity: 1;
         }
+      }
+
+      img{
+        width:100%
+
       }
 
       .ply_info {
