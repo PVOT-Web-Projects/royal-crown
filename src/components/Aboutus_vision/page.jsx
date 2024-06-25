@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import AboutUs_vision from "@/images/aboutus_vision_image.webp"
+import AboutUs_vision from "../../images/aboutUs_vision_image.webp"
 import vision_playButton from "@/images/svgLogos/vision_playButton.svg"
 import "./aboutus_vision.scss"
 const page = () => {
