@@ -1,0 +1,44 @@
+@import "../../app/variables.scss";
+@import "../../fonts/fonts.scss";
+
+.aboutUs_vision_outer {
+  padding: 4rem 4rem;
+
+  .aboutUs_vision {
+    display: flex;
+    justify-content: space-between;
+
+    .vision_heading {
+      font-size: 96px;
+    }
+    .vision_text {
+      font-size: 24px;
+      width: 46%;
+      text-align: right;
+      display: flex;
+      align-items: center;
+    }
+}
+
+.vision_image_outer{
+  padding-top:2rem;
+  position: relative;
+
+
+  .vision_image {
+    width: 100%;
+    height: auto;
+  }
+  .vision_playButton{
+    // width: 100%;
+    max-width:100%;
+    height: auto;
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+  }
+}
+
+}
