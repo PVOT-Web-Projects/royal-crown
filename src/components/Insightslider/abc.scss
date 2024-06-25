@@ -65,9 +65,12 @@
   cursor: pointer;
   font-size: 16px;
 }
+.wrap{
+  position: relative;
+}
 .fixed-counter {
     width: 30%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -8%;
     z-index: 1;
