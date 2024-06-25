@@ -3,13 +3,22 @@
 
 .aboutUs_vision_outer {
   padding: 4rem 4rem;
+  @media (max-width: 1024px) {
+    padding: 2rem 2rem;
+  }
 
   .aboutUs_vision {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+      flex-direction:column;
+    }
 
     .vision_heading {
       font-size: 96px;
+      @media (max-width: 575px) {
+        font-size: 40px;
+      }
     }
     .vision_text {
       font-size: 24px;
@@ -17,6 +26,14 @@
       text-align: right;
       display: flex;
       align-items: center;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        text-align: left;
+      }
+
+
+
     }
 }
 
