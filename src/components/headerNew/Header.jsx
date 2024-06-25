@@ -25,7 +25,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"#"} text={"About Us"} fontSize={"16px"} />
+            <LinkHover url={"/about-us"} text={"About Us"} fontSize={"16px"} />
           </motion.li>
           <motion.li
             initial={{
