@@ -34,6 +34,16 @@
   position: absolute;
   background-position: center center;
   background-size: cover;
+  img{
+    max-width: 100%;
+    display: block;
+    width: 300px;
+    height: 220px;
+  }
+  p{
+    text-align: center;
+    margin: 10px 0 0;
+  }
 }
 
 .gallery_box_in:nth-child(1) {
