@@ -1,9 +1,14 @@
 "use client";
 
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import './threeDSlider.scss'; // Import your SCSS file here
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./threeDSlider.scss"; // Import your SCSS file here
+import Image from "next/image";
+import img1 from "@/images/circleImg1.jpg";
+import img2 from "@/images/circleImg2.jpg";
+import img3 from "@/images/circleImg3.jpg";
+import img4 from "@/images/circleImg4.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,12 +21,12 @@ const ThreeDSlider2 = () => {
         end: "bottom+=3000px center-=200px", // Increase the end point to extend the scroll distance
         scrub: true,
         pin: ".gallery_box", // Ensure pinning the correct element
-        pinSpacing: false,  // Disable automatic pin spacing
+        pinSpacing: false, // Disable automatic pin spacing
         markers: true,
-      }
+      },
     });
 
-    tl.to('.gallery_box_outer', {
+    tl.to(".gallery_box_outer", {
       duration: 10,
       rotateY: 360,
       ease: "none",
@@ -29,7 +34,7 @@ const ThreeDSlider2 = () => {
 
     return () => {
       // Clean up ScrollTrigger instances
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
@@ -37,15 +42,42 @@ const ThreeDSlider2 = () => {
     <section className="work2">
       <div className="gallery_box">
         <div className="gallery_box_outer">
-          <div className="gallery_box_in" style={{ background: 'black' }}></div>
-          <div className="gallery_box_in" style={{ background: 'yellow' }}></div>
-          <div className="gallery_box_in" style={{ background: 'red' }}></div>
-          <div className="gallery_box_in" style={{ background: 'pink' }}></div>
-          <div className="gallery_box_in" style={{ background: 'blue' }}></div>
-          <div className="gallery_box_in" style={{ background: 'green' }}></div>
-          <div className="gallery_box_in" style={{ background: 'purple' }}></div>
-          <div className="gallery_box_in" style={{ background: 'lightgrey' }}></div>
-          <div className="gallery_box_in" style={{ background: 'orange' }}></div>
+          <div className="gallery_box_in" style={{ background: "black" }}>
+            <Image src={img1} alt="img1" />
+            <p>Laminate 1</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "yellow" }}>
+            <Image src={img2} alt="img1" />
+            <p>Laminate 9</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "red" }}>
+            <Image src={img3} alt="img1" />
+            <p>Laminate 8</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "pink" }}>
+            <Image src={img4} alt="img1" />
+            <p>Laminate 7</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "blue" }}>
+            <Image src={img1} alt="img1" />
+            <p>Laminate 6</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "green" }}>
+            <Image src={img2} alt="img1" />
+            <p>Laminate 5</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "purple" }}>
+            <Image src={img3} alt="img1" />
+            <p>Laminate 4</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "lightgrey" }}>
+            <Image src={img4} alt="img1" />
+            <p>Laminate 3</p>
+          </div>
+          <div className="gallery_box_in" style={{ background: "orange" }}>
+            <Image src={img1} alt="img1" />
+            <p>Laminate 2</p>
+          </div>
         </div>
       </div>
     </section>
