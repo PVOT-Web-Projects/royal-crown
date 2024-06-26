@@ -6,6 +6,7 @@ import "./aboutUs_sizes.scss"
 const page = () => {
   return (
     <>
+    
       <div class="aboutUs_size_outer">
       <div class="parent">
 <div class="div1">
@@ -41,6 +42,7 @@ const page = () => {
 </div>
 </div>
       </div>
+
     </>
   )
 }

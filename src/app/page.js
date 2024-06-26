@@ -26,7 +26,7 @@ export default function Home() {
       <Certification />
       {/* <CircularScroll /> */}
       {/* <ThreeDSlider /> */}
-      <ThreeDSlider2 />
+      <ThreeDSlider2 /> 
       <div className="Form_Page">
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
         <Form />
