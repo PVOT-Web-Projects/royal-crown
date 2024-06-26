@@ -17,10 +17,10 @@ const ThreeDSlider2 = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".gallery_box",
-        start: "top center-=200px",
-        end: "bottom+=3000px center-=200px", // Increase the end point to extend the scroll distance
+        start: "top center",
+        end: "bottom center", // Increase the end point to extend the scroll distance
         scrub: true,
-        pin: ".gallery_box", // Ensure pinning the correct element
+        pin: false, // Ensure pinning the correct element
         pinSpacing: false, // Disable automatic pin spacing
         markers: true,
       },
@@ -40,43 +40,45 @@ const ThreeDSlider2 = () => {
 
   return (
     <section className="work2">
-      <div className="gallery_box">
-        <div className="gallery_box_outer">
-          <div className="gallery_box_in" style={{ background: "black" }}>
-            <Image src={img1} alt="img1" />
-            <p>Laminate 1</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "yellow" }}>
-            <Image src={img2} alt="img1" />
-            <p>Laminate 9</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "red" }}>
-            <Image src={img3} alt="img1" />
-            <p>Laminate 8</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "pink" }}>
-            <Image src={img4} alt="img1" />
-            <p>Laminate 7</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "blue" }}>
-            <Image src={img1} alt="img1" />
-            <p>Laminate 6</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "green" }}>
-            <Image src={img2} alt="img1" />
-            <p>Laminate 5</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "purple" }}>
-            <Image src={img3} alt="img1" />
-            <p>Laminate 4</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "lightgrey" }}>
-            <Image src={img4} alt="img1" />
-            <p>Laminate 3</p>
-          </div>
-          <div className="gallery_box_in" style={{ background: "orange" }}>
-            <Image src={img1} alt="img1" />
-            <p>Laminate 2</p>
+      <div className="work2_wrap">
+        <div className="gallery_box">
+          <div className="gallery_box_outer">
+            <div className="gallery_box_in" style={{ background: "black" }}>
+              <Image src={img1} alt="img1" />
+              <p>Laminate 1</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "yellow" }}>
+              <Image src={img2} alt="img1" />
+              <p>Laminate 9</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "red" }}>
+              <Image src={img3} alt="img1" />
+              <p>Laminate 8</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "pink" }}>
+              <Image src={img4} alt="img1" />
+              <p>Laminate 7</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "blue" }}>
+              <Image src={img1} alt="img1" />
+              <p>Laminate 6</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "green" }}>
+              <Image src={img2} alt="img1" />
+              <p>Laminate 5</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "purple" }}>
+              <Image src={img3} alt="img1" />
+              <p>Laminate 4</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "lightgrey" }}>
+              <Image src={img4} alt="img1" />
+              <p>Laminate 3</p>
+            </div>
+            <div className="gallery_box_in" style={{ background: "orange" }}>
+              <Image src={img1} alt="img1" />
+              <p>Laminate 2</p>
+            </div>
           </div>
         </div>
       </div>
