@@ -29,13 +29,24 @@ header {
       @media (max-width: 1199px) {
         gap: 20px;
       }
+      &.dark {
+        li {
+          a {
+            color: $black;
+          }
+        }
+      }
+      &.light {
+        li {
+          a {
+            color: $white;
+          }
+        }
+      }
       li {
-
         a {
-          color: $white;
           text-decoration: none;
           text-transform: uppercase;
-          color: $black;
           position: relative;
           transition: all 0.4s;
           &::before {
