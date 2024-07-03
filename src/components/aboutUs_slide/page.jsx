@@ -33,7 +33,7 @@ function ScrollSection() {
           trigger: triggerElement,
           start: "top top",
           end: "300 top",
-          scrub: true,
+          scrub: 2,
           pin: true,
         },
       }
