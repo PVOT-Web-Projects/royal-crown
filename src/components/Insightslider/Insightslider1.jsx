@@ -53,7 +53,8 @@ function ScrollSection() {
   }, [currentIndex]);
 
   return (
-    <section className="scroll-section-outer">
+    <div style={{position:"relative"}}>
+      <section className="scroll-section-outer">
       <div ref={triggerRef}>
         <div className="InsightsTextMain">
           <p className="InsightsText">Latest Insights</p>
@@ -151,6 +152,7 @@ function ScrollSection() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 
