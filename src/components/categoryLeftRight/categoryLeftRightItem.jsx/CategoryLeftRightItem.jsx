@@ -42,8 +42,8 @@ const CategoryLeftRightItem = ({
             <div className="left_bottom">
               <YellowButton url={url} btn_text={"EXPLORE COLLECTION"} />
               <div className="logoes">
-                <Image src={logo1} alt={title} />
-                <Image src={logo2} alt={title} />
+                {logo1 && <Image src={logo1} alt={title} />}
+                {logo2 && <Image src={logo2} alt={title} />}
               </div>
             </div>
           </div>
