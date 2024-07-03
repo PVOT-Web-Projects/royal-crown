@@ -60,7 +60,7 @@ const RotatingImages = () => {
         end: `+=${numImages * 100}%`,
         scrub: true,
         pin: ".work2_wrap",
-        markers: true,
+        markers: false,
         onUpdate: (self) => {
           const progress = self.progress - 0.6 * imageDuration;
           const index = Math.floor(progress / imageDuration) % numImages;

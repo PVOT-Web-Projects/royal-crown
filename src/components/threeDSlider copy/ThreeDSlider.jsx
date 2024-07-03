@@ -22,7 +22,7 @@ const ThreeDSlider2 = () => {
         scrub: true,
         pin: false, // Ensure pinning the correct element
         pinSpacing: false, // Disable automatic pin spacing
-        markers: true,
+        markers: false,
       },
     });
 
