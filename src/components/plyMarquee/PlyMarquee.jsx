@@ -1,5 +1,4 @@
 "use client"
-
 const { default: Image } = require("next/image");
 const { default: Marquee } = require("react-fast-marquee");
 import img1 from "@/images/ply1.png";

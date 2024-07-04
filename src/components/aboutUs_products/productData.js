@@ -1,4 +1,3 @@
-
 import filterImage1 from "@/images/filter_image1.png";
 import filterImage2 from "@/images/filter_image2.png";
 import filterImage3 from "@/images/filter_image3.png";
@@ -10,56 +9,17 @@ import filterImage8 from "@/images/filter_image8.png";
 import filterImage9 from "@/images/filter_image9.png";
 import filterImage10 from "@/images/filter_image10.png";
 
-
 const products = [
-    {
-      name: 'Sony Playstation 5',
-      image:filterImage1,
-      category: 'games',
-    },
-    {
-      name: 'Samsung Galaxy',
-      image:filterImage2,
-      category: 'smartphones',
-    },
-    {
-      name: 'Cannon EOS Camera',
-      image:filterImage3,
-      category: 'cameras',
-    },
-    {
-      name: 'Sony A7 Camera',
-      image:filterImage4,
-      category: 'cameras',
-    },
-    {
-      name: 'LG TV',
-      image:filterImage5,
-      category: 'televisions',
-    },
-    {
-      name: 'Nintendo Switch',
-      image:filterImage6,
-      category: 'games',
-    },
-    {
-      name: 'Xbox Series X',
-      image:filterImage7,
-      category: 'games',
-    },
-    {
-      name: 'Samsung TV',
-      image:filterImage8,
-      category: 'televisions',
-    },
-    {
-      name: 'Google Pixel',
-      image:filterImage9,
-      category: 'smartphones',
-    },
-    {
-      name: 'Sony ZV1F Camera',
-      image:filterImage10,
-      category: 'cameras',
-    },
-  ];
+  {name:"img", image: filterImage1, category: 'Xylem', categoryType: "Spotless", categoryValue:"Decorative Interior Compacts" },
+  { name:"img",  image: filterImage2, category: 'Royal Crown' , categoryType:"Exotic Urbane" , categoryValue:"Decorative" },
+  { name:"img",  image: filterImage3, category: 'QBliss' , categoryType: "Spotless" , categoryValue:"Interior Compacts" },
+  { name:"img",  image: filterImage4, category: 'QBliss' ,  categoryType:"Exotic Urbane" , categoryValue:"Decorative" },
+  { name:"img",  image: filterImage5, category: 'Crown XCL' , categoryType: "Spotless" , categoryValue:"Exterior Compacts" },
+  { name:"img",  image: filterImage6, category: 'Xylem' , categoryType: "Classic Wood Grains" , categoryValue:"Exterior Compacts"},
+  { name:"img",  image: filterImage7, category: 'Xylem' , categoryType: "Spotless" , categoryValue:"Exterior Compacts" },
+  { name:"img",  image: filterImage8, category: 'Crown XCL' , categoryType: "Spotless" , categoryValue:"Exterior Compacts" },
+  { name:"img",  image: filterImage9, category: 'Royal Crown' , categoryType:"Classic Wood Grains" , categoryValue:"Decorative" },
+  { name:"img", image: filterImage10, category: 'QBliss' , categoryType:"Classic Wood Grains" , categoryValue:"Exterior Compacts" },
+];
+
+export default products;
