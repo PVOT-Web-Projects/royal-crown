@@ -104,6 +104,11 @@
       gap: 6rem;
       .aboutpara {
         width: 33%;
+        @media (min-width: 1025px) {
+          font-size: 20px;
+          width: 40%;
+          gap: 2rem;
+        }
         @media (max-width: 1024px) {
           font-size: 13px;
           width: 40%;
@@ -116,6 +121,11 @@
       }
       .aboutpara2 {
         width: 44%;
+        @media (min-width: 1025px) {
+          font-size: 20px;
+          width: 40%;
+          gap: 2rem;
+        }
         @media (max-width: 1024px) {
           font-size: 13px;
           width: 41%;

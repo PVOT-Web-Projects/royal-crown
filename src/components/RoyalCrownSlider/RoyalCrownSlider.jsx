@@ -21,7 +21,7 @@ export default function App() {
   return (
     <>
     <ShadowHeading text={"Why Royal Crown"} /> 
-      <div className="MainContainer">
+      <div className="MainContainer" style={{marginTop:"50px"}}>
       
         <div className="abc">
           <div className="LogoImg">
@@ -179,7 +179,7 @@ export default function App() {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className="tenExp">
+          <div className="tenExp" style={{marginBottom:"50px"}}>
             <div className="tenExpBorder">
               <p className="tenExpBorderText">10</p>
             </div>
