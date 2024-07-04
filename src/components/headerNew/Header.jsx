@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import logo from "@/images/svgLogos/header_logo.svg";
-import logo1 from "@/images/white_logo.png";
+import logo1 from "@/images/svgLogos/white_logo.svg";
 import logo2 from "@/images/svgLogos/header_crown_logo.svg";
 import logo3 from "@/images/crown_white.png";
 import "./header.scss";
@@ -50,7 +50,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"#"} text={"Products"} fontSize={"16px"} />
+            <LinkHover url={"/products"} text={"Products"} fontSize={"16px"} />
           </motion.li>
           <motion.li
             initial={{
