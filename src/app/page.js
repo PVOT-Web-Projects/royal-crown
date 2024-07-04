@@ -13,11 +13,17 @@ import InsightSlider from "@/components/Insightslider/Insightslider1";
 import AboutUs from "@/components/Aboutus/Aboutus";
 import ThreeDSlider from "@/components/threeDSlider/ThreeDSlider";
 import ThreeDSlider2 from "@/components/threeDSlider copy/ThreeDSlider";
+import RotatingImages from "@/components/The rotating image/RotatingImages";
+
 export default function Home() {
   return (
     <main className="main">
       <HeroBanner />
       <AboutUs />
+      {/* <ThreeDSlider2 /> */}
+      <div style={{height:"400px"}}></div>
+      <RotatingImages/>
+      <div style={{height:"850vh"}}></div>
       <Headingwithbutton />
       <PlyMarquee />
       <RoyalCrownSlider />
@@ -26,7 +32,7 @@ export default function Home() {
       <Certification />
       {/* <CircularScroll /> */}
       {/* <ThreeDSlider /> */}
-      <ThreeDSlider2 /> 
+      
       <div className="Form_Page">
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
         <Form />
