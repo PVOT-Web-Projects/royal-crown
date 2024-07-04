@@ -11,40 +11,46 @@ import filterImage7 from "@/images/filter_image7.png";
 import filterImage8 from "@/images/filter_image8.png";
 import filterImage9 from "@/images/filter_image9.png";
 import filterImage10 from "@/images/filter_image10.png";
+import productData from "./productData.js"
 const page = () => {
+
+
+
+
+
+
+
   return (
     <>
-      <div class="products_name">EXPLORE PRODUCTS</div>
+     <div class="first_top">
+     <div id="sticky_top" class="products_name">EXPLORE PRODUCTS</div>
 
-    <div class="supply">
-      <div class="one">one</div>
-      <div class="container"> 
-    <div class="tall"><Image src={filterImage1} alt="picsum"/></div>
-    <div><Image src={filterImage2} alt="picsum"/></div>
-    <div class="tall"><Image src={filterImage3} alt="picsum"/></div>
-    <div class="tall" ><Image src={filterImage4} alt="picsum"/></div>
-    <div class=""><Image src={filterImage5} alt="picsum"/></div>
-    <div class=""><Image src={filterImage6} alt="picsum"/></div>
-    <div class=""><Image src={filterImage7} alt="picsum"/></div>
-    <div class="tall"><Image src={filterImage8} alt="picsum"/></div>
-    <div class="tall"><Image src={filterImage9} alt="picsum"/></div>
-    <div class="big"><Image src={filterImage10} alt="picsum"/></div>
-    <div class="tall"><Image src={filterImage1} alt="picsum"/></div>
-    <div><Image src={filterImage1} alt="picsum"/></div>
-    {/* <div><Image src={filterImage2} alt="picsum"/></div>
-    <div><Image src={filterImage3} alt="picsum"/></div>
-    <div><Image src={filterImage4} alt="picsum"/></div>
-    <div class="big"><Image src={filterImage5} alt="picsum"/></div>
-    <div><Image src={filterImage6} alt="picsum"/></div>
-    <div><Image src={filterImage7} alt="picsum"/></div>
-    <div><Image src={filterImage8} alt="picsum"/></div>
-    <div class="wide"><Image src={filterImage9} alt="picsum"/></div>
-    <div><Image src={filterImage10} alt="picsum"/></div>
-    <div><Image src={filterImage1} alt="picsum"/></div>
-    <div><Image src={filterImage2} alt="picsum"/></div>
-    <div><Image src={filterImage3} alt="picsum"/></div> */}
+<div class="supply">
+  <div id="sticky" class="one">
+
   </div>
-    </div>
+
+
+
+
+
+  <div  class="container"> 
+<div class="tall"><Image src={filterImage1} alt="picsum"/></div>
+<div><Image src={filterImage2} alt="picsum"/></div>
+<div class="tall"><Image src={filterImage3} alt="picsum"/></div>
+<div class="tall" ><Image src={filterImage4} alt="picsum"/></div>
+<div class=""><Image src={filterImage5} alt="picsum"/></div>
+<div class=""><Image src={filterImage6} alt="picsum"/></div>
+<div class=""><Image src={filterImage7} alt="picsum"/></div>
+<div class="tall"><Image src={filterImage8} alt="picsum"/></div>
+<div class="tall"><Image src={filterImage9} alt="picsum"/></div>
+<div class="big"><Image src={filterImage10} alt="picsum"/></div>
+<div class="tall"><Image src={filterImage1} alt="picsum"/></div>
+<div><Image src={filterImage1} alt="picsum"/></div>
+
+</div>
+</div>
+     </div>
 
     </>
   );
