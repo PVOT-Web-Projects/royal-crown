@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "fluid-simulation-react": "^1.0.5",
     "formik": "^2.4.6",
     "framer-motion": "^11.2.10",
     "gsap": "^3.12.5",
@@ -19,10 +20,12 @@
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",
     "react-locomotive-scroll": "^0.2.2",
+    "sharp": "^0.33.4",
     "swiper": "^11.1.4",
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "sass": "^1.77.4"

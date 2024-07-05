@@ -1,5 +1,6 @@
+
+import Header from "../components/headerNew/Header";
 import "./globals.scss";
-import Header from "@/components/header/header";
 import Footer from "@/components/footer/Footer";
 
 export const metadata = {

@@ -2,17 +2,28 @@
 
 import Link from "next/link";
 import logo from "@/images/svgLogos/header_logo.svg";
+import logo1 from "@/images/svgLogos/white_logo.svg";
 import logo2 from "@/images/svgLogos/header_crown_logo.svg";
+import logo3 from "@/images/crown_white.png";
 import "./header.scss";
 import Image from "next/image";
 import LinkHover from "../linkHover/LinkHover";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const [isHome, setIsHome] = useState(true);
+  const pathname = usePathname();
+  console.log("url", isHome);
+  useEffect(() => {
+    if (pathname === "/") setIsHome(true);
+    else setIsHome(false);
+  }, [pathname]);
   return (
     <header>
       <nav>
-        <ul>
+        <ul className={isHome ? "dark" : "light"}>
           <motion.li
             initial={{
               opacity: 0,
@@ -25,7 +36,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"#"} text={"About Us"} fontSize={"16px"} />
+            <LinkHover url={"/about-us"} text={"About Us"} fontSize={"16px"} />
           </motion.li>
           <motion.li
             initial={{
@@ -39,7 +50,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"#"} text={"Products"} fontSize={"16px"} />
+            <LinkHover url={"/products"} text={"Products"} fontSize={"16px"} />
           </motion.li>
           <motion.li
             initial={{
@@ -70,10 +81,14 @@ const Header = () => {
           viewport={{ once: true }}
         >
           <Link href={"/"}>
-            <Image src={logo} alt="header_logo" />
+            {isHome ? (
+              <Image src={logo} alt="header_logo" />
+            ) : (
+              <Image src={logo1} alt="header_logo" />
+            )}
           </Link>
         </motion.div>
-        <ul>
+        <ul className={isHome ? "dark" : "light"}>
           <motion.li
             initial={{
               opacity: 0,
@@ -103,7 +118,11 @@ const Header = () => {
             <LinkHover url={"#"} text={"Laminate Library"} fontSize={"16px"} />
           </motion.li>
           <div className="side_logo">
-            <Image src={logo2} alt="header_crown_logo" />
+            {isHome ? (
+              <Image src={logo2} alt="header_crown_logo" />
+            ) : (
+              <Image src={logo3} alt="header_crown_logo" />
+            )}
           </div>
         </ul>
       </nav>

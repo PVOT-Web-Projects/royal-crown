@@ -1,0 +1,61 @@
+@import "../../app/variables.scss";
+@import "../../fonts/fonts.scss";
+
+.aboutUs_vision_outer {
+  padding: 4rem 4rem;
+  @media (max-width: 1024px) {
+    padding: 2rem 2rem;
+  }
+
+  .aboutUs_vision {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      flex-direction:column;
+    }
+
+    .vision_heading {
+      font-size: 96px;
+      @media (max-width: 575px) {
+        font-size: 40px;
+      }
+    }
+    .vision_text {
+      font-size: 24px;
+      width: 46%;
+      text-align: right;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        text-align: left;
+      }
+
+
+
+    }
+}
+
+.vision_image_outer{
+  padding-top:2rem;
+  position: relative;
+
+
+  .vision_image {
+    width: 100%;
+    height: auto;
+  }
+  .vision_playButton{
+    // width: 100%;
+    max-width:100%;
+    height: auto;
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+  }
+}
+
+}

@@ -34,14 +34,14 @@
 }
 .textSliderText {
   width: 70%;
-  margin-left: auto;
+  // margin-left: auto;
   padding-top: 1rem;
-  text-align: right;
+  text-align: left;
   padding-bottom: 1rem;
   font-size: 20px;
 }
 .textSliderText2 {
-  text-align: right;
+  text-align: left;
   font-size: 16px;
 }
 .InsightsTextMain {
@@ -65,9 +65,12 @@
   cursor: pointer;
   font-size: 16px;
 }
+.wrap{
+  position: relative;
+}
 .fixed-counter {
     width: 30%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -8%;
     z-index: 1;
