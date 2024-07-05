@@ -2,6 +2,12 @@
   .wrapper {
     .big_image {
       position: relative;
+      &:hover {
+        .socials {
+          position: absolute;
+          left: 0;
+        }
+      }
       img {
         max-width: 100%;
         display: block;
@@ -28,6 +34,37 @@
           object-fit: contain;
           @media (max-width: 991px) {
             width: 250px !important;
+          }
+        }
+      }
+      .socials {
+        position: absolute;
+        top: 50%;
+        left: -60px;
+        transform: translateY(-50%);
+        transition: all 0.4s;
+        ul {
+          background-color: rgba(0, 0, 0, 0.41);
+          padding: 30px 15px;
+          li {
+            margin: 0 0 20px;
+            &:last-child {
+              margin: 0;
+            }
+            a {
+              &:hover {
+                img {
+                  transform: translateX(8px);
+                }
+              }
+              img {
+                max-width: 100%;
+                display: block;
+                width: auto !important;
+                transform: translateX(0);
+                transition: all 0.5s;
+              }
+            }
           }
         }
       }

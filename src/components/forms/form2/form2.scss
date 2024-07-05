@@ -1,0 +1,47 @@
+@import "../../../app/variables.scss";
+
+.form2 {
+  .wrapper {
+    background-color: $white;
+    form {
+      width: 300px;
+      padding: 64px 97px;
+      .field {
+        margin: 0 0 20px;
+        input {
+          border: none;
+          border-bottom: 1px solid $black;
+          width: 100%;
+          font-size: 18px;
+          padding: 0 0 10px;
+          &::placeholder{
+            font-size: 18px;
+          }
+          &:focus{
+            outline: none;
+          }
+        }
+        p.error {
+            color: red;
+            height: 20px;
+        }
+        textarea {
+          border: none;
+          border-bottom: 1px solid $black;
+          width: 100%;
+          font-size: 18px;
+          &::placeholder{
+            font-size: 18px;
+          }
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+      .submit_btn {
+        button {
+        }
+      }
+    }
+  }
+}
