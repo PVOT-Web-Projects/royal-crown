@@ -1,6 +1,6 @@
 import HeroBanner from "@/components/HeroBanner/HeroBanner";
 import Headingwithbutton from "@/components/Headingwithbutton/headingwithbutton";
-import Form from "@/components/form/Form";
+import Form from "@/components/forms/form1/Form";
 import SocialPage from "@/components/socialPage/socialpage";
 import SocialMediaImg from "@/images/socials-image.png";
 import "./Home.scss";

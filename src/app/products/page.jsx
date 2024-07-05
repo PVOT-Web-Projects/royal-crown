@@ -1,4 +1,4 @@
-import Form from "@/components/form/Form";
+import Form from "@/components/forms/form/Form";
 import SocialPage from "@/components/socialPage/socialpage";
 import SocialMediaImg from "@/images/socials-image.png";
 import ProductBanner from "@/components/Product_banner/page";
