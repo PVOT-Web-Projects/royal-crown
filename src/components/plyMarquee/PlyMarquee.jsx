@@ -18,10 +18,7 @@ const PlyMarquee = () => {
   const [getThickness, setGetThickness] = useState("");
   const [getSize, setGetSize] = useState("");
   const [getColor, setGetColor] = useState("");
-  console.log("category", getCategory);
-  console.log("thickness", getThickness);
-  console.log("size", getSize);
-  console.log("color", getColor);
+  
   const category = [
     { cat: "Xylem" },
     { cat: "Xylem2" },
