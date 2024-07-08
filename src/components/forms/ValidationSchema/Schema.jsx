@@ -9,7 +9,7 @@ export const FormSchemas = Yup.object({
       .required("Phone number is required"),
     message: Yup.string().required("Message is required"),
 });
-export const form1Schemas = Yup.object({
+export const form2Schemas = Yup.object({
     fName: Yup.string().required("First Name is required"),
     lName: Yup.string().required("Last Name is required"),
     email: Yup.string().email("Invalid email address").required("Email is required"),
@@ -18,4 +18,6 @@ export const form1Schemas = Yup.object({
       .required("Phone number is required"),
     message: Yup.string().required("Message is required"),
 });
-
+export const form3Schemas = Yup.object({
+  email: Yup.string().email("Invalid email address").required("Email is required"),
+})

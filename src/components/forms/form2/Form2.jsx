@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormik } from "formik";
-import { form1Schemas } from "../ValidationSchema/Schema";
+import { form2Schemas } from "../ValidationSchema/Schema";
 import "./form2.scss";
 import SubmitButton from "@/components/buttons/submitButton/SubmitButton";
 
@@ -15,7 +15,7 @@ const Form2 = () => {
   };
   const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues: initialValue,
-    validationSchema: form1Schemas,
+    validationSchema: form2Schemas,
     onSubmit: (action, value) => {
       action.resetForm();
       console.log("value", value);

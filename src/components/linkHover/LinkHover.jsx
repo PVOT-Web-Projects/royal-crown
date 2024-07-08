@@ -1,15 +1,16 @@
 import Link from "next/link";
 import "./linkHover.scss";
-const LinkHover = ({ url, text, color, fontSize }) => {
+import PageTransition from "../pageTransition/PageTransition";
+const LinkHover = ({ url, text, color, fontSize, textTransform, children }) => {
   return (
-    <Link
+    <PageTransition
       href={url}
-      style={{ color: color, fontSize: fontSize }}
+      style={{ color: color, fontSize: fontSize, textTransform:textTransform }}
       className={`linkHover`}
     >
       <span> {text}</span>
       <span> {text}</span>
-    </Link>
+    </PageTransition>
   );
 };
 export default LinkHover;
