@@ -94,7 +94,7 @@ const AllLaminates = () => {
       </div>
       <div className="counter">
         <div className="slide-count">
-          {activeSlide + 1} / {totalSlides}
+          {`0${activeSlide + 1}`} / {totalSlides}
         </div>
         <div className="dots">
           <div className="swiper-pagination"></div>

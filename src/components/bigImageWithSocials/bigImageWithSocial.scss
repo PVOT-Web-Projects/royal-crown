@@ -1,13 +1,11 @@
+@import "../../app/variables.scss";
+
 .big_image_with_social {
+  padding: 0 0 200px;
+  background-color: $black1;
   .wrapper {
     .big_image {
       position: relative;
-      &:hover {
-        .socials {
-          position: absolute;
-          left: 0;
-        }
-      }
       img {
         max-width: 100%;
         display: block;
@@ -19,30 +17,42 @@
         top: 50%;
         left: 30%;
         transform: translateY(-50%);
-        @media (max-width: 1199px) {
+        @media (max-width: 1339px) {
           left: 20%;
         }
         @media (max-width: 991px) {
           left: 15%;
         }
-        @media (max-width: 575px) {
-          left: 20px;
+        @media(max-width:767px){
+          top: 22%;
+          left: 150px;
         }
+        @media(max-width:575px){
+          left: 80px;
+        }
+      
         img {
           max-width: 100%;
           display: block;
           object-fit: contain;
-          @media (max-width: 991px) {
+          @media (max-width: 1199px) {
             width: 250px !important;
+          }
+          @media (max-width: 991px) {
+            width: 220px !important;
           }
         }
       }
       .socials {
         position: absolute;
         top: 50%;
-        left: -60px;
+        left: 0;
         transform: translateY(-50%);
         transition: all 0.4s;
+        @media(max-width:767px){
+          top: 22%;
+          
+        }
         ul {
           background-color: rgba(0, 0, 0, 0.41);
           padding: 30px 15px;
