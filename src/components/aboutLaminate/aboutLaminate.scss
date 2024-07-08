@@ -2,16 +2,28 @@
 
 .about_laminate {
   padding: 300px 104px 180px 104px;
+  @media screen and (max-width:768px) {
+    padding: 100px 50px 180px 50px;
+  }
   .wrapper {
     display: flex;
     justify-content: space-around;
+    @media screen and (max-width:768px) {
+      flex-direction: column;
+    }
     .left {
       width: 30%;
       // padding: 72px 100px 0 0;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      @media screen and (max-width:768px) {
+        width: 100%;
+      }
       .heading_text {
+        @media screen and (max-width:768px) {
+          width: 100%;
+        }
         .heading {
           width: 430px;
           font-size: 86px;
@@ -21,6 +33,9 @@
           /* padding-right: 50px; */
           color: #fff;
           text-transform: capitalize;
+          @media screen and (max-width:768px) {
+            margin-top: 40px;
+          }
         }
         .text {
           // width: 426px;
@@ -47,16 +62,26 @@
     .right {
       position: relative;
       width: 50%;
+      @media screen and (max-width:768px) {
+        width: 100%;
+      }
       .right_aboutus{
         position: absolute;
         font-size: 120px;
         transform: translate(58%,-90px);
+        @media screen and (max-width:768px) {
+          font-size: 80px;
+          transform: translate(30%,-60px);
+        }
       }
       .scroll_down{
         position: absolute;
         bottom: 0px;
         transform: translate(0px,100px);
         font-size: larger;
+        @media screen and (max-width:768px) {
+          transform: translate(0px,700px);
+        }
       }
       .left_text {
         font-size: 20px;

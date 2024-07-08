@@ -8,7 +8,7 @@ import aboutLaminateImage from "@/images/laminate - about-us 1.png";
 import AboutUsDivider from "./AboutUsDivider";
 const AboutUs = () => {
   return (
-    <div className="abous_us">
+    <div className="about_us">
       <AboutLaminate
         heading={"Royal Crown Laminates"}
         text={
