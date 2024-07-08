@@ -1,5 +1,5 @@
 import "./footer.scss";
-import LinkHover from "../linkHover/LinkHover";
+import LinkHover from "../../linkHover/LinkHover";
 
 const footerUrls = [
   {
