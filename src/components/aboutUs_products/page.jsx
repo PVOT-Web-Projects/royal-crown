@@ -1,19 +1,19 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import "./aboutUs_product.scss";
 import Image from "next/image";
 import products from "./productData.js";
 import { Dropdown } from "primereact/dropdown";
 
-
 const Page = () => {
   const [selectedBrand, setSelectedBrand] = useState("all");
   const [selectedType, setSelectedType] = useState("all");
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const[selectedFinish,setSelectedFinish]= useState("all");
-  const[selectedSize,setSelectedSize]= useState("all");
-  const[selectedThickness,setSelectedThickness]= useState("all");
-  const[selectedColor,setSelectedColor]= useState("all");
+  const [selectedFinish, setSelectedFinish] = useState("all");
+  const [selectedSize, setSelectedSize] = useState("all");
+  const [selectedThickness, setSelectedThickness] = useState("all");
+  const [selectedColor, setSelectedColor] = useState("all");
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
   const brands = [
     { label: "All Brands", value: "all" },
@@ -74,8 +74,9 @@ const Page = () => {
     { label: "White", value: "White" },
   ];
 
- 
-
+  const mappedColor = useMemo(() => {
+    return color.map((c) => ({ ...c, className: 'myOptionClassName' }));
+  }, [color]);
 
   const handleBrandChange = (e) => {
     setSelectedBrand(e.value);
@@ -89,7 +90,6 @@ const Page = () => {
     setSelectedCategory(e.value);
   };
 
-
   const handleFinishChange = (e) => {
     setSelectedFinish(e.value);
   };
@@ -98,18 +98,13 @@ const Page = () => {
     setSelectedSize(e.value);
   };
 
-  const handleThicknessChange = (e)=>{
+  const handleThicknessChange = (e) => {
     setSelectedThickness(e.value);
   };
 
-  const handleColorChange = (e)=>{
+  const handleColorChange = (e) => {
     setSelectedColor(e.value);
   };
-
-
-
-
-
 
   const filteredProducts = products.filter((product) => {
     const brandMatch = selectedBrand === "all" || product.category === selectedBrand;
@@ -119,8 +114,18 @@ const Page = () => {
     const finishMatch = selectedFinish === "all" || product.categoryFinish === selectedFinish;
     const sizeMatch = selectedSize === "all" || product.categorySize === selectedSize;
     const thicknessMatch = selectedThickness === "all" || product.categoryThickness === selectedThickness;
-    return brandMatch && typeMatch && categoryMatch;  // add  new dropdown data to get proper result
+    return brandMatch && typeMatch && categoryMatch && finishMatch && sizeMatch && thicknessMatch;
   });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -175,23 +180,35 @@ const Page = () => {
               <label htmlFor="color-select" className="dropdown-label">
                 SELECT COLOR
               </label>
-              <Dropdown
-                id="color-select"
-                options={color}
-                value={selectedColor}
-                onChange={handleColorChange}
-                placeholder="Select a Color"
-                className="color-select"
-              />
+              {isMobile ? (
+                <Dropdown
+                  id="color-select"
+                  options={mappedColor}
+                  value={selectedColor}
+                  onChange={handleColorChange}
+                  placeholder="Select a Color"
+                  className="color-select"
+                />
+              ) : (
+                <div className="color_dropdown">
+                  <div className="color1"></div>
+                  <div className="color2"></div>
+                  <div className="color3"></div>
+                  <div className="color4"></div>
+                  <div className="color5"></div>
+                  <div className="color6"></div>
+                  <div className="color7"></div>
+                  <div className="color8"></div>
+                </div>
+              )}
             </div>
-
 
             <div className="dropdown1">
               <label htmlFor="finish-select" className="dropdown-label">
                 SELECT FINISH
               </label>
               <Dropdown
-                id="type-select"
+                id="finish-select"
                 options={finish}
                 value={selectedFinish}
                 onChange={handleFinishChange}
@@ -201,8 +218,8 @@ const Page = () => {
             </div>
 
             <div className="dropdown1">
-              <label htmlFor="finish-select" className="dropdown-label">
-                SELECT FINISH
+              <label htmlFor="size-select" className="dropdown-label">
+                SELECT SIZE
               </label>
               <Dropdown
                 id="size-select"
@@ -215,7 +232,7 @@ const Page = () => {
             </div>
 
             <div className="dropdown1">
-              <label htmlFor="finish-select" className="dropdown-label">
+              <label htmlFor="thickness-select" className="dropdown-label">
                 SELECT THICKNESS
               </label>
               <Dropdown
@@ -227,7 +244,6 @@ const Page = () => {
                 className="category-select"
               />
             </div>
-
           </div>
 
           <div className="container">
