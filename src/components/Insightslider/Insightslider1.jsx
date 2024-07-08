@@ -21,7 +21,7 @@ function ScrollSection() {
         x: 0,
       },
       {
-        x: "-120vw",
+        x: "-105vw",
         ease: "none",
         duration: 1,
         scrollTrigger: {
@@ -53,7 +53,7 @@ function ScrollSection() {
   }, [currentIndex]);
 
   return (
-    <div style={{position:"relative"}}>
+    <div style={{position:"relative",marginTop:"80px"}}>
       <section className="scroll-section-outer">
       <div ref={triggerRef}>
         <div className="InsightsTextMain">
