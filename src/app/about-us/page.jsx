@@ -8,8 +8,6 @@ import MyForm from "@/components/forms/form1/Form";
 const AboutUs = () => {
   return (
     <div className="abous_us">
-      <Aboutus_vision />
-
       <AboutLaminate
         heading={"Royal Crown Laminates"}
         text={
@@ -19,7 +17,6 @@ const AboutUs = () => {
         rightText={"Since 2005, a high density laminates manufacturing company"}
         image={aboutLaminateImage}
       />
-      <AboutUsDivider />
       <Aboutus_vision />
 
       <div className="Form_Page">
