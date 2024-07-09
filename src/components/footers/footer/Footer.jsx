@@ -1,5 +1,8 @@
+"use client";
+
 import "./footer.scss";
 import LinkHover from "../../linkHover/LinkHover";
+import { usePathname } from "next/navigation";
 
 const footerUrls = [
   {
@@ -35,33 +38,37 @@ const footerUrls = [
 ];
 
 const Footer = () => {
+  const pathname = usePathname();
+  console.log("url", pathname);
   return (
-    <footer>
-      <nav>
-        {footerUrls.map((item, index) => (
-          <ul key={index}>
-            <li>
-              <LinkHover
-                url={item.url1}
-                text={item.url1Text}
-                color={"#fff"}
-                borderColor={"white"}
-                fontSize={"16px"}
-              />
-            </li>
-            <li key={index}>
-              <LinkHover
-                url={item.url2}
-                text={item.url2Text}
-                color={"#fff"}
-                borderColor={"white"}
-                fontSize={"16px"}
-              />
-            </li>
-          </ul>
-        ))}
-      </nav>
-    </footer>
+    (pathname === "/" || pathname === "/store") && (
+      <footer>
+        <nav>
+          {footerUrls.map((item, index) => (
+            <ul key={index}>
+              <li>
+                <LinkHover
+                  url={item.url1}
+                  text={item.url1Text}
+                  color={"#fff"}
+                  borderColor={"white"}
+                  fontSize={"16px"}
+                />
+              </li>
+              <li key={index}>
+                <LinkHover
+                  url={item.url2}
+                  text={item.url2Text}
+                  color={"#fff"}
+                  borderColor={"white"}
+                  fontSize={"16px"}
+                />
+              </li>
+            </ul>
+          ))}
+        </nav>
+      </footer>
+    )
   );
 };
 export default Footer;

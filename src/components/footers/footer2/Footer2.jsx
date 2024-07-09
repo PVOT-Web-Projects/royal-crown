@@ -1,3 +1,5 @@
+"use client";
+
 import Form3 from "@/components/forms/form3/Form3";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,11 +14,14 @@ import yt from "@/images/svgLogos/yt.svg";
 import wa from "@/images/svgLogos/wa.svg";
 import li from "@/images/svgLogos/li.svg";
 import PageTransition from "@/components/pageTransition/PageTransition";
-import border from "@/images/svgLogos/yellow_footer_border.svg"
+import border from "@/images/svgLogos/yellow_footer_border.svg";
+import { usePathname } from "next/navigation";
 
-const Footer2 = () => {
-  return (
-    <div className="footer2">
+const Footer2 = ({ bgColor }) => {
+  const pathname = usePathname();
+  console.log("path", pathname);
+  return pathname === "/" || pathname === "/store" ? null : (
+    <footer className="footer2" style={{ backgroundColor: bgColor }}>
       <div className="wrapper">
         <div className="left">
           <div className="left_wrapper">
@@ -205,7 +210,7 @@ const Footer2 = () => {
       </div>
       <Image src={border} alt="border" />
       <div className="copyright">© 2024 All Rights Reserved</div>
-    </div>
+    </footer>
   );
 };
 export default Footer2;

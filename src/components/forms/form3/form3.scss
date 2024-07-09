@@ -15,12 +15,19 @@
     }
     input {
       width: 307px;
-      background-color: $black;
+      background-color: $black1;
       border: 1px solid $white;
       height: calc(3rem - 12px);
       padding: 5px 10px;
       font-size: 18px;
       text-transform: capitalize;
+      color: $white;
+      &:focus-visible{
+        outline: none;
+      }      
+      &:focus{
+        outline: none;
+      }      
     }
     p.error {
       height: 20px;
