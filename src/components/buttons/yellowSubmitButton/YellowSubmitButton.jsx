@@ -1,4 +1,4 @@
-import "../yellowButton/yellowBUtton.scss";
+import "../yellowButton/yellowButton.scss"
 
 const YellowSubmitButton = ({ btn_text }) => {
   return (
