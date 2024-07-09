@@ -92,7 +92,7 @@ const AllLaminates = () => {
           ))}
         </Swiper>
       </div>
-      <div className="counter">
+      <div className="counter_slide">
         <div className="slide-count">
           {`0${activeSlide + 1}`} / {totalSlides}
         </div>
