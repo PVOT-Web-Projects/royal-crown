@@ -1,154 +1,204 @@
 @import "../../fonts/fonts.scss";
-
-.MainContainer {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  
-  .abc {
+.royal_crown_slider {
+  .shadow_heading {
+    .wrapper {
+      position: static;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .MainContainer {
     display: flex;
-    position: relative;
-    flex-direction: column;
-
-    .LogoImg {
-      position: absolute;
-      top: 50%;
-      left: 80%;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    overflow: hidden;
+    @media (max-width: 767px) {
+      flex-direction: column;
     }
 
-    .Rc_Text_Main {
-      padding-bottom: 2rem;
-      
-      .Rc_Text_MainInner {
-        color: #595959;
-        font-size: 20px;
-      }
-    }
-
-    .tenExp {
+    .abc {
       display: flex;
-      align-items: center;
-      margin-top: auto;
       position: relative;
+      flex-direction: column;
+      width: 50%;
+      &.left {
+        width: 40%;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+      }
+      &.right {
+        @media (max-width: 767px) {
+          padding: 0 20px;
+          width: 95%;
+          margin: 40px 0 0;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+      .LogoImg {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+      }
 
-      .tenExpBorder {
-        padding: 6px 10px;
-        display: inline-flex;
-        border: 1px solid #FFBC37;
+      .Rc_Text_Main {
+        padding-bottom: 2rem;
 
-        .tenExpBorderText {
-          font-size: 90px;
+        .Rc_Text_MainInner {
+          color: #595959;
+          font-size: 20px;
         }
       }
 
-      .tenExpBorderTextInner {
-        width: 50%;
-        padding: 0 20px;
-        font-size: 30px;
-        font-family: "futura_light";
+      .tenExp {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        position: relative;
+
+        .tenExpBorder {
+          padding: 6px 10px;
+          display: inline-flex;
+          border: 1px solid #ffbc37;
+
+          .tenExpBorderText {
+            font-size: 90px;
+            @media (max-width: 575px) {
+              font-size: 60px;
+            }
+          }
+        }
+
+        .tenExpBorderTextInner {
+          width: 50%;
+          padding: 0 20px;
+          font-size: 30px;
+          font-family: "futura_light";
+        }
       }
     }
   }
-}
 
-.Carousel_Slider_container {
-  width: 500px;
+  .Carousel_Slider_container {
+    width: 90%;
 
-  .mySwiper {
-    text-align: center;
-    margin: 0 auto;
+    .mySwiper {
+      text-align: center;
+      margin: 0 auto;
 
-    .third_section_image {
-      width: 100%;
-      display: block;
+      .third_section_image {
+        width: 100%;
+        display: block;
+      }
     }
   }
-}
 
-.Carousel_Slider_container2 {
-  width: 700px;
+  .Carousel_Slider_container2 {
+    width: 100%;
+    @media (max-width: 1600px) {
+      width: 100%;
+    }
 
-  .mySwiper2 {
-    text-align: center;
-    margin: 0 auto;
+    .mySwiper2 {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
-}
 
-.swiper-slide {
-  text-align: center;
-}
-
-.third_section_content {
-  text-align: center;
-  position: relative;
-
-  .third_section_overlay_text {
-    color: black;
+  .swiper-slide {
     text-align: center;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+  }
 
-    .third_section_overlay_span {
-      color: #fff;
-      font-family: "Dream Avenue";
+  .third_section_content {
+    text-align: center;
+    position: relative;
+
+    .third_section_overlay_text {
+      color: black;
+      text-align: center;
       font-size: 22px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       text-transform: uppercase;
+
+      .third_section_overlay_span {
+        color: #fff;
+        font-family: "Dream Avenue";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+      }
     }
   }
-}
 
-.swiper2,
-.swiper3 {
-  display: flex;
-  gap: 2rem;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  top: 50%;
-  color: #FFBC3780 !important;
-  font-weight: 900;
-}
-
-.swiper-button-next {
-  left: 100%;
-}
-
-.swiper-button-prev {
-  left: 90%;
-}
-
-.Carousel_text_maincontent {
-  position: relative;
-  text-align: center;
-
-  .Text_InnerText {
-    color: #FFFFFF;
-    font-size: 45px;
-    text-align: left;
-    padding-bottom: 2rem;
+  .swiper2,
+  .swiper3 {
+    display: flex;
+    gap: 2rem;
   }
 
-  .carousel_text_Content {
-    color: white;
-    text-align: left;
-    font-size: 28px;
-    width: 100%;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 50%;
+    color: #ffbc3780 !important;
+    font-weight: 900;
   }
 
-  @media (max-width: 500px) {
+  .swiper-button-next {
+    left: 100%;
+    @media (max-width: 767px) {
+      left: auto;
+      right: 40px;
+    }
+    @media (max-width: 575px) {
+      left: auto;
+      right: 10px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 90%;
+    @media (max-width: 767px) {
+      left: auto;
+      right: 80px;
+    }
+    @media (max-width: 575px) {
+      left: auto;
+      right: 50px;
+    }
+  }
+
+  .Carousel_text_maincontent {
+    position: relative;
+    text-align: center;
+    @media (max-width: 767px) {
+      margin: 0 0 40px;
+    }
+
+    .Text_InnerText {
+      color: #ffffff;
+      font-size: 45px;
+      text-align: left;
+      padding-bottom: 2rem;
+    }
+
     .carousel_text_Content {
-      width: 50%;
+      color: white;
+      text-align: left;
+      font-size: 28px;
+      width: 100%;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+      @media (max-width: 767px) {
+        font-size: 22px;
+      }
     }
   }
 }
