@@ -8,14 +8,16 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const HeroBanner = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(0);
   console.log("width", width);
 
   useEffect(() => {
+
+    setWidth(window.innerWidth)
     const handleResize = () => {
       setWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
     };
-    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
 
