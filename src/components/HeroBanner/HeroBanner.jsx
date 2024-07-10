@@ -5,8 +5,29 @@ import Link from "next/link";
 import banner from "@/images/hero_banner.png";
 import "./heroBanner.scss";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const HeroBanner = () => {
+  const [width, setWidth] = useState(0);
+  console.log("width", width);
+
+  useEffect(() => {
+
+    setWidth(window.innerWidth)
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
+    };
+    return () => window.removeEventListener("resize", handleResize);
+  }, [width]);
+
+  let Y;
+    if (width > 1600) {
+      Y = 220;
+    } else if (width < 1600) {
+      Y = 195;
+    }
+
   return (
     <div className="hero_banner">
       <div className="banner_image">
@@ -17,7 +38,7 @@ const HeroBanner = () => {
               className="card"
               initial={{
                 opacity: 1,
-                y: 220,
+                y: Y,
               }}
               whileInView={{
                 opacity: 1,

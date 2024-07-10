@@ -1,8 +1,14 @@
 @import "../../app/variables.scss";
 
 .big_image_with_social {
-  padding: 0 0 200px;
+  padding: 0 0 120px;
   background-color: $black1;
+  @media(max-width:991px){
+    padding: 0 0 80px;
+  }
+  @media(max-width:767px){
+    padding: 0 0 20px;
+  }
   .wrapper {
     .big_image {
       position: relative;

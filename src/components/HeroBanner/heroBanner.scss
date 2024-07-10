@@ -20,6 +20,9 @@
       text-align: center;
       width: 425px;
       padding: 0 20px;
+      @media(max-width:1600px){
+        bottom: 20px;
+      }
 
       @media (max-width: 575px) {
         width: 90%;
@@ -35,6 +38,10 @@
             font-weight: $weightRegular;
             margin: 0 0 16px;
             line-height: 70px;
+            @media(max-width:1600px){
+              font-size: 60px;
+              line-height: 60px;
+            }
             @media (max-width: 575px) {
               font-size: $font55;
             }
@@ -46,6 +53,9 @@
         font-weight: $weightRegular;
         line-height: 31px;
         margin: 0 0 40px;
+        @media(max-width:1600px){
+          margin: 0 0 20px;
+        }
       }
       .link {
         text-align: center;

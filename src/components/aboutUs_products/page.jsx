@@ -13,7 +13,7 @@ const Page = () => {
   const [selectedSize, setSelectedSize] = useState("all");
   const [selectedThickness, setSelectedThickness] = useState("all");
   const [selectedColor, setSelectedColor] = useState("all");
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isMobile, setIsMobile] = useState(0);
 
   const brands = [
     { label: "All Brands", value: "all" },
