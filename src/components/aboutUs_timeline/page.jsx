@@ -18,10 +18,10 @@ function ScrollSection() {
     const pin = gsap.fromTo(
       sectionElement,
       {
-        x: 0,
+        y: 0,
       },
       {
-        x: xValue,
+        y: xValue,
         ease: "none",
         duration: 1,
         scrollTrigger: {

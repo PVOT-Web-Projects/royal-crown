@@ -33,8 +33,12 @@
           /* padding-right: 50px; */
           color: #fff;
           text-transform: capitalize;
+
           @media screen and (max-width:768px) {
             margin-top: 40px;
+          }
+          @media screen and (max-width : 486px){
+            font-size: 50px;
           }
         }
         .text {
@@ -73,6 +77,9 @@
           font-size: 80px;
           transform: translate(30%,-60px);
         }
+        @media screen and (max-width:1024px){
+          font-size: 70px;
+        }
       }
       .scroll_down{
         position: absolute;
@@ -81,6 +88,9 @@
         font-size: larger;
         @media screen and (max-width:768px) {
           transform: translate(0px,700px);
+        }
+        @media screen and (max-width : 385px){
+          transform: translate(0px 800px);
         }
       }
       .left_text {

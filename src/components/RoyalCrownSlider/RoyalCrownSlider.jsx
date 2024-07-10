@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <div className="royal_crown_slider">
-      <ShadowHeading text={"Why Royal Crown"} />
+      <ShadowHeading text={"Why Royal Crown"}/>
       <div className="MainContainer" style={{ marginTop: "50px" }}>
         <div className="abc left">
           <div className="LogoImg">
