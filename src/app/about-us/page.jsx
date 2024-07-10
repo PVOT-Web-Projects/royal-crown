@@ -19,7 +19,7 @@ const AboutUs = () => {
         image={aboutLaminateImage}
       />
       <AboutUsEstablishment/>
-      {/* <Aboutus_vision /> */}
+      <Aboutus_vision />
 
       <div className="Form_Page">
         {/* <SocialPage socialMediaImgSrc={SocialMediaImg} /> */}

@@ -8,7 +8,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const AboutUsEstablishment = () => {
-  const yearsRef = useRef([]);
+  const yearsRef = useRef([null]);
   const sectionRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +23,8 @@ const AboutUsEstablishment = () => {
           trigger: year,
           start: "top center",
           end: "bottom center",
+          // markers : true,
+          // pin : true,
           onEnter: () => {
             gsap.to(year, { color: "black", fontSize: largeSize, scale: 1.5, duration: 0.5 });
             yearsRef.current.forEach((otherYear, otherIndex) => {
