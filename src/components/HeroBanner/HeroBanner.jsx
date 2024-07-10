@@ -12,8 +12,7 @@ const HeroBanner = () => {
   console.log("width", width);
 
   useEffect(() => {
-
-    setWidth(window.innerWidth)
+    setWidth(window.innerWidth);
     const handleResize = () => {
       setWidth(window.innerWidth);
       window.addEventListener("resize", handleResize);

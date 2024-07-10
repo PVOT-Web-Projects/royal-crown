@@ -1,8 +1,11 @@
+"use client"
+
 import React from 'react';
 import Image from 'next/image';
 import laminateabout from '@/images/laminateabout.png';
 import goldcrown from '@/images/goldcrownlogoo.png';
 import "./Aboutus.scss";
+import ShadowHeading from '../shadowHeading/ShadowHeading';
 
 const AboutUs = () => {
   return (
@@ -13,8 +16,9 @@ const AboutUs = () => {
           <Image className='image' src={laminateabout} alt="logo" />
         </div>
         <div className="two">
-          <h2 className='aboutheading2'>ABOUT US</h2>
-          <h2 className='aboutheading'>ABOUT US</h2>
+          {/* <h2 className='aboutheading2'>ABOUT US</h2>
+          <h2 className='aboutheading'>ABOUT US</h2> */}
+          <ShadowHeading text={"ABOUT US"} fontSize={"60px"} />
          
          <div className='about_para'>
          <p className='aboutpara'>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor . Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor . </p>
