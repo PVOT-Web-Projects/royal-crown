@@ -1,26 +1,33 @@
-.certification_main{
-    color: white;
-    .certification_heading{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #59595959;
-        font-size: 64px;
-        font-weight: 500;
-        line-height:57.6px ;
-        letter-spacing: 20%;
-        @media(max-width:991px){
-            font-size: 50px;
-        }
-        @media(max-width:575px){
-            font-size: 42px;
-        }
+.certification_main {
+  color: white;
+  .certification_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #59595959;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 57.6px;
+    letter-spacing: 20%;
+    @media (max-width: 991px) {
+      font-size: 50px;
     }
-    .certificate_marqee{
-        padding: 50px 0px;
-        .logocertificate{
-            margin: 1rem;
-        }
+    @media (max-width: 575px) {
+      font-size: 42px;
     }
-    
+  }
+  .certificate_marqee {
+    padding: 50px 0px;
+    .logocertificate {
+      margin: 1rem;
+      @media (max-width: 767px) {
+        width: 135px;
+        height: 135px;
+      }
+      @media (max-width: 575px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
 }
