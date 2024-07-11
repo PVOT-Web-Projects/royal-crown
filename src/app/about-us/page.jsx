@@ -6,6 +6,7 @@ import AboutLaminate from "@/components/aboutLaminate/AboutLaminate";
 import aboutLaminateImage from "@/images/laminate - about-us 1.png";
 import MyForm from "@/components/forms/form1/Form";
 import AboutUsEstablishment from "@/components/aboutUs_Establishment/aboutUs_Establish";
+import AboutUs_Texture from "@/components/aboutUs_Texture/aboutUs_Texture";
 const AboutUs = () => {
   return (
     <div className="abous_us">
@@ -20,6 +21,7 @@ const AboutUs = () => {
       />
       <AboutUsEstablishment/>
       <Aboutus_vision />
+      <AboutUs_Texture/>
 
       <div className="Form_Page">
         {/* <SocialPage socialMediaImgSrc={SocialMediaImg} /> */}

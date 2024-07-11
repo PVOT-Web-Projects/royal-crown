@@ -89,8 +89,9 @@
         @media screen and (max-width:768px) {
           transform: translate(0px,700px);
         }
-        @media screen and (max-width : 385px){
-          transform: translate(0px 800px);
+        @media screen and (max-width : 425px){
+          position: absolute;
+          transform: translate(0px 900px) !important;
         }
       }
       .left_text {

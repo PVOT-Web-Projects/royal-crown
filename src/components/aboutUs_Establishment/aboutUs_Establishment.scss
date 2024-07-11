@@ -19,7 +19,7 @@
         gap: 3rem;
         
 
-        @media (max-width : 728px) {
+        @media (max-width : 768px) {
             display: flex;
             flex-direction: column;
         }
@@ -36,10 +36,20 @@
         background: url("../../images//Group\ 6.png") no-repeat;
         padding: 0 90px;
 
-        @media (max-width : 728px) {
+        @media (max-width : 768px) {
             width: 100%;
+            padding: 0 110px;
         }
-    
+
+        @media screen and (max-width : 475px) {
+            width: 100%;
+            padding: 0 40px;
+        }
+
+        @media (max-width : 329px) {
+            width: 100%;
+            padding: 0;
+        }
         .icon {
             max-width: 100%;
             display: block;
@@ -51,6 +61,9 @@
             font-size: 35px;
             text-transform: uppercase;
             letter-spacing: 5px;
+
+
+            
         }
     
         .box {
@@ -77,7 +90,7 @@
     
     .right {
         width: 60%;
-        @media (max-width : 728px) {
+        @media (max-width : 768px) {
             width: 100%;
         }
         .TimeLine_Image {
@@ -91,6 +104,9 @@
             font-size: 21px;
             width: 90%;
 
+            @media screen and (max-width : 768px) {
+                padding: 10px;
+            }
         }
     }
 }
