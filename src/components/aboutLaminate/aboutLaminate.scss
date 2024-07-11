@@ -82,16 +82,12 @@
         }
       }
       .scroll_down{
-        position: absolute;
-        bottom: 0px;
-        transform: translate(0px,100px);
-        font-size: larger;
-        @media screen and (max-width:768px) {
-          transform: translate(0px,700px);
-        }
-        @media screen and (max-width : 425px){
-          position: absolute;
-          transform: translate(0px 900px) !important;
+        font-size: 23px;
+        padding: 10px 0 0 0;
+        cursor: pointer;
+
+        @media screen and (max-width : 768px) {
+          display: none;
         }
       }
       .left_text {
@@ -109,6 +105,16 @@
           width: 100%;
         }
       }
+    }
+  }
+  .scrollDown{
+    display: none;
+    font-size: 23px;
+    padding: 10px 0 0 0;
+    cursor: pointer;
+
+    @media (max-width : 768px){
+      display: block;
     }
   }
 }
