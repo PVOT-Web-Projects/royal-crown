@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./aboutUs_Texture.scss";
 import Crown from "../../images/crown11.png";
-import image from "../../images/aboutUs_size_image1.png";
+import image from "../../images/3d-rendering-dining-room-kitchen-with-luxury-decor.jpg";
 import ScrollSection from "../aboutUs_slide/page";
 
 const AboutUs_Texture = () => {
@@ -23,7 +23,7 @@ const AboutUs_Texture = () => {
           </div>
         </div>
         <div className="right">
-          <div className="box">{/* <Image src={image} /> */}</div>
+          <div ><Image src={image} className="box"/></div>
           <div className="size-section">
             <div className="size-box">
               <p>Sizes</p>

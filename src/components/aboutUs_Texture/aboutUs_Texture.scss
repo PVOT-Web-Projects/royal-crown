@@ -78,9 +78,9 @@
             }
 
             .box {
-                background-color: grey;
-                height: 300px;
-                width: 416px;
+                max-width: 100%;
+                display: block;
+                height: auto;
             }
 
             .size-section {

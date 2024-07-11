@@ -24,8 +24,8 @@ const AboutUs = () => {
       <AboutUs_Texture/>
 
       <div className="Form_Page">
-        {/* <SocialPage socialMediaImgSrc={SocialMediaImg} /> */}
-        {/* <MyForm /> */}
+        {/* <SocialPage socialMediaImgSrc={SocialMediaImg} />
+        <MyForm /> */}
       </div>
     </div>
   );
