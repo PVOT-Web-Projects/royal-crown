@@ -1,19 +1,6 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLocationDot,
-  faMapPin,
-  faPhoneVolume,
-  faClock,
-} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 import Image from "next/image";
-import Phone_svg from "@/images/phone_Svgg.svg";
-import User_svg from "@/images/user_Svg.svg";
-import HomeLocation_svg from "@/images/location_svg.svg";
-import Address_svg from "@/images/address_Svg.svg";
-import gsap from "gsap";
-import splitType from "split-type";
 import styles from "@/components/findStore_search/findStore_search.module.css";
 import "./findStore.css";
 function Mapsection() {
@@ -1751,7 +1738,7 @@ stateDistricts.forEach((state) => {
         "Please select State and City to search Royalè Touchè Experience Centre near your location.",
     },
   ]);
-  // const [getDirectionURL, setGetDirectionURL] = useState("");
+
   const toggleDropdown1 = () => {
     setIsOpen1(!isOpen1);
     if (isOpen2) setIsOpen2(false);
@@ -1811,65 +1798,19 @@ stateDistricts.forEach((state) => {
     }
   };
 
-  const storeRef = useRef("");
-  let refs = useRef([]);
-  useEffect(() => {
-    setTimeout(() => {
-      const ourText = new splitType(storeRef.current, { types: "chars" });
-      const chars = ourText.chars;
-      gsap.fromTo(
-        chars,
-        {
-          y: 100,
-          opacity: 0,
-          rotate: "45deg",
-        },
-        {
-          y: 0,
-          opacity: 1,
-          stagger: 0.02,
-          duration: 2,
-          rotate: "0deg",
-          ease: "power4.out",
-        }
-      );
-    }, 2300);
-  }, []);
-  const splitWords = (phrase) => {
-    let body = [];
-    phrase.split(" ").forEach((word, i) => {
-      const letters = splitLetters(word);
-      body.push(
-        <p key={word + "_" + i} className="findStore_text_animation_wrapper">
-          {letters}
-        </p>
-      );
-    });
-    return body;
-  };
-  const splitLetters = (word) => {
-    let letters = [];
-    word.split("").forEach((letter, i) => {
-      letters.push(
-        <span
-          key={letter + "_" + i}
-          ref={(el) => {
-            refs.current.push(el);
-          }}
-        >
-          {letter}
-        </span>
-      );
-    });
-    return letters;
-  };
-
   return (
     <div className={styles.Map_section}>
       <div className={styles.map_section1}>
-        <div className={styles.content_Text} ref={storeRef}>
+        {/* <div className={styles.content_Text} ref={storeRef}>
           {splitWords("Royalé Touché Experience Centre Near Me")}
-        </div>
+        </div> */}
+       
+      </div>
+
+      <div className={styles.map_section2}>
+     
+        <div className={styles.content30}>
+
         <div className={styles.option_section}>
           <div
             className={`${styles.select_menu} ${isOpen1 ? styles.active : ""}`}
@@ -1886,7 +1827,7 @@ stateDistricts.forEach((state) => {
                 viewBox="0 0 22 14"
                 fill="none"
               >
-                <path d="M2 2L11 11L20 2" stroke="black" strokeWidth="3" />
+                <path d="M2 2L11 11L20 2" stroke="white" strokeWidth="2" />
               </svg>
             </div>
             <ul className={styles.options}>
@@ -1917,7 +1858,7 @@ stateDistricts.forEach((state) => {
                 viewBox="0 0 22 14"
                 fill="none"
               >
-                <path d="M2 2L11 11L20 2" stroke="black" strokeWidth="3" />
+                <path d="M2 2L11 11L20 2" stroke="white" strokeWidth="2" />
               </svg>
             </div>
             <ul className={styles.options}>
@@ -1936,10 +1877,6 @@ stateDistricts.forEach((state) => {
             Search
           </button>
         </div>
-      </div>
-
-      <div className={styles.map_section2}>
-        <div className={styles.content30}>
           {selectedLocationContent.map((location, index) => (
             <>
               <div key={index}>
@@ -1953,11 +1890,11 @@ stateDistricts.forEach((state) => {
 
                       {/* Address */}
                       <div className={styles.content}>
-                        <Image
+                        {/* <Image
                           src={Address_svg}
                           alt="phone"
                           className={styles.allsvg}
-                        />
+                        /> */}
 
                         {/* <FontAwesomeIcon
                           icon={faMapPin}
@@ -1967,11 +1904,11 @@ stateDistricts.forEach((state) => {
                       </div>
                       {/* Map-lOCATION (aHMEDABAD,gUJARAT) */}
                       <div className={styles.content}>
-                        <Image
+                        {/* <Image
                           src={HomeLocation_svg}
                           alt="phone"
                           className={styles.allsvg}
-                        />
+                        /> */}
                         {/* <FontAwesomeIcon
                           icon={faMapPin}
                           className={styles.allsvg}
@@ -1987,22 +1924,22 @@ stateDistricts.forEach((state) => {
                         icon={faMapPin}
                         className={styles.allsvg}
                       /> */}
-                        <Image
+                        {/* <Image
                           src={User_svg}
                           alt="phone"
                           className={styles.allsvg}
-                        />
+                        /> */}
                         <div className={styles.address}>
                           {location.supplierName}
                         </div>
                       </div>
                       {/* pHONE nUMBER */}
                       <div className={styles.content}>
-                        <Image
+                        {/* <Image
                           src={Phone_svg}
                           alt="phone"
                           className={styles.allsvg}
-                        />
+                        /> */}
 
                         {/* <FontAwesomeIcon
                           icon={faPhoneVolume}
@@ -2043,9 +1980,7 @@ stateDistricts.forEach((state) => {
         </div>
         <div className={styles.content70}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.802628858455!2d72.46987617617147!3d23.03101801601143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b09932f1e99%3A0x75fbb34492ff4f3e!2sRoyale%20Touche%20Wooden%20Floors!5e0!3m2!1sen!2sin!4v1708933279442!5m2!1sen!2sin"
-            width="100%"
-            height="720"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0578930659026!2d72.49071127591135!3d22.984898517731924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9aeb23c7e7e7%3A0xd34044573492f3c0!2sRoyal%20Art%20Laminates!5e0!3m2!1sen!2sin!4v1720691503627!5m2!1sen!2sin"
             allowfullscreen=""
             className={styles.map_frame}
             loading="lazy"

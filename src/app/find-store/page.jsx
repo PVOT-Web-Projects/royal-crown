@@ -1,4 +1,5 @@
-import FindStore from "../../components/findstore/FindStore"
+import FindStore from "../../components/findStore_search/page"
+
 const Findstore =() =>{
     return(
         <div>
