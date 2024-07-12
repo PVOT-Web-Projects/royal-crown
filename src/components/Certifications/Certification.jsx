@@ -8,7 +8,7 @@ import iso from '@/images/iso.png'
 const Certification = () => {
   return (
     <>
-     <div className="certification_main">
+     <div className="certification_main" style={{marginTop:"140px"}}>
      <h2 className='certification_heading'>CERTIFICATIONS</h2>
         <Marquee speed={100} loop={0}>
           <div className='certificate_marqee'>

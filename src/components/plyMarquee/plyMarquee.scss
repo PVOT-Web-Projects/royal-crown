@@ -18,6 +18,7 @@
     .filter {
       width: 22%;
       border-bottom: 1px solid $white;
+      font-size: larger;
       @media (max-width: 767px) {
         width: 48%;
         margin: 0 0 40px;

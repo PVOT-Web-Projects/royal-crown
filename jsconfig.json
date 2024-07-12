@@ -5,7 +5,7 @@
       "@/components/*": ["src/components/*"],
       "@/app/*": ["src/app/*"],
       "@/images/*": ["src/images/*"],
-      "@/ValidationSchema/*": ["src/ValidationSchema/*"],
+      "@/ValidationSchema/*": ["src/components/forms/ValidationSchema/*"],
       "@/fonts/*": ["src/fonts/*"],
     }
   },

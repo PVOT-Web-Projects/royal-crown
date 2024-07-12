@@ -10,10 +10,10 @@ a.linkHover  {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  height: 20px;
+  height: 25px;
   &:hover{
     span{
-      transform: translateY(-20px);
+      transform: translateY(-23px);
       overflow: hidden;
     }
   }

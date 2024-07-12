@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { useFormik } from "formik";
-import { FormSchemas } from "@/ValidationSchema/Schema";
+import { FormSchemas } from "@/components/forms/ValidationSchema/Schema";
 import "./form.scss";
 
 const MyForm = () => {

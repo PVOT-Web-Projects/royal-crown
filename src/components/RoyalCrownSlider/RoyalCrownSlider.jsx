@@ -16,14 +16,11 @@ import LogoImg from "../../images/crown_light_logo.png";
 export default function App() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-
-  
   return (
-    <>
-    <ShadowHeading text={"Why Royal Crown"} /> 
-      <div className="MainContainer">
-      
-        <div className="abc">
+    <div className="royal_crown_slider">
+      <ShadowHeading text={"Why Royal Crown"}/>
+      <div className="MainContainer" style={{ marginTop: "50px" }}>
+        <div className="abc left">
           <div className="LogoImg">
             <Image src={LogoImg} alt="none" />
           </div>
@@ -97,7 +94,7 @@ export default function App() {
           </div>
         </div>
 
-        <div className="abc">
+        <div className="abc right">
           <div className="Rc_Text_Main">
             <p className="Rc_Text_MainInner">Royal Crown Laminates</p>
           </div>
@@ -179,7 +176,7 @@ export default function App() {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className="tenExp">
+          <div className="tenExp" style={{ marginBottom: "50px" }}>
             <div className="tenExpBorder">
               <p className="tenExpBorderText">10</p>
             </div>
@@ -191,7 +188,6 @@ export default function App() {
           </div>
         </div>
       </div>
-       
-    </>
+    </div>
   );
 }

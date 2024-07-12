@@ -9,6 +9,16 @@ body {
   padding: 0;
   background-color: $bg;
   color: $white;
+  transition-property: opacity, transform, filter, background-color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 800ms;
+  overflow-x: hidden;
+}
+.page_transition{
+  opacity: 0;
+  background-color: $black;
+  transform: translateY(40px);
+  filter: blur(12px);
 }
 h1 {
   font-family: "futura_regular";
@@ -47,6 +57,14 @@ ul {
   }
 }
 
-::-webkit-scrollbar {
-  display: none; // required for explore product
+input {
+  font-family: "futura_regular";
 }
+textarea {
+  font-family: "futura_regular";
+}
+
+// ::-webkit-scrollbar {
+//   display: none; // required for explore product
+
+// }

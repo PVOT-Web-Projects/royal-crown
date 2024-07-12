@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import logo from "@/images/svgLogos/header_logo.svg";
-import logo1 from "@/images/white_logo.png";
+import logo1 from "@/images/svgLogos/white_logo.svg";
 import logo2 from "@/images/svgLogos/header_crown_logo.svg";
 import logo3 from "@/images/crown_white.png";
 import "./header.scss";
@@ -11,6 +11,7 @@ import LinkHover from "../linkHover/LinkHover";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import PageTransition from "../pageTransition/PageTransition";
 
 const Header = () => {
   const [isHome, setIsHome] = useState(true);
@@ -80,13 +81,13 @@ const Header = () => {
           }}
           viewport={{ once: true }}
         >
-          <Link href={"/"}>
+          <PageTransition href={"/"}>
             {isHome ? (
               <Image src={logo} alt="header_logo" />
             ) : (
               <Image src={logo1} alt="header_logo" />
             )}
-          </Link>
+          </PageTransition>
         </motion.div>
         <ul className={isHome ? "dark" : "light"}>
           <motion.li
