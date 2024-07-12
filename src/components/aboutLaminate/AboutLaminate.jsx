@@ -5,20 +5,20 @@ import crown from "../../images/crown11.png";
 const AboutLaminate = ({ heading, text, leftText, rightText, image }) => {
   return (
     <div className="about_laminate">
-      <div className="wrapper">
-        <div className="right">
-          <div className="right_aboutus">
+      <div className="laminate-wrapper">
+        <div className="laminate-left">
+          <div className="left_aboutus">
             ABOUT <br /> US
           </div>
-          <div className="right_image">
-            <Image src={image} alt={heading} />
+          <div >
+            <Image src={image} className="left_image"/>
           </div>
           <div className="scroll_down">
             SCROLL <br />
             DOWN
           </div>
         </div>
-        <div className="left">
+        <div className="laminate-right">
           <div className="heading_text">
             <div className="heading">{heading}</div>
             <div className="text">{text}</div>
@@ -30,8 +30,11 @@ const AboutLaminate = ({ heading, text, leftText, rightText, image }) => {
           </div>
         </div>
       </div>
-        <div className="scrollDown">  SCROLL <br />
-        DOWN</div>
+      <div className="scrollDown">
+        {" "}
+        SCROLL <br />
+        DOWN
+      </div>
     </div>
   );
 };
