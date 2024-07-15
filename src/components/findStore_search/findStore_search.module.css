@@ -21,7 +21,33 @@
   display: flex;
   justify-content: space-between;
   /* gap: 6rem; */
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
 }
+.main_section_outer::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0;
+  transition: all 0.5s;
+}
+.main_section_outer:hover::before {
+  background-color: #fff;
+  height: 100%;
+  z-index: -1;
+}
+.main_section_outer:hover .content_1 {
+  color: #000;
+}
+.main_section_outer:hover .address {
+  color: #000;
+}
+
+
 .main_content {
   display: flex;
   /* width: 50%; */
@@ -127,8 +153,9 @@
 }
 .content_border {
   margin-bottom: 10px;
-  border: 1px solid #CFB071;
+  border: 1px solid #cfb071;
 }
+
 .button_OUTER {
   padding-left: 3rem;
 }
@@ -184,7 +211,7 @@
 .main_content_inner {
   width: 70%;
 }
-.main_content_inner_two{
+.main_content_inner_two {
   width: 30%;
 }
 .content_1 {
@@ -210,7 +237,7 @@
   font-weight: 400;
   line-height: 134.5%;
 }
-.SvgLogo{
+.SvgLogo {
   width: 100%;
 }
 .content {
@@ -253,63 +280,62 @@
   display: block;
 }
 
-@media (max-width: 1500px){
+@media (max-width: 1500px) {
   .content30 {
     height: 575px;
   }
 }
-@media (max-width:1199px){
+@media (max-width: 1199px) {
   .select_menu .select_btn {
     width: 150px;
     font-size: 18px;
   }
-  .search_button{
+  .search_button {
     font-size: 20px;
     padding: 12px 26px 12px 26px;
   }
-  .select_menu{
+  .select_menu {
     /* padding-right: 1rem; */
   }
-  .address{
+  .address {
     width: 85%;
   }
-  .button_OUTER{
+  .button_OUTER {
     padding-left: 0rem;
   }
   .select_menu .options {
     width: 160px;
   }
-  .map_section2{
+  .map_section2 {
     padding: 0 0px 0 30px;
   }
-  .option_section{
+  .option_section {
     gap: 1.5rem;
   }
-  .content_1{
+  .content_1 {
     width: 85%;
   }
 }
 
-
-@media (max-width: 991px){
-  .Map_section_outer{
+@media (max-width: 991px) {
+  .Map_section_outer {
     flex-direction: column-reverse;
   }
-  .map_section2{
+  .map_section2 {
     width: 100%;
   }
-  .Map_Section_Iframe_Outer{
+  .Map_Section_Iframe_Outer {
     width: 100%;
   }
-  .content30{
+  .content30 {
     height: auto;
   }
 }
-@media (max-width:561px){
-  .map_section2{
+@media (max-width: 561px) {
+  .map_section2 {
     padding: 0px;
   }
-  .option_section{
+  .option_section {
     padding-left: 15px;
   }
   .select_menu .select_btn {
