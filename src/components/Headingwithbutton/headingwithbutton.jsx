@@ -1,5 +1,6 @@
 import React from "react";
 import "./headingwithbutton.scss";
+import YellowButton from "../buttons/yellowButton/YellowButton";
 
 const headingwithbutton = () => {
   return (
@@ -8,11 +9,11 @@ const headingwithbutton = () => {
         Sturdily beautiful. Warm, bright. Naturally comforting. Timelessly{" "}
         <span className="subheading">modern.</span>
       </h1>
-      <div className="buttonContainer">
+      <YellowButton btn_text={"Let's Start"} url={"/"} />
+      {/* <div className="buttonContainer">
         <button className="button">Let's Start</button>
-      </div>
+      </div> */}
     </div>
-    
   );
 };
 

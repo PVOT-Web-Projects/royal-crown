@@ -1820,9 +1820,9 @@ function Mapsection() {
         </div>
         {/* Selection Section */}
         <div className={styles.map_section2}>
-          <div className={styles.Img_Logo_Outer}>
+          {/* <div className={styles.Img_Logo_Outer}>
             <Image src={ImageLogo} className={styles.Img_Logo} />
-          </div>
+          </div> */}
           <div className={styles.Option_Sec_Outer}>
             <div className={styles.option_section}>
               <div

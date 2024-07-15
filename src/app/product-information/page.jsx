@@ -1,9 +1,12 @@
 
-import RelatedProductinfo from "@/components/related_product_info/page";
+import KeyFeaturesInfo from "@/components/key_features_info/page";
+import RelatedProductInfo from "@/components/related_products_info/page";
 const ProductInformation =() =>{
     return(
         <div>
-            <RelatedProductinfo />
+            <KeyFeaturesInfo />
+            <RelatedProductInfo />
+
         </div>
     )
 }

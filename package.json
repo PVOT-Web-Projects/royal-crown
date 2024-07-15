@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^4.0.0",
     "fluid-simulation-react": "^1.0.5",
     "formik": "^2.4.6",
     "framer-motion": "^11.2.10",
