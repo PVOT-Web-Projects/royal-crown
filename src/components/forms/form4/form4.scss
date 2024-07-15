@@ -1,3 +1,5 @@
+@import "../../../app/variables.scss";
+
 .form4 {
   padding: 200px 0 0;
   .form4_inner {
@@ -12,7 +14,9 @@
         .form4_wrap {
           width: 100%;
           opacity: 1;
-          height: 100%;
+          height: auto;
+          transform: translateX(0);
+          padding: 50px 95px;
         }
         .btn {
           display: none;
@@ -24,29 +28,73 @@
           display: block;
           width: 100%;
           object-fit: cover;
-         
+          height: 100%;
         }
       }
       .form4_wrap {
-        // width: 0;
-        // opacity: 0;
-        // height: 100%;
+        width: 0;
+        opacity: 0;
+        height: 0;
+        transform: translateX(500px);
         transition: all 1s;
+        background-color: $white;
+        color: $black;
+
+        .form4_wrap_inner {
+          h2 {
+            font-size: 50px;
+            line-height: 66px;
+            color: $black;
+          }
+          p {
+            font-size: 18px;
+            line-height: 20px;
+          }
+          form {
+            .field {
+              width: 100%;
+              label {
+                display: block;
+              }
+              input {
+                width: -webkit-fill-available;
+                border: 1px solid $black;
+                height: 35px;
+                &:focus {
+                  outline: none;
+                }
+              }
+              textarea {
+                width: 100%;
+                border: 1px solid $black;
+                &:focus {
+                  outline: none;
+                }
+              }
+            }
+            .field_wrap {
+              display: flex;
+              justify-content: space-between;
+              gap: 20px;
+            }
+          }
+        }
       }
       .btn {
         position: absolute;
         right: -60px;
         top: 50%;
         transform: translateY(-50%);
-        z-index: 1;
+        z-index: 9;
       }
     }
-    .right_image{
+    .right_image {
       width: 30%;
-      img{
+      position: relative;
+      z-index: 1;
+      img {
         width: 100%;
         display: block;
-        opacity: 0.2;
         object-fit: cover;
         height: 100%;
       }
