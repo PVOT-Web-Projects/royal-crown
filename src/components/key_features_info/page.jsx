@@ -59,7 +59,7 @@ const Card = ({ title, description, icon, backgroundColor }) => (
   </div>
 );
 
-const ProductInfo = () => (
+const KeyFeaturesInfo = () => (
   <div className="Card-Grid-MainContainer">
     <div className="Card_MainTitle">
         <p className="Card_MainTitle_text">KEY FEATURES</p>
@@ -78,4 +78,4 @@ const ProductInfo = () => (
   </div>
 );
 
-export default ProductInfo;
+export default KeyFeaturesInfo;
