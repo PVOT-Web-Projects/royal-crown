@@ -12,7 +12,7 @@ import PlyMarquee from "@/components/plyMarquee/PlyMarquee";
 import InsightSlider from "@/components/Insightslider/Insightslider1";
 import AboutUs from "@/components/Aboutus/Aboutus";
 import ThreeDSlider from "@/components/threeDSlider/ThreeDSlider";
-import ThreeDSlider2 from "@/components/threeDSlider copy/ThreeDSlider";
+import ThreeDSlider2 from "@/components/threeDSlider copy/page";
 import RotatingImages from "@/components/The rotating image/RotatingImages";
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
     <main className="main">
       <HeroBanner />
       <AboutUs />
-      {/* <ThreeDSlider2 /> */}
+      <ThreeDSlider2 />
       {/* <div style={{height:"400px"}}></div> */}
       {/* <RotatingImages/> */}
       {/* <div style={{height:"850vh"}}></div> */}
