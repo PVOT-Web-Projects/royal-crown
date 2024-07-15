@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import ImageLogo from "../../images/svgLogos/white_logo.svg";
 import styles from "@/components/findStore_search/findStore_search.module.css";
 import "./findStore.css";
 function Mapsection() {
@@ -196,12 +197,12 @@ function Mapsection() {
   ];
   stateDistricts.sort((a, b) => a.state.localeCompare(b.state));
 
-// Sort the districts array within each state alphabetically
-stateDistricts.forEach((state) => {
-  state.districts.sort((a, b) => a.localeCompare(b));
-});
+  // Sort the districts array within each state alphabetically
+  stateDistricts.forEach((state) => {
+    state.districts.sort((a, b) => a.localeCompare(b));
+  });
 
-// console.log(stateDistricts);
+  // console.log(stateDistricts);
 
   const options2 =
     stateDistricts.find((item) => item.state === selectedOption1)?.districts ||
@@ -523,7 +524,8 @@ stateDistricts.forEach((state) => {
           supplierName: "MR. SHAHUL HAMEED",
           mapLocation: "KOTTAYAM, KERALA",
           phone: "+918137973747",
-          Address:"1, VIII/290/T,VIII/1145/T, K K ARCADE, OPP.MARCELLINAS SCHOOL, MADOM JN, S H MOUNT",
+          Address:
+            "1, VIII/290/T,VIII/1145/T, K K ARCADE, OPP.MARCELLINAS SCHOOL, MADOM JN, S H MOUNT",
         },
       ],
       KOZHIKODE: [
@@ -559,7 +561,8 @@ stateDistricts.forEach((state) => {
           supplierName: "MR. KIRAN KUMAR R",
           mapLocation: "THIRUVANTHAPURAM, KERALA",
           phone: "+919447323618",
-          Address:"TC 43/648, DEVI TOWER, KOCHAR ROAD, VALIYASALAI, CHALAI P.O",
+          Address:
+            "TC 43/648, DEVI TOWER, KOCHAR ROAD, VALIYASALAI, CHALAI P.O",
         },
       ],
       THRISSUR: [
@@ -889,11 +892,13 @@ stateDistricts.forEach((state) => {
     BIHAR: {
       PATNA: [
         {
-          content1:"Royale Touche Laminates, Plywood and Wooden Floors-Patna, Patna Plywood",
+          content1:
+            "Royale Touche Laminates, Plywood and Wooden Floors-Patna, Patna Plywood",
           supplierName: "Mr. Umesh kumar Chokhani",
           mapLocation: " PATNA, BIHAR",
           phone: "'9334330117, 9110940582",
-          Address:"Patna Plywood, Hotel Raj Kumar Building, Exhibition Road, Patna",
+          Address:
+            "Patna Plywood, Hotel Raj Kumar Building, Exhibition Road, Patna",
         },
         {
           content1: "OLYMPIC DÉCOR LLP",
@@ -1735,7 +1740,7 @@ stateDistricts.forEach((state) => {
   const [selectedLocationContent, setSelectedLocationContent] = useState([
     {
       content1:
-        "Please select State and City to search Royalè Touchè Experience Centre near your location.",
+        "Please select State and City to search Experience Centre near your location.",
     },
   ]);
 
@@ -1800,192 +1805,166 @@ stateDistricts.forEach((state) => {
 
   return (
     <div className={styles.Map_section}>
-      <div className={styles.map_section1}>
-        {/* <div className={styles.content_Text} ref={storeRef}>
-          {splitWords("Royalé Touché Experience Centre Near Me")}
-        </div> */}
-       
-      </div>
-
-      <div className={styles.map_section2}>
-     
-        <div className={styles.content30}>
-
-        <div className={styles.option_section}>
-          <div
-            className={`${styles.select_menu} ${isOpen1 ? styles.active : ""}`}
-            onClick={toggleDropdown1}
-          >
-            <div className={styles.select_btn} onClick={toggleDropdown1}>
-              <div className={styles.sBtn_text}>
-                {selectedOption1 || "Select State"}
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="14"
-                viewBox="0 0 22 14"
-                fill="none"
-              >
-                <path d="M2 2L11 11L20 2" stroke="white" strokeWidth="2" />
-              </svg>
-            </div>
-            <ul className={styles.options}>
-              {sortedStates.map((option, index) => (
-                <li
-                  key={index}
-                  className={styles.option}
-                  onClick={() => handleOptionClick1(option)}
-                >
-                  <span className={styles.option_text}>{option}</span>
-                </li>
-              ))}
-            </ul>
+      <div className={styles.Map_section_outer}>
+        {/* Map Section */}
+        <div className={styles.Map_Section_Iframe_Outer}>
+          <div className={styles.content70}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0578930659026!2d72.49071127591135!3d22.984898517731924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9aeb23c7e7e7%3A0xd34044573492f3c0!2sRoyal%20Art%20Laminates!5e0!3m2!1sen!2sin!4v1720691503627!5m2!1sen!2sin"
+              allowfullscreen=""
+              className={styles.map_frame}
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-
-          <div
-            className={`${styles.select_menu} ${isOpen2 ? styles.active : ""}`}
-            onClick={toggleDropdown2}
-          >
-            <div className={styles.select_btn} onClick={toggleDropdown2}>
-              <div className={styles.sBtn_text}>
-                {selectedOption2 || "Select City"}
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="14"
-                viewBox="0 0 22 14"
-                fill="none"
-              >
-                <path d="M2 2L11 11L20 2" stroke="white" strokeWidth="2" />
-              </svg>
-            </div>
-            <ul className={styles.options}>
-              {options2.map((option, index) => (
-                <li
-                  key={index}
-                  className={styles.option}
-                  onClick={() => handleOptionClick2(option)}
-                >
-                  <span className={styles.option_text}>{option}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <button className={styles.search_button} onClick={handleSearch}>
-            Search
-          </button>
         </div>
-          {selectedLocationContent.map((location, index) => (
-            <>
-              <div key={index}>
-                <p className={styles.content_1}>{location.content1}</p>
+        {/* Selection Section */}
+        <div className={styles.map_section2}>
+          <div className={styles.Img_Logo_Outer}>
+            <Image src={ImageLogo} className={styles.Img_Logo} />
+          </div>
+          <div className={styles.Option_Sec_Outer}>
+            <div className={styles.option_section}>
+              <div
+                className={`${styles.select_menu} ${
+                  isOpen1 ? styles.active : ""
+                }`}
+                onClick={toggleDropdown1}
+              >
+                <div className={styles.select_btn} onClick={toggleDropdown1}>
+                  <div className={styles.sBtn_text}>
+                    {selectedOption1 || "Select State"}
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="14"
+                    viewBox="0 0 22 14"
+                    fill="none"
+                  >
+                    <path d="M2 2L11 11L20 2" stroke="white" strokeWidth="2" />
+                  </svg>
+                </div>
+                <ul className={styles.options}>
+                  {sortedStates.map((option, index) => (
+                    <li
+                      key={index}
+                      className={styles.option}
+                      onClick={() => handleOptionClick1(option)}
+                    >
+                      <span className={styles.option_text}>{option}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-                {location.mapLocation &&
-                  location.phone &&
-                  location.supplierName && (
-                    <div className={styles.main_content}>
-                      {/* Display mapLocation and phone only if available */}
-
-                      {/* Address */}
-                      <div className={styles.content}>
-                        {/* <Image
-                          src={Address_svg}
-                          alt="phone"
-                          className={styles.allsvg}
-                        /> */}
-
-                        {/* <FontAwesomeIcon
-                          icon={faMapPin}
-                          className={styles.allsvg}
-                        /> */}
-                        <div className={styles.address}>{location.Address}</div>
-                      </div>
-                      {/* Map-lOCATION (aHMEDABAD,gUJARAT) */}
-                      <div className={styles.content}>
-                        {/* <Image
-                          src={HomeLocation_svg}
-                          alt="phone"
-                          className={styles.allsvg}
-                        /> */}
-                        {/* <FontAwesomeIcon
-                          icon={faMapPin}
-                          className={styles.allsvg}
-                        /> */}
-                        <div className={styles.address}>
-                          {location.mapLocation}
-                        </div>
-                      </div>
-
-                      {/* Supplier contact name */}
-                      <div className={styles.content}>
-                        {/* <FontAwesomeIcon
-                        icon={faMapPin}
-                        className={styles.allsvg}
-                      /> */}
-                        {/* <Image
-                          src={User_svg}
-                          alt="phone"
-                          className={styles.allsvg}
-                        /> */}
-                        <div className={styles.address}>
-                          {location.supplierName}
-                        </div>
-                      </div>
-                      {/* pHONE nUMBER */}
-                      <div className={styles.content}>
-                        {/* <Image
-                          src={Phone_svg}
-                          alt="phone"
-                          className={styles.allsvg}
-                        /> */}
-
-                        {/* <FontAwesomeIcon
-                          icon={faPhoneVolume}
-                          className={styles.allsvg}
-                        /> */}
-                        <div className={styles.address}>{location.phone}</div>
-                      </div>
-                      {/* extra mobile number if required */}
-                      {location.extraPhone && (
-                        <div className={styles.content}>
-                          <FontAwesomeIcon
-                            icon={faPhoneVolume}
-                            className={styles.allsvg}
-                          />
-                          <div className={styles.address}>
-                            {location.extraPhone}
+              <div
+                className={`${styles.select_menu} ${
+                  isOpen2 ? styles.active : ""
+                }`}
+                onClick={toggleDropdown2}
+              >
+                <div className={styles.select_btn} onClick={toggleDropdown2}>
+                  <div className={styles.sBtn_text}>
+                    {selectedOption2 || "Select City"}
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="14"
+                    viewBox="0 0 22 14"
+                    fill="none"
+                  >
+                    <path d="M2 2L11 11L20 2" stroke="white" strokeWidth="2" />
+                  </svg>
+                </div>
+                <ul className={styles.options}>
+                  {options2.map((option, index) => (
+                    <li
+                      key={index}
+                      className={styles.option}
+                      onClick={() => handleOptionClick2(option)}
+                    >
+                      <span className={styles.option_text}>{option}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className={styles.button_OUTER}>
+                <button className={styles.search_button} onClick={handleSearch}>
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={styles.content30}>
+            {selectedLocationContent.map((location, index) => (
+              <>
+                <div key={index} >
+                 
+                  {location.mapLocation &&
+                    location.phone &&
+                    location.supplierName && (
+                      <div className={styles.main_section_outer}> 
+                        
+                        <div className={styles.main_content_inner}>
+                        <p className={styles.content_1}>{location.content1}</p>
+                          {/* Display mapLocation and phone only if available */}
+                          {/* Address */}
+                          <div className={styles.content}>
+                            <div className={styles.address}>
+                              {location.Address}
+                            </div>
+                          </div>
+                          {/* Map-lOCATION (aHMEDABAD,gUJARAT) */}
+                          <div className={styles.content}>
+                            <div className={styles.address}>
+                              {location.mapLocation}
+                            </div>
                           </div>
                         </div>
-                      )}
-                    </div>
-                  )}
-                {location.mapLocation && location.phone && (
-                  <div className={styles.content_border}>
-                    <svg
+
+                        {/* Supplier contact name */}
+                        <div className={styles.main_content_inner_two}>
+                          <div className={styles.content1}>
+                            <div className={styles.address}>
+                              {location.supplierName}
+                            </div>
+                          </div>
+                          <div className={styles.content1}>
+                            <div className={styles.address}>
+                              {location.phone}
+                            </div>
+                          </div>
+                          {/* extra mobile number if required */}
+                          {location.extraPhone && (
+                            <div className={styles.content}>
+                              <div className={styles.address}>
+                                {location.extraPhone}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                  {location.mapLocation && location.phone && (
+                    <div className={styles.content_border}>
+                      {/* <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="371"
-                      height="2"
+                      className={styles.SvgLogo}
+                      height="1"
                       viewBox="0 0 371 2"
                       fill="none"
                     >
-                      <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="2" />
-                    </svg>
-                  </div>
-                )}
-              </div>
-            </>
-          ))}
-        </div>
-        <div className={styles.content70}>
-          <iframe
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0578930659026!2d72.49071127591135!3d22.984898517731924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9aeb23c7e7e7%3A0xd34044573492f3c0!2sRoyal%20Art%20Laminates!5e0!3m2!1sen!2sin!4v1720691503627!5m2!1sen!2sin"
-            allowfullscreen=""
-            className={styles.map_frame}
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+                      <path d="M0.5 1H371" stroke="#CFB071" strokeWidth="1" />
+                    </svg> */}
+                    </div>
+                  )}
+                </div>
+              </>
+            ))}
+          </div>
         </div>
       </div>
     </div>
