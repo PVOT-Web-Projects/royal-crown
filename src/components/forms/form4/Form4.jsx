@@ -40,23 +40,25 @@ const Form4 = () => {
                 industry. Lorem Ipsum has been the industry's standard
               </p>
               <form onSubmit={handleSubmit}>
-                <div className="field">
-                  <label htmlFor="fname">First Name</label>
-                  <input
-                    type="text"
-                    name="fname"
-                    value={values.fName}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div className="field">
-                  <label htmlFor="lName">Last Name</label>
-                  <input
-                    type="text"
-                    name="lName"
-                    value={values.lName}
-                    onChange={handleChange}
-                  />
+                <div className="field_wrap">
+                  <div className="field">
+                    <label htmlFor="fname">First Name</label>
+                    <input
+                      type="text"
+                      name="fname"
+                      value={values.fName}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="field">
+                    <label htmlFor="lName">Last Name</label>
+                    <input
+                      type="text"
+                      name="lName"
+                      value={values.lName}
+                      onChange={handleChange}
+                    />
+                  </div>
                 </div>
                 <div className="field">
                   <label htmlFor="email">E-mail Address</label>
@@ -83,6 +85,7 @@ const Form4 = () => {
                     name="fname"
                     value={values.fName}
                     onChange={handleChange}
+                    rows={5}
                   ></textarea>
                 </div>
                 <div className="field">
