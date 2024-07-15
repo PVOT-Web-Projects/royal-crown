@@ -21,15 +21,18 @@ export default function Home() {
       <HeroBanner />
       <AboutUs />
       {/* <ThreeDSlider2 /> */}
-      <div style={{height:"400px"}}></div>
-      <RotatingImages/>
-      <div style={{height:"850vh"}}></div>
+      {/* <div style={{height:"400px"}}></div> */}
+      {/* <RotatingImages/> */}
+      {/* <div style={{height:"850vh"}}></div> */}
       <Headingwithbutton />
       <PlyMarquee />
       <RoyalCrownSlider />
 
       <Certification />
       <InsightSlider />
+
+
+      
       {/* <CircularScroll /> */}
       {/* <ThreeDSlider /> */}
       
