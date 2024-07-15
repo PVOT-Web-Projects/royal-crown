@@ -12,6 +12,7 @@
         .form4_wrap {
           width: 100%;
           opacity: 1;
+          height: 100%;
         }
         .btn {
           display: none;
@@ -27,8 +28,9 @@
         }
       }
       .form4_wrap {
-        width: 0;
-        opacity: 0;
+        // width: 0;
+        // opacity: 0;
+        // height: 100%;
         transition: all 1s;
       }
       .btn {
