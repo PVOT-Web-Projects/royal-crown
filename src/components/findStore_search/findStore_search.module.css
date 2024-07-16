@@ -295,6 +295,7 @@
 }
 /* search button */
 .button_OUTER {
+  padding-top: 1rem;
   position: relative;
   overflow: hidden;
   height: 3.25rem;
