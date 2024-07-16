@@ -1,21 +1,17 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import "./aboutLaminate.scss";
 import crown from "../../images/crown11.png";
 
-const AboutLaminate = ({ heading, text, leftText, rightText, image }) => {
+const AboutLaminate = ({ heading, text, leftText, rightText, image ,  scrollTo,
+  goToSectionRef, showArrow}) => {
   return (
     <div className="about_laminate">
       <div className="laminate-wrapper">
         <div className="laminate-left">
-          <div className="left_aboutus">
-            ABOUT <br /> US
-          </div>
-          <div >
-            <Image src={image} className="left_image"/>
-          </div>
-          <div className="scroll_down">
-            SCROLL <br />
-            DOWN
+          <div className="left_aboutus">ABOUT US</div>
+          <div>
+            <Image src={image} className="left_image" />
           </div>
         </div>
         <div className="laminate-right">
@@ -30,12 +26,16 @@ const AboutLaminate = ({ heading, text, leftText, rightText, image }) => {
           </div>
         </div>
       </div>
-      <div className="scrollDown">
-        {" "}
-        SCROLL <br />
-        DOWN
+      {showArrow && (
+      <div className="container_mouse">
+            <span className="mouse-btn" onClick={() => scrollTo(goToSectionRef)}>
+              <span className="mouse-scroll"></span>
+            </span>
+            <span>Scroll Down</span>
       </div>
+      )}
     </div>
   );
 };
+
 export default AboutLaminate;

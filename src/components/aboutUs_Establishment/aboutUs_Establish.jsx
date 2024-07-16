@@ -59,7 +59,7 @@ const AboutUsEstablishment = () => {
   }, []);
 
   return (
-    <div className="about_Establishment">
+    <div className="about_Establishment" id="establishment">
       <div className="Establishment_Wrapper" ref={sectionRef}>
         <div className="left" ref={sectionRef}>
           <div className="icon">
