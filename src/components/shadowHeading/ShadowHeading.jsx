@@ -19,12 +19,12 @@ const ShadowHeading = ({ text, fontSize }) => {
         }}
         viewport={{ once: true }}
       >
-        <div
+        {/* <div
           className="shadow_heading_text shadow"
           style={{ fontSize: fontSize }}
         >
           {text}
-        </div>
+        </div> */}
         <div
           className="shadow_heading_text normal"
           style={{ fontSize: fontSize }}

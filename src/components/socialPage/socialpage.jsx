@@ -12,8 +12,9 @@ const SocialPage = ({ socialMediaImgSrc }) => {
     { src: facebookIcon, alt: "Facebook", link: "https://www.facebook.com" },
     { src: instagramIcon, alt: "Instagram", link: "https://www.instagram.com" },
     { src: youtubeIcon, alt: "YouTube", link: "https://www.youtube.com" },
-    { src: whatsappIcon, alt: "WhatsApp", link: "https://www.whatsapp.com" },
+    
     { src: linkedinIcon, alt: "LinkedIn", link: "https://www.linkedin.com" },
+    { src: whatsappIcon, alt: "WhatsApp", link: "https://www.whatsapp.com" },
   ];
   return (
     <div className="socialPage">

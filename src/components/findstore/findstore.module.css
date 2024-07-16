@@ -1,0 +1,21 @@
+.FindStoreContainer{
+    padding: 100px 20px;
+}
+.FindStoreInnerContainer{
+    display: flex;
+}
+.FindStoreInnerFirst{
+    width: 50%;
+}
+.FindStoreInnerSecond{
+    width: 50%;
+}
+.MapFrame{
+    width: 100%;
+    height: 100vh;
+    filter: grayscale(1);
+}
+.ImageLogoOuter{
+    text-align: center;
+    margin: 0 auto;
+}

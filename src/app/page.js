@@ -30,6 +30,9 @@ export default function Home() {
 
       <Certification />
       <InsightSlider />
+
+
+      
       {/* <CircularScroll /> */}
       {/* <ThreeDSlider /> */}
       
