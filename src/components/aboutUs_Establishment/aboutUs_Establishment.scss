@@ -3,13 +3,11 @@
 .about_Establishment {
     color: black;
     background-color: #D9D9D9 !important;
-    padding: 60px 0px 35px 10px;
-    @media only screen and (min-width: 992px) {
-        padding: 60px 0px 35px 10px;
-    }
+    padding: 90px 50px 180px 50px;
+    overflow-x: hidden;
 
-    @media (max-width : 575px) {
-        padding: 0;
+    @media (max-width:746px) {
+        padding: 90px 30px 180px 30px;
     }
 
     .Establishment_Wrapper {
@@ -17,14 +15,22 @@
         display: flex;
         justify-content: space-between;
         gap: 3rem;
-        
+
+        @media (max-width : 1500px) {
+            gap: 8rem;
+        }
+
+        @media (max-width : 1025px) {
+            gap: 3rem;
+        }
+
 
         @media (max-width : 768px) {
             display: flex;
             flex-direction: column;
         }
     }
-    
+
     .left {
         display: flex;
         flex-direction: column;
@@ -36,63 +42,102 @@
         background: url("../../images//Group\ 6.png") no-repeat;
         padding: 0 90px;
 
+        @media (max-width : 991px) {
+            width: 50%;
+            padding: 0 50px;
+        }
+
         @media (max-width : 768px) {
-            width: 100%;
-            padding: 0 110px;
+            width: 90%;
+            padding: 0 10px 0 10px;
         }
 
         @media screen and (max-width : 475px) {
             width: 100%;
-            padding: 0 40px;
+            padding: 0 0px;
         }
 
         @media (max-width : 329px) {
             width: 100%;
             padding: 0;
         }
+
         .icon {
             max-width: 100%;
             display: block;
             height: auto;
         }
-    
+
         .icon_heading {
             font-weight: bold;
             font-size: 35px;
             text-transform: uppercase;
             letter-spacing: 5px;
 
-
-            
+            @media (max-width:475px) {
+                font-size: 30px;
+            }
         }
-    
+
         .box {
             display: flex;
             flex-direction: column;
-    
+            flex-wrap: wrap;
+        
             .year {
                 font-size: 50px;
-                font-weight: bold;
                 transition: color 0.3s, font-weight 0.3s, font-size 0.3s;
-            }
+                cursor: pointer;
+                padding: 0 0 4rem 10px;
     
+        
+                @media (max-width: 475px) {
+                    font-size: 40px;
+                }
+        
+                @media (max-width: 320px) {
+                    font-size: 30px;
+                }
+            }
+        
             .other-years {
                 font-size: 2rem;
                 color: #999;
-                padding: 4rem;
-                
-                p{
-                    padding: 10px;
+                padding: 0 0 4rem 1rem;
+        
+                @media (max-width: 320px) {
+                    font-size: 1rem;
+                }
+        
+                p {
+                    padding: 0 0 0 10px;
                 }
             }
         }
+        
     }
-    
+
     .right {
         width: 60%;
+        padding: 40px 0 0 0;
+
+        @media (max-width : 991px) {
+            width: 50%;
+        }
+
         @media (max-width : 768px) {
             width: 100%;
+            padding: 0 10px 0 10px;
         }
+
+        @media (max-width :575px) {
+            padding: 0;
+        }
+
+        @media (max-width : 475px) {
+            padding: 0px;
+        }
+
         .TimeLine_Image {
             max-width: 100%;
             height: auto;

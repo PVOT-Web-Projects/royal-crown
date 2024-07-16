@@ -1,0 +1,30 @@
+.establish{
+    color: black;
+    background-color: #D9D9D9;
+    padding: 90px 0px 0px 200px;
+    overflow:hidden;
+    
+    .establishment_wrapper{
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+
+        .left{
+            width: 40%;
+            text-align: center;
+            // padding: 100px 0 0 0 ;
+
+            .year{
+                font-size: 50px;
+                font-weight: bold;
+
+            }
+        }
+
+        .right{
+            width: 60%;
+        }
+    }
+
+}
