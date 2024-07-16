@@ -18,22 +18,22 @@ import RotatingImages from "@/components/The rotating image/RotatingImages";
 export default function Home() {
   return (
     <main className="main">
-      {/* <HeroBanner />
-      <AboutUs /> */}
+      <HeroBanner />
+      <AboutUs />
 
        {/* commented */}
       {/* <ThreeDSlider2 /> */}
        {/* commented */}
 
 
-      {/* <div style={{height:"400px"}}></div>
+      <div style={{height:"400px"}}></div>
       <RotatingImages/>
       <div style={{height:"850vh"}}></div>
       <Headingwithbutton />
       <PlyMarquee />
       <RoyalCrownSlider />
 
-      <Certification /> */}
+      <Certification />
       <InsightSlider />
 
 
