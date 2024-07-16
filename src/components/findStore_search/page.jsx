@@ -4,7 +4,7 @@ import Image from "next/image";
 import ImageLogo from "../../images/svgLogos/white_logo.svg";
 import styles from "@/components/findStore_search/findStore_search.module.css";
 import "./findStore.css";
-function Mapsection() {
+function FindStoreSearch() {
   const [isOpen1, setIsOpen1] = useState(false);
   const [selectedOption1, setSelectedOption1] = useState("");
   const options1 = [
@@ -1891,9 +1891,9 @@ function Mapsection() {
                 </ul>
               </div>
               <div className={styles.button_OUTER}>
-                <button className={styles.search_button} onClick={handleSearch}>
+                <span className={styles.search_button} onClick={handleSearch}>
                   Search
-                </button>
+                </span>
               </div>
             </div>
           </div>
@@ -1971,4 +1971,4 @@ function Mapsection() {
   );
 }
 
-export default Mapsection;
+export default FindStoreSearch;

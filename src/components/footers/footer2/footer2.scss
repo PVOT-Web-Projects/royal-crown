@@ -231,7 +231,14 @@
     }
   }
   img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    // width: 100%;
+    @media (max-width: 575px){
+      padding-bottom: 2rem;
+
+    }
   }
   .copyright {
     text-align: center;
