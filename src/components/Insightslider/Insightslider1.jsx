@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "./abc.scss";
 import Image from "next/image";
 import demoimage from "../../images/insightslider.png";
+import YellowButton from "../buttons/yellowButton/YellowButton";
 function ScrollSection() {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
@@ -59,7 +60,8 @@ function ScrollSection() {
         <div className="InsightsTextMain">
           <p className="InsightsText">LATEST INSIGHTS</p>
           <div className="InsightsButton">
-            <button className="innerrbutton">Explore All Blogs</button>
+            <YellowButton btn_text={"Explore All Blogs"} url={"/"}/>
+            {/* <button className="innerrbutton">Explore All Blogs</button> */}
           </div>
         </div>
         <div className="wrap">

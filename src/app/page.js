@@ -26,9 +26,11 @@ export default function Home() {
        {/* commented */}
 
 
-      <div style={{height:"400px"}}></div>
-      <RotatingImages/>
-      <div style={{height:"850vh"}}></div>
+      {/* <div style={{height:"400px"}}></div> */}
+      {/* <RotatingImages/> */}
+      {/* <div style={{height:"850vh"}}></div> */}
+
+      
       <Headingwithbutton />
       <PlyMarquee />
       <RoyalCrownSlider />

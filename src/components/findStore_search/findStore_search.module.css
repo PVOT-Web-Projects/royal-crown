@@ -153,7 +153,7 @@
   }
 }
 .content_border {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   border: 1px solid #cfb071;
 }
 
@@ -295,6 +295,7 @@
 }
 /* search button */
 .button_OUTER {
+  padding-top: 1rem;
   position: relative;
   overflow: hidden;
   height: 3.25rem;
@@ -406,5 +407,20 @@
   .option_section{
     /* flex-direction: column; */
     flex-wrap: wrap;
+  }
+  .main_section_outer{
+    flex-direction: column;
+  }
+  .main_content_inner {
+    width: 100%;
+  }
+  .main_content_inner_two {
+    width: 100%;
+  }
+  .content_1{
+    width: 100%;
+  }
+  .address {
+    width: 100%;
   }
 }

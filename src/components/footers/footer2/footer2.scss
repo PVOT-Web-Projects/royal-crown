@@ -177,11 +177,13 @@
                 }
                 &:hover {
                   transform: scale(1.1);
+                  color: rgb(254, 197, 84);
                 }
                 img {
                   padding: 0 0 5px;
                 }
-                span {
+                span{
+
                 }
               }
             }
@@ -211,6 +213,7 @@
                     transform: scale(1.3);
                   }
                 }
+                
                 img {
                   transition: all 0.5s;
                   @media (max-width: 767px) {

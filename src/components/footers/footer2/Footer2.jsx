@@ -200,7 +200,7 @@ const Footer2 = ({ bgColor }) => {
                 </li>
                 <li>
                   <Link href={"https://www.whatsapp.com/"} target="_blank">
-                    <Image src={wa} alt="wa" /> <span>WhatsApp</span>
+                    <Image src={wa} alt="wa"/> <span>WhatsApp</span>
                   </Link>
                 </li>
               </ul>
