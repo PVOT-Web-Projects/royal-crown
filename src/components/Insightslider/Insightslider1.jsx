@@ -21,7 +21,7 @@ function ScrollSection() {
         x: 0,
       },
       {
-        x: "-105vw",
+        x: "-100%",
         ease: "none",
         duration: 1,
         scrollTrigger: {

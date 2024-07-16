@@ -91,6 +91,7 @@
   -webkit-animation-duration: 0.35s;
   -webkit-animation-fill-mode: both;
 }
+
 .select_menu .options .option {
   display: flex;
   height: 55px;
@@ -156,14 +157,13 @@
   border: 1px solid #cfb071;
 }
 
-.button_OUTER {
+/* .button_OUTER {
   padding-left: 3rem;
-}
-.search_button {
+} */
+/* .search_button {
   background: transparent;
   outline: none;
   border: 1px solid white;
-  /* padding: 7px 26px 8px 26px; */
   padding: 9px 26px 13px 26px;
   color: #fff;
   font-size: 22px;
@@ -171,7 +171,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-}
+} */
 .location {
   color: #000;
   font-size: 20px;
@@ -193,6 +193,20 @@
   height: 650px;
   overflow-y: auto;
   overflow-x: hidden;
+}
+.select_menu .options::-webkit-scrollbar{
+  width: 12px;
+  height: 680px;
+  margin-left: 10px;
+}
+.select_menu .options::-webkit-scrollbar-thumb {
+  display: block;
+  overflow-y: auto;
+  background-color: #ffbc37;
+}
+.select_menu .options::-webkit-scrollbar-track {
+  background-color: #d9d9d91f;
+  margin-left: 20px;
 }
 .content30::-webkit-scrollbar {
   width: 12px;
@@ -256,7 +270,7 @@
   padding: 20px;
 }
 .content_button {
-  background: #006f69;
+  /* background: #006f69; */
   padding: 10px 30px;
   cursor: pointer;
   border: none;
@@ -278,6 +292,45 @@
 }
 .allsvg {
   display: block;
+}
+/* search button */
+.button_OUTER {
+  position: relative;
+  overflow: hidden;
+  height: 3.25rem;
+  padding: 0 2rem;
+  background: rgb(254, 197, 84);
+  background-size: 400%;
+  color: black;
+  border: none;
+  font-size: 18px;
+  line-height: 16px;
+  font-family: "futura_medium";
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+}
+.button_OUTER .search_button {
+  position: relative;
+  z-index: 1;
+}
+.button_OUTER::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: white;
+  transition: all 0.475s;
+}
+.button_OUTER:hover::before {
+  transform: scaleX(1);
 }
 
 @media (max-width: 1500px) {
@@ -301,7 +354,7 @@
     width: 85%;
   }
   .button_OUTER {
-    padding-left: 0rem;
+    padding: 0rem;
   }
   .select_menu .options {
     width: 160px;
@@ -347,5 +400,11 @@
   }
   .select_menu .options .option {
     padding: 0 5px;
+  }
+}
+@media (max-width:575px){
+  .option_section{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
   }
 }

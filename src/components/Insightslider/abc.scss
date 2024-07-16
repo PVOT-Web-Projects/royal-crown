@@ -77,7 +77,8 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background: #1c211e;
+  // background: #1c211e;
+  background-color: rgb(28, 33, 30);
 }
 .counter {
   font-size: 100px;
@@ -101,11 +102,14 @@
 }
 
 @media (min-width: 1500px) {
+  .fixed-counter{
+    width: 27%;
+  }
   .scroll-section {
     width: auto;
   }
   .scroll-section-inner {
-    margin-left: 300px;
+    margin-left: 350px;
   }
 }
 @media (max-width: 1400px) {
@@ -121,9 +125,14 @@
 }
 @media (max-width: 1200px) {
   .fixed-counter {
-    width: 12%;
+    width: 25%;
     top: 0;
     left: 0%;
+  }
+}
+@media (max-width: 1024px) {
+  .textSliderText {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -136,19 +145,34 @@
   .scroll-section {
     padding: 0 10px !important;
   }
+  .InsightsTextMain {
+    padding: 0 50px;
+  }
+  .InsightsText {
+    font-size: 75px;
+  }
+  .fixed-counter {
+    width: 25%;
+  }
+  .scroll-section-inner {
+    margin-left: 250px;
+  }
 }
 @media (max-width: 425px) {
   .scroll-section-inner {
     height: auto;
-    width: auto;
-    margin-left: auto;
+    width: 350vw;
+    margin-left: 30px;
   }
   .InsightsTextMain {
     padding: 0 20px;
   }
   .InsightsText {
-    font-size: 55px;
+    font-size: 40px;
   }
+  .InsightsButton {
+    padding-top: 2rem;
+}
   .fixed-counter {
     display: none;
   }
@@ -157,5 +181,18 @@
   }
   .scroll-section {
     padding-right: 0rem;
+    height: 65vh;
+  }
+  .innerrbutton {
+    padding: 15px 45px;
+  }
+}
+@media (max-width: 375px) {
+  .scroll-section-inner {
+    width: 500vw;
+  }
+  .scroll-section {
+    padding: 0 10px;
+    height: 60vh;
   }
 }
