@@ -3,7 +3,8 @@
 import "./footer.scss";
 import LinkHover from "../../linkHover/LinkHover";
 import { usePathname } from "next/navigation";
-
+import Image from "next/image";
+import border from "@/images/svgLogos/yellow_footer_border.svg";
 const footerUrls = [
   {
     url1: "#",
@@ -69,6 +70,10 @@ const Footer = () => {
             </ul>
           ))}
         </nav>
+        <div>
+        <Image src={border} alt="border" />
+        <div className="copyright">© 2024 All Rights Reserved</div>
+        </div>
       </footer>
     )
   );

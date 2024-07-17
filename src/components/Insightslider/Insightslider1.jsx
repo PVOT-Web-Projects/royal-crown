@@ -60,7 +60,7 @@ function ScrollSection() {
       <section className="scroll-section-outer">
         <div ref={triggerRef}>
           <div className="InsightsTextMain">
-            <p className="InsightsText">LATEST INSIGHTS</p>
+            <p className="InsightsText">Latest Insights</p>
             <div className="InsightsButton">
               <YellowButton btn_text={"Explore All Blogs"} url={"/"} />
             </div>

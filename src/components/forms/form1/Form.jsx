@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import { useFormik } from "formik";
 import { FormSchemas } from "@/components/forms/ValidationSchema/Schema";
 import "./form.scss";
+import YellowButton from "@/components/buttons/yellowButton/YellowButton";
+import YellowSubmitButton from "@/components/buttons/yellowSubmitButton/YellowSubmitButton";
 
 const MyForm = () => {
   const initialValue = {
@@ -168,9 +170,10 @@ const MyForm = () => {
             </div>
           </div>
           <div className="submit-button">
-          <button type="submit" className="submit_button">
+          <YellowSubmitButton btn_text={"Send"}/>
+          {/* <button type="submit" className="submit_button">
             SEND
-          </button>                                                     
+          </button>                                                      */}
           </div>
         </form>
       </div>

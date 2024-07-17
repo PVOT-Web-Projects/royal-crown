@@ -8,51 +8,60 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const AboutUsEstablishment = () => {
-  const yearsRef = useRef([null]);
-  const sectionRef = useRef(null);
-  gsap.registerPlugin(ScrollTrigger);
+  // const yearsRef = useRef([]);
+  // const sectionRef = useRef(null);
+  // gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    const updateFontSize = () => {
-      const isLargeScreen = window.matchMedia("(min-width: 768px)").matches;
-      const largeSize = isLargeScreen ? "4rem" : "2rem";
-      const smallSize = isLargeScreen ? "2rem" : "1rem";
+  // useEffect(() => {
+  //   const updateFontSize = () => {
+  //     const isLargeScreen = window.matchMedia("(min-width: 768px)").matches;
+  //     const largeSize = isLargeScreen ? "4rem" : "2rem";
+  //     const smallSize = isLargeScreen ? "2rem" : "1rem";
 
-      yearsRef.current.forEach((year, index) => {
-        ScrollTrigger.create({
-          trigger: year,
-          start: "top center",
-          end: "bottom center",
-          // markers : true,
-          // pin : true,
-          onEnter: () => {
-            gsap.to(year, { color: "black", fontSize: largeSize, scale: 1.5, duration: 0.5 });
-            yearsRef.current.forEach((otherYear, otherIndex) => {
-              if (otherIndex !== index) {
-                gsap.to(otherYear, { color: "grey", fontSize: smallSize, scale: 1, duration: 0.5 });
-              }
-            });
-          },
-          onLeaveBack: () => gsap.to(year, { color: "grey", fontSize: smallSize, scale: 1, duration: 0.5 }),
-          onEnterBack: () => gsap.to(year, { color: "black", fontSize: largeSize, scale: 1.5, duration: 0.5 }),
-          onLeave: () => gsap.to(year, { color: "grey", fontSize: smallSize, scale: 1, duration: 0.5 }),
-        });
-      });
-    };
+  //     yearsRef.current.forEach((year, index) => {
+  //       ScrollTrigger.create({
+  //         trigger: year,
+  //         start: "top center",
+  //         end: "bottom center",
+  //         onEnter: () => {
+  //           gsap.to(year, { color: "black", fontSize: largeSize, scale: 1.5, duration: 0.5 });
+  //           yearsRef.current.forEach((otherYear, otherIndex) => {
+  //             if (otherIndex !== index) {
+  //               gsap.to(otherYear, { color: "grey", fontSize: smallSize, scale: 1, duration: 0.5 });
+  //             }
+  //           });
+  //         },
+  //         onLeaveBack: () => gsap.to(year, { color: "grey", fontSize: smallSize, scale: 1, duration: 0.5 }),
+  //         onEnterBack: () => gsap.to(year, { color: "black", fontSize: largeSize, scale: 1.5, duration: 0.5 }),
+  //         onLeave: () => gsap.to(year, { color: "grey", fontSize: smallSize, scale: 1, duration: 0.5 }),
+  //       });
+  //     });
+  //   };
 
-    updateFontSize();
-    window.addEventListener("resize", updateFontSize);
+  //   const pinSection = () => {
+  //     ScrollTrigger.create({
+  //       trigger: sectionRef.current,
+  //       start: "top top",
+  //       end: "bottom top",
+  //       pin: true,
+  //       pinSpacing: false
+  //     });
+  //   };
 
-    return () => {
-      window.removeEventListener("resize", updateFontSize);
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-    };
-  }, []);
+  //   updateFontSize();
+  //   pinSection();
+  //   window.addEventListener("resize", updateFontSize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", updateFontSize);
+  //     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+  //   };
+  // }, []);
 
   return (
-    <div className="about_Establishment">
-      <div className="Establishment_Wrapper" >
-        <div className="left" ref={sectionRef}>
+    <div className="about_Establishment" id="establishment">
+      <div className="Establishment_Wrapper">
+        <div className="left" >
           <div className="icon">
             <Image src={icon} alt="Crown Icon" />
           </div>
@@ -61,24 +70,9 @@ const AboutUsEstablishment = () => {
             <div>ESTABLISHMENT</div>
           </div>
           <div className="box">
-            <p
-              className="year"
-              ref={(el) => (yearsRef.current[0] = el)}
-            >
-              1990
-            </p>
-            <p
-              className="year other-years"
-              ref={(el) => (yearsRef.current[1] = el)}
-            >
-              1993
-            </p>
-            <p
-              className="year other-years"
-              ref={(el) => (yearsRef.current[2] = el)}
-            >
-              1993
-            </p>
+            <p className="year">1990</p>
+            <p className="year other-years" >1993</p>
+            <p className="year other-years" >1993</p>
           </div>
         </div>
         <div className="right">
@@ -86,8 +80,7 @@ const AboutUsEstablishment = () => {
             <Image src={timeLine} alt="Timeline" className="TimeLine_Image" />
           </div>
           <div className="Text-block">
-            From our infant days we have carved ourselves as renowned
-            manufacturers and exporters of premium grade decorative laminates.
+            From our infant days we have carved ourselves as renowned manufacturers and exporters of premium grade decorative laminates.
           </div>
         </div>
       </div>

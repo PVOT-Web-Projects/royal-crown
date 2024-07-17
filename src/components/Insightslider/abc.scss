@@ -9,6 +9,18 @@
   flex-direction: row;
   position: relative;
   margin-left: 320px;
+  @media(max-width:1440px){
+    margin-top: -55px;
+  }
+  @media(max-width:1300px){
+    margin-top: -50px;
+  }
+  @media(max-width:1199px){
+    margin-top: -5px;
+  }
+  @media(max-width:991px){
+    margin-top: 0px;
+  }
 }
 
 .scroll-section {
@@ -30,6 +42,11 @@
   max-width: 100%;
   height: auto;
   width: 100%;
+  // @media(max-width: 1440px){
+  //   height: 46vh;
+  //   width: 96%;
+  //   object-fit: contain;
+  // }
 }
 .textSliderText {
   width: 70%;
@@ -79,6 +96,9 @@
   height: 100%;
   // background: #1c211e;
   background-color: rgb(28, 33, 30);
+  @media (max-width: 1024px){
+    width: 17%;
+  }
 }
 .counter {
   font-size: 100px;
