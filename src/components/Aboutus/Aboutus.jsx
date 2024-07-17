@@ -18,7 +18,7 @@ const AboutUs = () => {
         <div className="two">
           {/* <h2 className='aboutheading2'>ABOUT US</h2>
           <h2 className='aboutheading'>ABOUT US</h2> */}
-          <ShadowHeading text={"ABOUT US"} fontSize={"60px"} />
+          <ShadowHeading text={"ABOUT US"} fontSize={"80px"} />
          
          <div className='about_para'>
          <p className='aboutpara'>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor . Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor . </p>
