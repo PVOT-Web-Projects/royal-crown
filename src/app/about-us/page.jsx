@@ -4,7 +4,7 @@ import SocialMediaImg from "@/images/socials-image.png";
 import Aboutus_vision from "@/components/Aboutus_vision/page";
 import "./Home.scss";
 import AboutLaminate from "@/components/aboutLaminate/AboutLaminate";
-import aboutLaminateImage from "@/images/557x535.jpg";
+import aboutLaminateImage from "@/images/laminate - about-us 1.png";
 import MyForm from "@/components/forms/form1/Form";
 import AboutUsEstablishment from "@/components/aboutUs_Establishment/aboutUs_Establish";
 import AboutUs_Texture from "@/components/aboutUs_Texture/aboutUs_Texture";
@@ -23,7 +23,7 @@ const AboutUs = () => {
         <AboutLaminate
           heading={"Royal Crown Laminates"}
           text={
-            "Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor . Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor . "
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.  "
           }
           leftText={"SCROLL DOWN"}
           rightText={
@@ -35,11 +35,13 @@ const AboutUs = () => {
           showArrow={true}
         />
       </div>
-      {/* <AboutUsEstablishment/> */}
-        {/* <div ref={section2}>
+      <AboutUsEstablishment/>
+      {/* <div ref={section2}>
           <Establish goToSectionRef={section3} scrollTo={scrollTo} showArrow={false}/>
         </div> */}
-      <Aboutus_vision />
+      <div ref={section2}>
+        <Aboutus_vision duration={60}/>
+      </div>
       <div ref={section3}>
         <AboutUs_Texture />
       </div>

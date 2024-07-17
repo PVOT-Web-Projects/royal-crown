@@ -1,11 +1,24 @@
 @import "../../app/variables.scss";
 
 .about_laminate {
-  padding: 150px 70px 150px 70px;
+  padding: 200px 100px 150px 200px;
   position: relative; /* Ensure positioning context */
 
-  @media (max-width: 768px) {
-    padding: 300px 40px 180px 40px;
+  @media (max-width : 1500px) {
+    padding: 150px 100px 150px 100px;
+  }
+
+  @media (max-width : 1440px) {
+    padding: 150px 80px 150px 80px;
+  }
+
+  @media (max-width : 1199px) {
+    // padding: 150px 60px 100px 60px;
+    padding: 146px 20px 100px 20px;
+  }
+
+  @media (max-width: 991px) {
+    padding: 150px 0px 180px 0px;
   }
 
   @media (max-width: 475px) {
@@ -14,59 +27,76 @@
 
   .laminate-wrapper {
     display: flex;
+    gap: 10rem;
+    padding: 0 50px 0 50px;
 
+    @media (min-width : 1500px) {
+      padding: 0px 30px 0px 30px;
+      gap: 8rem;
+    }
+    @media (max-width: 1250px) {
+      gap: 5rem;
+      // padding: 0 30px 0 30px; 
+    }
     @media (max-width: 1199px) {
       gap: 5rem;
+      // padding: 0 30px 0 30px; 
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 991px) {
       flex-direction: column;
       gap: 2rem;
     }
 
     .laminate-left {
       position: relative;
-      width: 60%;
+
 
       .left_image {
         display: block;
         max-width: 100%;
         height: auto;
       }
-
-      @media (max-width: 768px) {
+      @media (max-width: 991px) {
         width: 100%;
       }
 
       .left_aboutus {
         position: absolute;
         font-size: 80px;
-        left: 100px;
+        left: 90px;
         top: -55px;
 
+        @media (max-width : 1500px) {
+          left: 50px;
+        }
+
         @media (max-width: 991px) {
-          top: -50px;
-          font-size: 60px;
+          top: -45px;
+          font-size: 70px;
+          left: 35%;
         }
 
         @media (max-width: 768px) {
-          top: -35px;
-          font-size: 55px;
-          left: 150px;
+          top: -45px;
+          font-size: 65px;
+          left: 29%;
         }
 
         @media (max-width: 575px) {
-          left: 100px;
+          left: 90px;
+          font-size: 60px;
         }
 
         @media (max-width: 475px) {
           top: -30px;
           left: 60px;
-          font-size: 45px;
+          font-size: 35px;
         }
 
         @media (max-width: 320px) {
           top: -15px;
+          left: 0;
           font-size: 25px;
         }
       }
@@ -75,7 +105,10 @@
         max-width: 100%;
         display: block;
         height: auto;
-
+        @media(max-width: 991px){
+        margin: 0 auto;
+        text-align: center;
+        }
         @media (max-width: 768px) {
           width: 100%;
         }
@@ -83,15 +116,20 @@
     }
 
     .laminate-right {
-      width: 40%;
+      width: 45%;
       display: flex;
       flex-direction: column;
-      gap: 5rem;
+      gap: 3rem;
+
+      @media (max-width : 1500px) {
+        width: 60%;
+      }
 
       @media (max-width: 1199px) {
         gap: 3rem;
       }
       @media (max-width: 991px) {
+        width: 100%;
         gap: 2rem;
       }
       @media (max-width: 768px) {
@@ -100,13 +138,20 @@
       }
 
       .heading {
-        font-size: 60px;
-        line-height: 86%;
+        font-size: 70px;
+        line-height: 100%;
         text-align: left;
         padding: 0 0 20px 0px;
         color: #fff;
         letter-spacing: 5px;
+        text-transform: uppercase;
 
+        @media (max-width : 1440px) {
+          font-size: 55px;
+        }
+        @media (max-width : 1200px) {
+          font-size: 45px;
+        }
         @media (max-width: 991px) {
           font-size: 40px;
           padding: 0;
@@ -134,7 +179,11 @@
         font-size: 20px;
         line-height: 25px;
         color: $white2;
-        padding: 20px 0 0 0;
+        padding: 30px 0 0 0;
+
+        @media (max-width : 1500px) {
+          padding: 20px 0 0 0;
+        }
 
         @media (max-width: 991px) {
           padding: 10px 0 0 0;
@@ -153,19 +202,15 @@
         }
 
         @media (max-width: 991px) {
-          width: 265px;
+          width: 50%;
         }
 
         @media (max-width: 768px) {
-          width: 300px;
+          width: 70%;
         }
 
         @media (max-width: 475px) {
-          width: 300px;
-        }
-
-        @media (max-width: 329px) {
-          width: 200px;
+          width: 100%;
         }
       }
     }
