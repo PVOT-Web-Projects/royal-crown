@@ -1,12 +1,15 @@
 @import "../../../app/variables.scss" ;
 footer {
-  padding: 80px 40px;
+  padding: 80px 40px 27px 40px;
+  @media(min-width: 1500px){
+    padding: 80px 40px 27px 40px;
+  }
   @media(max-width:575px){
     padding: 50px 20px;
   }
   nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 100px;
     @media(max-width:1600px){
       gap: 60px;
@@ -34,7 +37,8 @@ footer {
         width: 100%;
       }
       li {
-        padding: 0 0 22px;
+        padding: 0 0 15px;
+        text-align: center;
         @media(max-width:767px){
           padding: 0 0 18px;
         }
@@ -47,6 +51,27 @@ footer {
          
         }
       }
+    }
+   
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    // width: 100%;
+    @media (max-width: 575px){
+      padding-bottom: 2rem;
+
+    }
+  }
+  .copyright {
+    text-align: center;
+    font-size: 18px;
+    margin: 40px 0 0;
+    @media (max-width: 575px) {
+      margin: 20px 0 0;
     }
   }
 }
