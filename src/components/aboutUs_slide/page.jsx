@@ -4,10 +4,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "./aboutUs_slide.scss";
 import Image from "next/image";
-import AboutUs_size_image1 from "@/images/AboutUs_size_image1.png";
-import AboutUs_size_image2 from "@/images/AboutUs_size_image2.png";
+import AboutUs_size_image1 from "@/images/aboutUs_size_image1.png";
+import AboutUs_size_image2 from "@/images/aboutUs_size_image2.png";
 import AboutUs_size_image3 from "@/images/AboutUs_size_image3.png";
-import AboutUs_size_image4 from "@/images/AboutUs_size_image4.png";
+import AboutUs_size_image4 from "@/images/aboutUs_size_image4.png";
 
 function ScrollSection() {
   const sectionRef = useRef(null);
