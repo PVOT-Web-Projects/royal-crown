@@ -4,7 +4,11 @@
   .filter_wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 0 150px 0 60px;
+    // padding: 0 150px 0 60px;
+    padding: 0 114px 0 125px;
+    @media(max-width: 1199px){
+      padding: 0 114px 0 80px;
+    }
     @media (max-width: 991px) {
       padding: 0 60px 0 40px;
     }

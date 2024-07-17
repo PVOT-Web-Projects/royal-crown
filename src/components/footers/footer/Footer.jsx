@@ -53,6 +53,7 @@ const Footer = () => {
                   color={"#fff"}
                   borderColor={"white"}
                   fontSize={"16px"}
+                  HoverBtn={"rgb(254, 197, 84)"}
                 />
               </li>
               <li key={index}>
@@ -62,6 +63,7 @@ const Footer = () => {
                   color={"#fff"}
                   borderColor={"white"}
                   fontSize={"16px"}
+                  HoverBtn={"rgb(254, 197, 84)"}
                 />
               </li>
             </ul>

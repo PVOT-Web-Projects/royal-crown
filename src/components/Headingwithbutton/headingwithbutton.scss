@@ -3,8 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 5rem;
+  padding: 10rem 5rem 5rem 8rem;
   color: white;
+  @media(max-width: 1199px){
+    padding: 10rem 5rem 5rem 5rem;
+  }
   @media (max-width: 991px) {
     padding: 4rem 3rem;
   }
@@ -17,12 +20,15 @@
   }
   .heading {
     text-align: left;
-    margin-bottom: 1rem;
+    margin-bottom: 3.5rem;
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     line-height: 1.2;
-    width: 55%;
+    width: 65%;
+    @media(min-width: 1500px){
+      width: 55%;
+    }
     @media (max-width: 1350px) {
       font-size: 4rem;
     }

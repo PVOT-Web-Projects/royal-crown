@@ -1,7 +1,7 @@
 import Link from "next/link";
 import "./linkHover.scss";
 import PageTransition from "../pageTransition/PageTransition";
-const LinkHover = ({ url, text, color, fontSize, textTransform, children }) => {
+const LinkHover = ({ url, text, color, fontSize, textTransform, HoverBtn,  children }) => {
   return (
     <PageTransition
       href={url}
@@ -9,7 +9,7 @@ const LinkHover = ({ url, text, color, fontSize, textTransform, children }) => {
       className={`linkHover`}
     >
       <span> {text}</span>
-      <span> {text}</span>
+      <span style={{color: HoverBtn}}>{text}</span>
     </PageTransition>
   );
 };
