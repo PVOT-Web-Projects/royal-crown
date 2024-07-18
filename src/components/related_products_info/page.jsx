@@ -5,6 +5,7 @@ import Img1 from "@/images/PRODUCT1.png";
 import Img2 from "@/images/PRODUCT2.png";
 import Img3 from "@/images/PRODUCT3.png";
 import Img4 from "@/images/PRODUCT4.png";
+import LineHeaderText from "../lineheadertext/page";
 const RelatedProductInfo = () => {
   const Images = [
     {
@@ -22,9 +23,10 @@ const RelatedProductInfo = () => {
   ];
   return (
     <div className="RelatedProductMainContainer">
-      <div className="RelatedProductHeader">
+      <LineHeaderText text={"RELATED PRODUCTS"} fontSizeText={"40px"}/>
+      {/* <div className="RelatedProductHeader">
         <p className="RelatedProductHeaderText">RELATED PRODUCTS</p>
-      </div>
+      </div> */}
 
       <div className="RelatedProductCards">
         {Images.map((item, index) => (
