@@ -71,7 +71,7 @@ const Footer = () => {
           ))}
         </nav>
         <div>
-        <Image src={border} alt="border" />
+        <Image src={border} alt="border" className="FooteriMg"/>
         <div className="copyright">© 2024 All Rights Reserved</div>
         </div>
       </footer>

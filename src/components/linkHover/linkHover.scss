@@ -11,6 +11,9 @@ a.linkHover  {
   position: relative;
   display: inline-block;
   height: 25px;
+  @media(max-width: 425px){
+    height: 24px;
+  }
   &:hover{
     span{
       transform: translateY(-23px);
