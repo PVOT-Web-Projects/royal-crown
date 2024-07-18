@@ -14,6 +14,7 @@ import AboutUs from "@/components/Aboutus/Aboutus";
 import ThreeDSlider from "@/components/threeDSlider/ThreeDSlider";
 import ThreeDSlider2 from "@/components/threeDSlider copy/ThreeDSlider";
 import RotatingImages from "@/components/The rotating image/RotatingImages";
+import InsightMainSlider from "@/components/insight_Slider_latest/InsightMain";
 
 export default function Home() {
   return (
@@ -36,8 +37,10 @@ export default function Home() {
       <RoyalCrownSlider />
 
       <Certification />
-      <InsightSlider />
-
+      <InsightMainSlider />
+      {/* <InsightSlider /> */}
+      
+    
 
        {/* commented */}
       {/* <CircularScroll /> */}
