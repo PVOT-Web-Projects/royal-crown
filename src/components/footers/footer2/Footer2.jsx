@@ -26,7 +26,7 @@ const Footer2 = ({ bgColor }) => {
         <div className="left">
           <div className="left_wrapper">
           <PageTransition href={"/"}>
-                <Image src={logo} alt="logo" />
+                <Image src={logo} alt="logo"/>
               </PageTransition>
             <div className="footer_logo">
              <Form3 />
@@ -47,6 +47,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -57,6 +58,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -67,6 +69,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -77,6 +80,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                 </ul>
@@ -92,6 +96,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -102,6 +107,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -112,6 +118,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -122,6 +129,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                 </ul>
@@ -137,6 +145,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -147,6 +156,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                   <li>
@@ -157,6 +167,7 @@ const Footer2 = ({ bgColor }) => {
                       borderColor={"white"}
                       fontSize={"18px"}
                       textTransform={"capitalize"}
+                      HoverBtn={"rgb(254, 197, 84)"}
                     />
                   </li>
                 </ul>
