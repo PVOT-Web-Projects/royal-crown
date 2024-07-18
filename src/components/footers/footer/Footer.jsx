@@ -7,7 +7,7 @@ import Image from "next/image";
 import border from "@/images/svgLogos/yellow_footer_border.svg";
 const footerUrls = [
   {
-    url1: "#",
+    url1: "/about-us",
     url1Text: "About",
     url2: "#",
     url2Text: "Annual Return",

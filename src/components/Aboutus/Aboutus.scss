@@ -107,7 +107,8 @@
           position: relative;
           @media(max-width:767px){
             font-size: 50px !important;
-            top: -55px;
+            top: 0;
+            left: 0;
           }
         }
       }
