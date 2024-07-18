@@ -3,10 +3,11 @@
 import "./footer.scss";
 import LinkHover from "../../linkHover/LinkHover";
 import { usePathname } from "next/navigation";
-
+import Image from "next/image";
+import border from "@/images/svgLogos/yellow_footer_border.svg";
 const footerUrls = [
   {
-    url1: "#",
+    url1: "/about-us",
     url1Text: "About",
     url2: "#",
     url2Text: "Annual Return",
@@ -53,6 +54,7 @@ const Footer = () => {
                   color={"#fff"}
                   borderColor={"white"}
                   fontSize={"16px"}
+                  HoverBtn={"rgb(254, 197, 84)"}
                 />
               </li>
               <li key={index}>
@@ -62,11 +64,16 @@ const Footer = () => {
                   color={"#fff"}
                   borderColor={"white"}
                   fontSize={"16px"}
+                  HoverBtn={"rgb(254, 197, 84)"}
                 />
               </li>
             </ul>
           ))}
         </nav>
+        <div>
+        <Image src={border} alt="border" />
+        <div className="copyright">© 2024 All Rights Reserved</div>
+        </div>
       </footer>
     )
   );

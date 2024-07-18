@@ -25,11 +25,11 @@ const Footer2 = ({ bgColor }) => {
       <div className="wrapper">
         <div className="left">
           <div className="left_wrapper">
-            <Form3 />
-            <div className="footer_logo">
-              <PageTransition href={"/"}>
+          <PageTransition href={"/"}>
                 <Image src={logo} alt="logo" />
               </PageTransition>
+            <div className="footer_logo">
+             <Form3 />
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ const Footer2 = ({ bgColor }) => {
                 </li>
                 <li>
                   <Link href={"https://www.whatsapp.com/"} target="_blank">
-                    <Image src={wa} alt="wa" /> <span>WhatsApp</span>
+                    <Image src={wa} alt="wa"/> <span>WhatsApp</span>
                   </Link>
                 </li>
               </ul>

@@ -10,7 +10,7 @@ const Certification = () => {
     <>
      <div className="certification_main" style={{marginTop:"140px"}}>
      <h2 className='certification_heading'>CERTIFICATIONS</h2>
-        <Marquee speed={100} loop={0}>
+        <Marquee speed={50} loop={0}> 
           <div className='certificate_marqee'>
             <Image className='logocertificate' src={intertek} alt="certificationimg" />
             <Image className='logocertificate' src={iso} alt="certificationimg" />

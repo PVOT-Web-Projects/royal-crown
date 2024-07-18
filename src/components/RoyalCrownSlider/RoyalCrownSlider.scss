@@ -21,10 +21,17 @@
   .MainContainer {
     display: flex;
     flex-direction: row-reverse;
+    padding-left: 70px;
     justify-content: space-evenly;
     overflow: hidden;
+    @media(max-width: 1199px){
+      padding-left: 40px;
+    }
     @media (max-width: 767px) {
       flex-direction: column;
+    }
+    @media(max-width: 425px){
+      padding-left: 20px;
     }
 
     .abc {
@@ -44,14 +51,29 @@
           width: 95%;
           margin: 40px 0 0;
         }
+        @media (max-width: 425px) {
+          padding: 0 0 0 20px;
+        }
+        @media (max-width: 375px) {
+          padding: 0 0 0 0px;
+        }
       }
       @media (max-width: 767px) {
         width: 100%;
       }
       .LogoImg {
         position: absolute;
-        top: 50%;
+        top: 46%;
         left: 80%;
+        @media (max-width: 1440px){
+          left: 70%;
+        }
+        @media (max-width: 1199px){
+          left: 64%;
+        }
+        @media (max-width: 768px){
+          left: 70%;
+        }
       }
 
       .Rc_Text_Main {
@@ -68,6 +90,9 @@
         align-items: center;
         margin-top: auto;
         position: relative;
+        @media (max-width: 375px){
+          margin-bottom: 0px;
+        }
 
         .tenExpBorder {
           padding: 6px 10px;
@@ -87,6 +112,9 @@
           padding: 0 20px;
           font-size: 30px;
           font-family: "futura_light";
+          @media(max-width: 375px){
+            font-size: 22px;
+          }
         }
       }
     }
@@ -102,6 +130,7 @@
       .third_section_image {
         width: 100%;
         display: block;
+        height: 76vh;
       }
     }
   }
@@ -155,31 +184,38 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    top: 50%;
+    top: 53%;
     color: #ffbc3780 !important;
     font-weight: 900;
   }
 
   .swiper-button-next {
-    left: 100%;
+    left: 92%;
+    top: 53%;
     @media (max-width: 767px) {
       left: auto;
       right: 40px;
     }
     @media (max-width: 575px) {
       left: auto;
-      right: 10px;
+      right: 20px;
+    }
+    @media (max-width: 375px) {
+      right: 0px;
     }
   }
 
   .swiper-button-prev {
-    left: 90%;
+    left: 79%;
     @media (max-width: 767px) {
       left: auto;
-      right: 80px;
+      right: 130px;
     }
     @media (max-width: 575px) {
       left: auto;
+      right: 100px;
+    }
+    @media(max-width: 375px){
       right: 50px;
     }
   }
@@ -202,11 +238,14 @@
       color: white;
       text-align: left;
       font-size: 28px;
-      width: 100%;
+      width: 88%;
       font-style: normal;
-      font-weight: 400;
+      font-weight: normal;
       line-height: normal;
       text-transform: capitalize;
+      @media(max-width: 1199px){
+        width: 90%;
+      }
       @media (max-width: 767px) {
         font-size: 22px;
       }

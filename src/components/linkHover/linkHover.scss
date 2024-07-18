@@ -15,11 +15,14 @@ a.linkHover  {
     span{
       transform: translateY(-23px);
       overflow: hidden;
+      // color: #FFBC37;
+      color: #1c211e;
+      font-weight: 900;
     }
   }
   span{
     display: block;
     transition: all 0.5s;
-  }
+  } 
  
 }

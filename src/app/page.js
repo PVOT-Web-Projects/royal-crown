@@ -20,10 +20,17 @@ export default function Home() {
     <main className="main">
       <HeroBanner />
       <AboutUs />
+
+       {/* commented */}
       {/* <ThreeDSlider2 /> */}
-      <div style={{height:"400px"}}></div>
-      <RotatingImages/>
-      <div style={{height:"850vh"}}></div>
+       {/* commented */}
+
+
+      {/* <div style={{height:"400px"}}></div> */}
+      {/* <RotatingImages/> */}
+      {/* <div style={{height:"850vh"}}></div> */}
+
+      
       <Headingwithbutton />
       <PlyMarquee />
       <RoyalCrownSlider />
@@ -32,10 +39,10 @@ export default function Home() {
       <InsightSlider />
 
 
-      
+       {/* commented */}
       {/* <CircularScroll /> */}
       {/* <ThreeDSlider /> */}
-      
+       {/* commented */}
       <div className="Form_Page">
         <SocialPage socialMediaImgSrc={SocialMediaImg} />
         <Form />

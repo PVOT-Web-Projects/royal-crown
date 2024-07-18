@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Footer_img from "@/images/royal_crown_footer.png";
+import Footer_img from "@/images/white_logo.png";
 import facebookIcon from "@/images/FacebookIcon.svg";
 import instagramIcon from "@/images/InstaIcon.svg";
 import youtubeIcon from "@/images/YoutubeIcon.svg";

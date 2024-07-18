@@ -23,8 +23,8 @@
     border-radius: 50%;
     width: 50px;
     height: 100%;
-    padding: 11px 0;
-    background-color: white;
+    padding: 15px 0;
+    // background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +46,8 @@
   .FooterImg{
     max-width: 100%;
     height: auto;
+    padding-bottom: 28px;
+    padding-left: 4px;
   }
   .SocialImg{
     max-width: 100%;
