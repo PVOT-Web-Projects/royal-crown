@@ -23,7 +23,9 @@ const RelatedProductInfo = () => {
   ];
   return (
     <div className="RelatedProductMainContainer">
+      <div>
       <LineHeaderText text={"RELATED PRODUCTS"} fontSizeText={"40px"}/>
+      </div>
       {/* <div className="RelatedProductHeader">
         <p className="RelatedProductHeaderText">RELATED PRODUCTS</p>
       </div> */}
