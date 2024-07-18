@@ -24,7 +24,13 @@
         font-size: 24px;
     }
     @media(max-width: 575px){
-        font-size: 27px;
+        font-size: 45px;
         width: 100%;
+    }
+    @media(max-width: 475px){
+        font-size: 30px;
+    }
+    @media(max-width: 320px){
+        font-size: 26px;
     }
   }

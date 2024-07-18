@@ -13,6 +13,10 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    @media(max-width: 768px){
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
 
     .RelatedProductCard {
       position: relative;
