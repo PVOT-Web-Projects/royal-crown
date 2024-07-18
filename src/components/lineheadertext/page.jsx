@@ -1,7 +1,7 @@
 import "./LineHeaderText.scss";
-const LineHeaderText = ({ text, fontSizeText }) => {
+const LineHeaderText = ({ text }) => {
   return (
-    <div className="RelatedProductHeader" style={{ fontSize: fontSizeText }}>
+    <div className="RelatedProductHeader">
       <p className="RelatedProductHeaderText">{text}</p>
     </div>
   );

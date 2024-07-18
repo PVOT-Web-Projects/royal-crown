@@ -1,21 +1,26 @@
 .RelatedProductMainContainer {
   padding: 0 100px;
-  .RelatedProductHeader {
-    text-align: center;
-    // padding: 20px 30px;
-    margin: 50px 0 0;
-    border: 1px solid white;
-    position: relative;
+  @media(max-width: 991px){
+      padding: 0 50px;
   }
-  .RelatedProductHeaderText {
-    font-size: 40px;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(28, 33, 30);
-    padding: 0 20px;
+  // .RelatedProductHeader {
+  //   text-align: center;
+  //   margin: 50px 0 0;
+  //   border: 1px solid white;
+  //   position: relative;
+  // }
+  // .RelatedProductHeaderText {
+  //   font-size: 40px;
+  //   font-weight: 600;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   background-color: rgb(28, 33, 30);
+  //   padding: 0 20px;
+  // }
+  .RelatedProductsTextInner{
+   
   }
   .RelatedProductCards {
     padding-top: 4rem;

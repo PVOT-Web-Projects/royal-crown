@@ -4,6 +4,9 @@
     margin: 50px 0 0;
     border: 1px solid white;
     position: relative;
+    @media(max-width: 575px){
+        border: none;
+    }
   }
   .RelatedProductHeaderText {
     font-size: 40px;
@@ -14,5 +17,14 @@
     transform: translate(-50%, -50%);
     background-color: rgb(28, 33, 30);
     padding: 0 20px;
+    @media(max-width: 991px){
+        font-size: 30px;
+    }
+    @media(max-width: 700px){
+        font-size: 24px;
+    }
+    @media(max-width: 575px){
+        font-size: 27px;
+        width: 100%;
+    }
   }
-  
