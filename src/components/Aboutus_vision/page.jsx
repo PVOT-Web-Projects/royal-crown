@@ -4,14 +4,17 @@ import AboutUs_vision from "../../images/aboutUs_vision_image.webp";
 import vision_playButton from "@/images/svgLogos/vision_playButton.svg";
 import "./aboutus_vision.scss";
 import logo from "../../images/logo_white.png";
-const page = ({duration = 60 }) => {
+import LineHeaderText from "../lineheadertext/page";
+const page = ({ duration = 60 }) => {
   const [width, setWidth] = useState(0);
   const increment = 100 / (duration * 10); // Increase the width 10 times per second
 
   const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
-    return `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+    return `${minutes.toString().padStart(2, "0")}:${seconds
+      .toString()
+      .padStart(2, "0")}`;
   };
 
   useEffect(() => {
@@ -30,7 +33,7 @@ const page = ({duration = 60 }) => {
   }, [increment]);
   return (
     <>
-      <div class="aboutUs_vision_outer">
+      {/* <div class="aboutUs_vision_outer">
         <div className="aboutUs_Wrapper">
           <div className="vision_heading">Vision</div>
           <div className="header_section">
@@ -52,15 +55,76 @@ const page = ({duration = 60 }) => {
               alt="Picture of the author"
             />
           </div>
-          <div className="progress-bar">
-            <div className="progress" style={{ width: `${width}%` }}></div>
-          </div>
-          <div className="aboutUs_vision_bottom">
-            <div className="vision_text_bottom">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout
+        </div>
+      </div> */}
+
+      <div className="aboutUs_vision_outer">
+        <div className="vision_header">
+          <div className="headerText">Vision</div>
+        </div>
+        <div className="aboutUs_Wrapper">
+          <div className="video_section_1">
+            <div className="vision_video">
+              <iframe
+                className="video_iframe"
+                src="https://www.youtube.com/embed/JpabryVkBHU"
+                title="#Enchante#ROYAL#CROWN#LAMINATES"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
-            <Image src={logo} alt="logo" />
+            <div className="video_description">
+              <div className="title">Video Title</div>
+              <div className="description">
+                From our infant days we have carved ourselves as renowned
+                manufacturers and exporters of premium grade decorative
+                laminates.
+              </div>
+            </div>
+          </div>
+          <div className="video_section_1">
+            <div className="vision_video">
+              <iframe
+                className="video_iframe"
+                src="https://www.youtube.com/embed/JpabryVkBHU"
+                title="#Enchante#ROYAL#CROWN#LAMINATES"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div className="video_description">
+              <div className="title">Video Title</div>
+              <div className="description">
+                From our infant days we have carved ourselves as renowned
+                manufacturers and exporters of premium grade decorative
+                laminates.
+              </div>
+            </div>
+          </div>
+          <div className="video_section_1">
+            <div className="vision_video">
+              <iframe
+                className="video_iframe"
+                src="https://www.youtube.com/embed/JpabryVkBHU"
+                title="#Enchante#ROYAL#CROWN#LAMINATES"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div className="video_description">
+              <div className="title">Video Title</div>
+              <div className="description">
+                From our infant days we have carved ourselves as renowned
+                manufacturers and exporters of premium grade decorative
+                laminates.
+              </div>
+            </div>
           </div>
         </div>
       </div>
