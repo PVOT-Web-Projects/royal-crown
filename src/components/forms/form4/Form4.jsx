@@ -7,6 +7,7 @@ import { useState } from "react";
 import ClickHandler from "@/components/buttons/clickHandler/ClickHandler";
 import { useFormik } from "formik";
 import { form4Schemas } from "../ValidationSchema/Schema";
+import YellowSubmitButton from "@/components/buttons/yellowSubmitButton/YellowSubmitButton";
 
 const Form4 = () => {
   const [showForm, setShowForm] = useState(false);
@@ -42,13 +43,17 @@ const Form4 = () => {
               <form onSubmit={handleSubmit}>
                 <div className="field_wrap">
                   <div className="field">
-                    <label htmlFor="fname">First Name</label>
+                    <label htmlFor="fName">First Name</label>
                     <input
                       type="text"
-                      name="fname"
+                      name="fName"
                       value={values.fName}
                       onChange={handleChange}
+                      placeholder="Enter First Name"
                     />
+                    <span className="error">
+                      {touched.fName && errors.fName && errors.fName}
+                    </span>
                   </div>
                   <div className="field">
                     <label htmlFor="lName">Last Name</label>
@@ -57,7 +62,11 @@ const Form4 = () => {
                       name="lName"
                       value={values.lName}
                       onChange={handleChange}
+                      placeholder="Enter Last Name"
                     />
+                    <span className="error">
+                      {touched.lName && errors.lName && errors.lName}
+                    </span>
                   </div>
                 </div>
                 <div className="field">
@@ -67,7 +76,11 @@ const Form4 = () => {
                     name="email"
                     value={values.email}
                     onChange={handleChange}
+                    placeholder="Enter Your Email Address"
                   />
+                  <span className="error">
+                    {touched.email && errors.email && errors.email}
+                  </span>
                 </div>
                 <div className="field">
                   <label htmlFor="phone">Phone Number</label>
@@ -76,21 +89,32 @@ const Form4 = () => {
                     name="phone"
                     value={values.phone}
                     onChange={handleChange}
+                    placeholder="+91 00000 00000"
                   />
+                  <span className="error">
+                    {touched.phone && errors.phone && errors.phone}
+                  </span>
                 </div>
                 <div className="field">
-                  <label htmlFor="fname">First Name</label>
+                  <label htmlFor="message">Message</label>
                   <textarea
                     type="text"
-                    name="fname"
-                    value={values.fName}
+                    name="message"
+                    value={values.message}
                     onChange={handleChange}
                     rows={5}
+                    placeholder="Enter your Text here..."
                   ></textarea>
+                  <span className="error">
+                    {touched.message && errors.message && errors.message}
+                  </span>
                 </div>
-                <div className="field">
-                  <button type="submit">Submit</button>
+                {/* <div className="field"> */}
+                <div className="SubmitBtnOuter">
+                  <YellowSubmitButton btn_text={"Submit"} type="submit" />
                 </div>
+                {/* <button type="submit">Submit</button> */}
+                {/* </div> */}
               </form>
             </div>
           </div>
