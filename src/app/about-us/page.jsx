@@ -40,7 +40,7 @@ const AboutUs = () => {
           <Establish goToSectionRef={section3} scrollTo={scrollTo} showArrow={false}/>
         </div> */}
       <div ref={section2}>
-        <Aboutus_vision duration={60}/>
+        <Aboutus_vision/>
       </div>
       <div ref={section3}>
         <AboutUs_Texture />

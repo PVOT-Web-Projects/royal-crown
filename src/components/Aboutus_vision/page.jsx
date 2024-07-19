@@ -4,6 +4,7 @@ import AboutUs_vision from "../../images/aboutUs_vision_image.webp";
 import vision_playButton from "@/images/svgLogos/vision_playButton.svg";
 import "./aboutus_vision.scss";
 import logo from "../../images/logo_white.png";
+import LineHeaderText from "../lineheadertext/page";
 const page = ({ duration = 60 }) => {
   const [width, setWidth] = useState(0);
   const increment = 100 / (duration * 10); // Increase the width 10 times per second
@@ -58,20 +59,21 @@ const page = ({ duration = 60 }) => {
       </div> */}
 
       <div className="aboutUs_vision_outer">
-        <div className="vision_heading">Vision</div>
+        <div className="vision_header">
+          <div className="headerText">Vision</div>
+        </div>
         <div className="aboutUs_Wrapper">
           <div className="video_section_1">
             <div className="vision_video">
-              <Image
-                class="vision_image_outer"
-                src={AboutUs_vision}
-                alt="Picture of the author"
-              />
-              <Image
-                class="vision_playButton"
-                src={vision_playButton}
-                alt="Picture of the author"
-              />
+              <iframe
+                className="video_iframe"
+                src="https://www.youtube.com/embed/JpabryVkBHU"
+                title="#Enchante#ROYAL#CROWN#LAMINATES"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div className="video_description">
               <div className="title">Video Title</div>
@@ -84,16 +86,15 @@ const page = ({ duration = 60 }) => {
           </div>
           <div className="video_section_1">
             <div className="vision_video">
-              <Image
-                class="vision_image_outer"
-                src={AboutUs_vision}
-                alt="Picture of the author"
-              />
-              <Image
-                class="vision_playButton"
-                src={vision_playButton}
-                alt="Picture of the author"
-              />
+              <iframe
+                className="video_iframe"
+                src="https://www.youtube.com/embed/JpabryVkBHU"
+                title="#Enchante#ROYAL#CROWN#LAMINATES"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div className="video_description">
               <div className="title">Video Title</div>
@@ -106,16 +107,15 @@ const page = ({ duration = 60 }) => {
           </div>
           <div className="video_section_1">
             <div className="vision_video">
-              <Image
-                class="vision_image_outer"
-                src={AboutUs_vision}
-                alt="Picture of the author"
-              />
-              <Image
-                class="vision_playButton"
-                src={vision_playButton}
-                alt="Picture of the author"
-              />
+              <iframe
+                className="video_iframe"
+                src="https://www.youtube.com/embed/JpabryVkBHU"
+                title="#Enchante#ROYAL#CROWN#LAMINATES"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div className="video_description">
               <div className="title">Video Title</div>
