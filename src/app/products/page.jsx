@@ -6,7 +6,7 @@ import "./product.scss";
 import MyForm from "@/components/forms/form1/Form";
 const AboutUs = () => {
   return (
-    <div className="abous_us">
+    <div className="abous_us">  
      <ProductBanner/>
      <AboutUs_products/>
       <div className="Form_Page">
