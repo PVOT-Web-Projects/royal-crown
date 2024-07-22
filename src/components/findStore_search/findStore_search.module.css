@@ -333,12 +333,22 @@
 .button_OUTER:hover::before {
   transform: scaleX(1);
 }
-
-@media (max-width: 1500px) {
+@media ((min-width: 1501px) and (max-height: 832px)) {
   .content30 {
-    height: 575px;
+      height: 669px !important;
   }
 }
+@media (min-width: 1500px) {
+  .content30 {
+    height: 737px;
+  }
+}
+@media (max-width: 1499px) {
+  .content30 {
+    height: 666px;
+  }
+}
+
 @media (max-width: 1199px) {
   .select_menu .select_btn {
     width: 150px;

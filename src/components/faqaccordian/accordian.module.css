@@ -85,21 +85,57 @@
   font-weight: 400;
   text-align: center;
   padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.FaqsTextOuterText {
+  width: 50%;
+  margin: 0 auto;
+}
+.FaqsTextInner {
+  font-size: 30px;
+  text-align: center;
+  /* width: 50%; */
+}
+.buttonOuterFaq {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.FaqsInner{
+  font-size: 50px;
+}
+@media (min-width: 1500px){
+  .FaqsTextOuterText {
+    width: 38%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px){
+  .FaqsTextOuterText {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 768px) {
+  .FaqsTextOuterText {
+    width: 90%;
+    margin: 0 auto;
+  }
   .rcAccordionTitle {
     width: 85%;
   }
   .rcAccordionCard {
     padding: 0 25px;
   }
-  .FaqText {
-    font-size: 40px;
-  }
 }
 @media (max-width: 575px) {
-  .FaqText {
-    font-size: 30px;
+  .FaqsInner{
+    font-size: 40px;
+  }
+  .FaqsTextInner{
+    font-size: 22px;
   }
 }
 @media (max-width: 425px) {
@@ -107,7 +143,6 @@
     padding: 0 20px;
   }
   .FaqText {
-    font-size: 20px;
     padding: 30px 20px;
   }
 }
