@@ -1,10 +1,55 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
-import ImageLogo from "../../images/svgLogos/white_logo.svg";
+// import Image from "next/image";
+// import ImageLogo from "../../images/svgLogos/white_logo.svg";
 import styles from "@/components/findStore_search/findStore_search.module.css";
 import "./findStore.css";
 function FindStoreSearch() {
+  const defaultCityData = [
+    {
+      content1:
+        "Royale Touche Laminates, Plywood and Wooden Floors-Ahmedabad, DEVDEEP DÉCOR LLP",
+      supplierName: "MR. MANDEEP PATEL",
+      mapLocation: "AHMEDABAD, GUJARAT",
+      phone: "+919624045453",
+      Address:
+        "GROUND FLOOR 4-5-6, SOHAM PRISTINE, NR SHALIGRAM-2, NR. SHAJANAND BUNGLOW, SINDHUBHAVAN,  THALTEJ",
+      // extraPhone: "fdfdfdfdfd",
+    },
+    {
+      content1: "SWAMI MARKETING",
+      supplierName: "MR. RADHAKISHAN J. GALANI",
+      mapLocation: "AHMEDABAD, GUJARAT",
+      phone: "+919825312223",
+      Address:
+        "JUDGES BUNGLOW, 29 30, AKASH TOWER, OPP PREMCHAND NAGAR, BODAKDEV",
+      // extraPhone: "fdfdfdfdfd",
+    },
+    {
+      content1: "MA UMIYA PLYWOOD & HARDWARE",
+      supplierName: "MR. PATEL SURESH PRAHLADBHAI",
+      mapLocation: "AHMEDABAD, GUJARAT",
+      phone: "+919879830339",
+      Address:
+        "GROUND FLOOR SHOP NO.5, MADHAV ORCHID, S P RING RPAD, NAVA ODHAV",
+    },
+    {
+      content1: "WOODLINK",
+      supplierName: "MR. RAHUL PATEL",
+      mapLocation: "AHMEDABAD, GUJARAT",
+      phone: "+919925033905",
+      Address:
+        "SURVEY NO.3/1, NEAR RAMDEV MASALA, SOLA BRIDGE CORNER, SOLA",
+    },
+    {
+      content1: "R D THAKKAR AND SONS",
+      supplierName: "MR. PRAKASH THAKKAR",
+      mapLocation: "AHMEDABAD, GUJARAT",
+      phone: "+919879750098",
+      Address: "1062/N/2/A, SAHKARI LATI BAZAR PART-1, JAGANNATHJI ROAD",
+    },
+  ];
+  
   const [isOpen1, setIsOpen1] = useState(false);
   const [selectedOption1, setSelectedOption1] = useState("");
   const options1 = [
@@ -209,6 +254,7 @@ function FindStoreSearch() {
     [];
   const [isOpen2, setIsOpen2] = useState(false);
   const [selectedOption2, setSelectedOption2] = useState("");
+  const [selectedLocationContent, setSelectedLocationContent] = useState(defaultCityData);
 
   const locationsData = {
     GUJARAT: {
@@ -1737,12 +1783,12 @@ function FindStoreSearch() {
       ],
     },
   };
-  const [selectedLocationContent, setSelectedLocationContent] = useState([
-    {
-      content1:
-        "Please select State and City to search Experience Centre near your location.",
-    },
-  ]);
+  // const [selectedLocationContent, setSelectedLocationContent] = useState([
+  //   {
+  //     content1:
+  //       "Please select State and City to search Experience Centre near your location.",
+  //   },
+  // ]);
 
   const toggleDropdown1 = () => {
     setIsOpen1(!isOpen1);
