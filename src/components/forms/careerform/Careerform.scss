@@ -19,6 +19,12 @@ $form-button-text: #000;
   margin: 0 250px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  @media(max-width: 1199px){
+    margin: 0 100px;
+  }
+  @media(max-width: 991px){
+    margin: 0 50px;
+  }
 }
 .SecondFormContainer {
   padding: 20px 50px;
