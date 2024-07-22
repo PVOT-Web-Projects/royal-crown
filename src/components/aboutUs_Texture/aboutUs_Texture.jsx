@@ -5,12 +5,12 @@ import image from "../../images/image 26.jpg";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { motion } from "framer-motion";
 import YellowButton from "../buttons/yellowButton/YellowButton";
 
 const AboutUs_Texture = () => {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
-  const leftRef = useRef(null);
   const rightRef = useRef(null);
   const rightBottomRef = useRef(null);
 
@@ -19,82 +19,31 @@ const AboutUs_Texture = () => {
   useEffect(() => {
     const sectionElement = sectionRef.current;
     const triggerElement = triggerRef.current;
-    const leftSectionElement = leftRef.current;
     const rightSectionElement = rightRef.current;
     const rightBottomElement = rightBottomRef.current;
 
     if (sectionElement && triggerElement) {
-      const horizontalSections = gsap.utils.toArray(".box");
+      const horizontalSections = gsap.utils.toArray(".image_box");
 
-      const scrollAnimation = gsap.to(horizontalSections, {
-        xPercent: -100 * (horizontalSections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-          trigger: triggerElement,
-          start: "top top",
-          end: () =>
-            "+=" + triggerElement.offsetWidth * (horizontalSections.length - 1),
-          pin: true,
-          scrub: true,
-          // snap: 1 / (horizontalSections.length - 1),
-        },
-      });
-
-      const leftSectionAnimation = gsap.fromTo(
-        leftSectionElement,
-        { x: -200, opacity: 0 },
+      const scrollAnimation = gsap.fromTo(
+        horizontalSections,
+        { xPercent: 0 },
         {
-          x: 0,
-          opacity: 1,
-          duration: 2,
+          xPercent: -100 * (horizontalSections.length - 1),
+          ease: "none",
           scrollTrigger: {
-            trigger: leftSectionElement,
+            trigger: triggerElement,
+            pin: true,
+            scrub: true,
             start: "top top",
-            end: "bottom bottom",
-            scrub: 2,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-
-      const rightSectionAnimation = gsap.fromTo(
-        rightSectionElement,
-        { x: 1200, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 2,
-          scrollTrigger: {
-            trigger: rightSectionElement,
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 2,
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-      const rightBottomAnimation = gsap.fromTo(
-        rightBottomElement,
-        { x: 1200, opacity: 0 },
-        {
-          x: 0,
-          opacity: 1,
-          duration: 2,
-          scrollTrigger: {
-            trigger: rightBottomElement,
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 2,
-            toggleActions: "play reverse play reverse",
+            end: "+=1000",
+            snap: 1 / (horizontalSections.length - 1),
           },
         }
       );
 
       return () => {
         scrollAnimation.kill();
-        leftSectionAnimation.kill();
-        rightSectionAnimation.kill();
-        rightBottomAnimation.kill();
       };
     }
   }, []);
@@ -103,7 +52,13 @@ const AboutUs_Texture = () => {
     <>
       <div className="aboutUs_Texture_Container" ref={triggerRef}>
         <div className="aboutUs_Texture_wrapper">
-          <div className="texture_left" ref={leftRef}>
+          <motion.div
+            className="texture_left"
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
+          >
             <div className="heading_text">
               <p>Why</p>
               <p className="brown">Royal</p>
@@ -119,49 +74,72 @@ const AboutUs_Texture = () => {
                 <div className="text">SKUs</div>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="texture_right">
             <div className="imageBox" ref={sectionRef}>
-              <div className="box">
+              <div className="image_box">
                 <Image src={image} alt="texture image" className="image1" />
               </div>
-              <div className="box">
+              <div className="image_box">
                 <Image src={image} alt="texture image" className="image1" />
               </div>
-              <div className="box">
+              <div className="image_box">
                 <Image src={image} alt="texture image" className="image1" />
               </div>
-              <div className="box">
+              <div className="image_box">
                 <Image src={image} alt="texture image" className="image1" />
               </div>
             </div>
-            <div className="size_section" ref={rightRef}>
-              <div className="size_section_inner">
+            <div className="size_section">
+              <motion.div
+                className="size_section_inner"
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 2 }}
+                viewport={{ once: true }}
+              >
                 <div className="size_left">
                   <p>Sizes</p>
                 </div>
                 <div className="size_right">
-                  <div><p>1220 x 2440mm</p></div>
-                  <div><p>1220 x 2440mm</p></div>
-                  <div><p>1220 x 2440mm</p></div>
-                  <div><p>1220 x 2440mm</p></div>
-                  <div><p>1220 x 2440mm</p></div>
-                  <div><p>1220 x 2440mm</p></div>
+                  <div>
+                    <p>1220 x 2440mm</p>
+                  </div>
+                  <div>
+                    <p>1220 x 2440mm</p>
+                  </div>
+                  <div>
+                    <p>1220 x 2440mm</p>
+                  </div>
+                  <div>
+                    <p>1220 x 2440mm</p>
+                  </div>
+                  <div>
+                    <p>1220 x 2440mm</p>
+                  </div>
+                  <div>
+                    <p>1220 x 2440mm</p>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
-            <div className="texture_footer" ref={rightBottomRef}>
-              <div className="texture_inner">
+            <div className="texture_footer">
+              <motion.div className="texture_inner"
+               initial={{ x: 100, opacity: 0 }}
+               whileInView={{ x: 0, opacity: 1 }}
+               transition={{ duration: 2 }}
+               viewport={{ once: true }}
+              >
                 <div className="logo_image">
-                  <Image src={Crown}/>
+                  <Image src={Crown} alt="Crown Logo" />
                 </div>
                 <div className="footer_text">
                   <p className="footer_text_inner">High Rating Reviews</p>
                 </div>
                 <div className="btn">
-                  <YellowButton btn_text={"More"} url={"/"}/>
+                  <YellowButton btn_text={"More"} url={"/"} />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
