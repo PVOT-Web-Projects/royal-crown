@@ -6,33 +6,48 @@ import styles from "./accordian.module.css";
 const faqs = [
   {
     id: 1,
-    header: "What is KGM Consultancy Group, and what services does it offer?",
-    text: `KGM Consultancy Group is a trusted partner for Australia's comprehensive Power BI consulting and business intelligence data analytics solutions. The group is led by industry expert Zaid Hassoneh, specializing in real-time dashboard Power BI solutions tailored to unique business needs.`,
+    header: "What is luxury lamination?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
   },
   {
     id: 2,
-    header: "How does KGM Group help businesses with analytics management consulting?",
-    text: `We assist businesses in transforming raw data into actionable intelligence, focusing on analytics management consulting. The goal is to empower organizations to make informed decisions and drive growth through expertly crafted financial performance dashboards. `,
+    header: "What are the benefits of luxury lamination compared to standard lamination?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
   },
   {
     id: 3,
-    header: "Can you elaborate on the expertise offered in healthcare analytics?",
-    text: `The group specializes in healthcare analytics, helping organizations stay ahead in the rapidly evolving healthcare industry. The emphasis is on creating solutions seamlessly integrating into workflows for increased efficiency. `,
+    header: "What types of finishes are available for luxury lamination?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance. `,
   },
   {
     id: 4,
-    header: "How does KGM Consultancy Group contribute to informed decision-making in businesses?",
-    text: `We empower businesses to confidently make strategic decisions by offering BI analytics solutions. The group's services emphasize elevating data analytics capabilities and providing practical solutions aligning with organizational goals. `,
+    header: "Is luxury lamination suitable for important documents and certificates?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
   },
   {
     id: 5,
-    header: "What is the philosophy behind the creation of performance dashboards?",
-    text: `The group recognizes the importance of well-designed and effective performance dashboards, focusing on crafting solutions that seamlessly integrate into workflows for a user-friendly experience.`,
+    header: "Does luxury lamination preserve the quality and color of photographs?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
   },
   {
     id: 6,
-    header: "How does the group personalize solutions for businesses in the digital age?",
-    text: `Driven by a passion for helping businesses thrive in the digital age, the group adopts a comprehensive approach to business analytics and consulting. Solutions are tailored to each client's needs, ensuring alignment with organizational goals.`,
+    header: "Can I choose different lamination styles for different parts of a single item?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
+  },
+  {
+    id: 7,
+    header: "How do you determine the cost of a lamination project?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
+  },
+  {
+    id: 8,
+    header: "Shipping and Delivery",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
+  },
+  {
+    id: 9,
+    header: "Do you offer nationwide and international shipping?",
+    text: `Luxury lamination is ideal for important documents and certificates as it provides protection, durability, and an enhanced, professional appearance.`,
   },
 ];
 
