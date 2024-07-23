@@ -2,8 +2,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-text-fill-color: #000 !important;
-  -webkit-box-shadow: 0 0 0 30px #d9d9d9 inset !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0 30px rgb(28, 33, 30) inset !important;
 }
 $form-bg: #d9d9d9;
 $form-text: #000;
@@ -133,8 +133,3 @@ $form-button-text: #000;
   font-size: 18px !important;
 }
 
-@media (max-width: 768px) {
-  .form-row {
-    flex-direction: column;
-  }
-}
