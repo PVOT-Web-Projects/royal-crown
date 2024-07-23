@@ -11,17 +11,17 @@ const CareerForm = () => {
   const [selectedCity, setSelectedCity] = useState("all");
   const brands = [
     { label: "Business Man", value: "all" },
-    { label: "Xylem", value: "Xylem" },
-    { label: "Royal Crown", value: "Royal Crown" },
-    { label: "QBliss", value: "QBliss" },
-    { label: "Crown XCL", value: "Crown XCL" },
+    { label: "Other", value: "Other" },
+    { label: "Other Option 1", value: "Other Option 1" },
+    { label: "Other Option 2", value: "Other Option 2" },
+    { label: "Other Option 3", value: "Other Option 3" },
   ];
   const city = [
     { label: "Select Your City", value: "all" },
-    { label: "Xylem", value: "Xylem" },
-    { label: "Royal Crown", value: "Royal Crown" },
-    { label: "QBliss", value: "QBliss" },
-    { label: "Crown XCL", value: "Crown XCL" },
+    { label: "Ahmedabad", value: "Ahmedabad" },
+    { label: "Surat", value: "Surat" },
+    { label: "Morbi", value: "Morbi" },
+    { label: "Jamnagar", value: "Jamnagar" },
   ];
   const handleBrandChange = (e) => {
     setSelectedBrand(e.value);
@@ -35,7 +35,11 @@ const CareerForm = () => {
     lastName: "",
     phoneNumber: "",
     emailAddress: "",
-    whoYouAre: "",
+    TellUs: "",
+    CompanyName: "",
+    SelectCity: "",
+    postcode: "",
+    privacyPolicy: false,
   };
 
   const { errors, values, touched, handleChange, handleSubmit } = useFormik({
@@ -115,50 +119,79 @@ const CareerForm = () => {
             <div className="form-group">
               <label htmlFor="TellUs">Tell us who you are</label>
               <Dropdown
-                id="TellUs"
+                name="TellUs"
                 options={brands}
                 value={selectedBrand}
                 onChange={handleBrandChange}
                 placeholder="Business man"
                 className="career-select"
               />
+              <p className="error">
+                {touched.TellUs && errors.TellUs && errors.TellUs}
+              </p>
             </div>
           </div>
           {/*  */}
           <div className="form-row">
-            <div className="form-group">    
-              <label htmlFor="whoYouAre">Company Name</label>
-              <input type="text" name="whoYouAre" placeholder="Your Company Name" />
+            <div className="form-group">
+              <label htmlFor="CompanyName">Company Name</label>
+              <input
+                type="text"
+                name="CompanyName"
+                placeholder="Your Company Name"
+              />
+              <p className="error">
+                {touched.CompanyName &&
+                  errors.CompanyName &&
+                  errors.CompanyName}
+              </p>
             </div>
             <div className="form-group">
               <label htmlFor="SelectCity">Select City</label>
               <Dropdown
-                id="SelectCity"
+                name="SelectCity"
                 options={city}
                 value={selectedCity}
                 onChange={handleCityChange}
                 placeholder="Business man"
                 className="career-select"
               />
+              <p className="error">
+                {touched.SelectCity && errors.SelectCity && errors.SelectCity}
+              </p>
             </div>
           </div>
           {/*  */}
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="address">Post code and full Address</label>
+              <label htmlFor="postcode">Post code and full Address</label>
               <input
                 type="text"
-                id="address"
+                name="postcode"
                 placeholder="Enter Address & Code"
               />
+              <p className="error">
+                {touched.postcode && errors.postcode && errors.postcode}
+              </p>
             </div>
           </div>
           <div className="form-row checkbox-row">
-            <input type="checkbox" id="privacyPolicy" />
+            <input
+              type="checkbox"
+              name="privacyPolicy"
+              onChange={handleChange}
+              checked={values.privacyPolicy}
+            />
+
             <label htmlFor="privacyPolicy">
               I agree with your Privacy Policy.
             </label>
           </div>
+          {/* <p className="error">
+              {touched.privacyPolicy &&
+                errors.privacyPolicy && 
+                errors.privacyPolicy}
+            </p> */}
           <div>
             <YellowSubmitButton btn_text={"Submit"} />
           </div>

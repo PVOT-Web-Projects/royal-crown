@@ -37,5 +37,9 @@ export const careerFormSchemas = Yup.object({
   phoneNumber: Yup.string()
     .matches(/^[0-9]{10}$/, "Phone number must be 10 digits")
     .required("Phone number is required"),
-    whoYouAre: Yup.string().required("Message is required"),
+    TellUs: Yup.string().required("Please Select Value"),
+    CompanyName: Yup.string().required("Enter Company Name"),
+    SelectCity: Yup.string().required("Please Select City"),
+    postcode: Yup.string().required("Address is required"),
+    privacyPolicy: Yup.boolean().oneOf([true], 'You must agree to the terms and conditions'),
 });
