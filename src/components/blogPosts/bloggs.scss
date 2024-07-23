@@ -1,0 +1,12 @@
+
+.BlogsInner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Always display 3 columns
+    gap: 20px;
+    padding: 0 50px;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; // Change to single column layout on smaller screens
+    }
+  }
+  
