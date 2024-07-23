@@ -1,6 +1,11 @@
-// import FaqData from "@/components/faqaccordian/faqdata";
+"use client"
+import { useEffect } from "react";
 
 const Blogs =() =>{
+    useEffect(() => {
+        document.title =
+            "Blogs | Royal Crown";
+    });
     return(
         <div>
             {/* <FaqData /> */}
