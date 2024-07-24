@@ -1,5 +1,7 @@
 "use client"
+import BlogsPage from "@/components/blogspage/page";
 import { useEffect } from "react";
+import BlogsMain from "@/components/blogPosts/page";
 
 const Blogs =() =>{
     useEffect(() => {
@@ -8,7 +10,8 @@ const Blogs =() =>{
     });
     return(
         <div>
-            {/* <FaqData /> */}
+            <BlogsPage />
+            <BlogsMain />
         </div>
     )
 }
