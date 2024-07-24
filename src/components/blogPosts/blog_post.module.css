@@ -1,8 +1,6 @@
 
 .gridItem {
-  /* background-color: #333; */
   color: white;
-  /* padding: 15px; */
   padding: 5px 0;
   border-radius: 8px;
   overflow: hidden;
@@ -16,15 +14,20 @@
     border-radius: 8px;
     object-fit: cover; 
   }
-  .date {
-    font-size: 14px;
-    margin-top: 10px;
+  .BlogsDate {
+    font-size: 20px;
+    margin-top: 12px;
     opacity: 0.7;
   }
 
-  .description {
-    font-size: 16px;
+  .BlogsDescription {
+    font-size: 19px;
     margin-top: 10px;
     flex-grow: 1; 
+  }
+  @media(max-width: 475px){
+    .BlogsDescription {
+      font-size: 17px;
+    }
   }
 

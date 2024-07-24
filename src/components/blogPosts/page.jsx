@@ -85,31 +85,6 @@ const BlogPost = ({ readMoreRoute }) => {
 
   return (
     <div ref={projectsRef} >
-      {/* {displayedData.map((item, index) => (
-        <div key={index} className={styles.BlogPost_outer}>
-          <div className={styles.BlogPost_imageOuter}>
-            <Image
-              src={item.image}
-              className={styles.BlogPost_image}
-              alt="image_blog"
-            />
-          </div>
-          <div className={styles.BlogPost_smallOuter}>
-            <p className={styles.BlogPost_date}>{item.date}</p>
-            <p className={styles.BlogPost_name}>{item.blog_name}</p>
-          </div>
-          <div className={styles.BlogPost_heading}>{item.blogPost_heading}</div>
-          <div className={styles.BlogPost_text}>{item.blogPost_text}</div>
-          <button
-            onClick={() => handleReadMoreClick(item.readMoreRoute)}
-            className={styles.button9}
-            role="button"
-          >
-            <span className={styles.text3}>Read More</span>
-            <span className={styles.text3}>Read More</span>
-          </button>
-        </div>
-      ))} */}
       <div className="BlogsInner">
       {displayedData.map((item, index) => (
         <div  key={index}  >
@@ -134,7 +109,8 @@ const BlogPost = ({ readMoreRoute }) => {
             onChange={handlePageChange}
             hidePrevButton
             hideNextButton
-            // showFirstButton
+            // showFirstButton    //for showing first button on pagination
+            // showLastButton     // for showing last button of pagination
             sx={{
               "& .MuiPaginationItem-root": {
                 backgroundColor: "transparent",
