@@ -19,8 +19,6 @@ const AboutUs_Texture = () => {
   useEffect(() => {
     const sectionElement = sectionRef.current;
     const triggerElement = triggerRef.current;
-    const rightSectionElement = rightRef.current;
-    const rightBottomElement = rightBottomRef.current;
 
     if (sectionElement && triggerElement) {
       const horizontalSections = gsap.utils.toArray(".image_box");
