@@ -41,7 +41,7 @@ const Footer2 = ({ bgColor }) => {
                 <ul>
                   <li>
                     <LinkHover
-                      url={"/"}
+                      url={"/about-us"}
                       text={"About Us"}
                       color={"#fff"}
                       borderColor={"white"}
@@ -123,7 +123,7 @@ const Footer2 = ({ bgColor }) => {
                   </li>
                   <li>
                     <LinkHover
-                      url={"/"}
+                      url={"/blogs"}
                       text={"Blogs"}
                       color={"#fff"}
                       borderColor={"white"}
@@ -139,7 +139,7 @@ const Footer2 = ({ bgColor }) => {
                 <ul>
                   <li>
                     <LinkHover
-                      url={"/"}
+                      url={"/faqs"}
                       text={"FAQs"}
                       color={"#fff"}
                       borderColor={"white"}
@@ -150,7 +150,7 @@ const Footer2 = ({ bgColor }) => {
                   </li>
                   <li>
                     <LinkHover
-                      url={"/"}
+                      url={"/careers"}
                       text={"Career"}
                       color={"#fff"}
                       borderColor={"white"}

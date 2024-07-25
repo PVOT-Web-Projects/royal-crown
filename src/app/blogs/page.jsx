@@ -1,9 +1,17 @@
-// import FaqData from "@/components/faqaccordian/faqdata";
+"use client"
+import BlogsPage from "@/components/blogspage/page";
+import { useEffect } from "react";
+import BlogsMain from "@/components/blogPosts/page";
 
 const Blogs =() =>{
+    useEffect(() => {
+        document.title =
+            "Blogs | Royal Crown";
+    });
     return(
         <div>
-            {/* <FaqData /> */}
+            <BlogsPage />
+            <BlogsMain />
         </div>
     )
 }

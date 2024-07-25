@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import AccordionItem from "./page";
 import styles from "./accordian.module.css";
+import YellowButton from "../buttons/yellowButton/YellowButton";
 
 const faqs = [
   {
@@ -62,7 +63,15 @@ const FaqData = () => {
     <div className={styles.containerFluid}>
             <div>
               <div className={styles.FaqText}>
-                <p>FREQUENTLY ASKED QUESTIONS</p>
+                <div>
+                <p className={styles.FaqsInner}>Frequently Asked Questions</p>
+                </div>
+                <div className={styles.FaqsTextOuterText}>
+                  <p className={styles.FaqsTextInner}>Our furniture collections are meticulously designed to elevate your living spaces.</p>
+                </div>
+                <div className={styles.buttonOuterFaq}>
+                  <YellowButton btn_text={"Get in Touch"} url={"/"}/>
+                </div>
               </div>
               {faqs.map((faq) => (
                 <AccordionItem
