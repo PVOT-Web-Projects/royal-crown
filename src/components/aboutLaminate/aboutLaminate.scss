@@ -1,7 +1,7 @@
 @import "../../app/variables.scss";
 
 .about_laminate {
-  padding: 200px 100px 150px 200px;
+  padding: 150px 100px 150px 200px;
   position: relative; /* Ensure positioning context */
 
   @media (max-width : 1500px) {
@@ -138,6 +138,11 @@
         gap: 2rem;
       }
 
+      .laminate_header{
+        font-size: 60px;
+        border-bottom: 1px solid white;
+        width: max-content;
+      }
       .heading {
         font-size: 60px;
         line-height: 100%;

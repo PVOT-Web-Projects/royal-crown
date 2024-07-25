@@ -35,13 +35,14 @@ const AboutLaminate = ({
     <div className="about_laminate">
       <div className="laminate-wrapper">
         <div className="laminate-left">
-          <div className="left_aboutus">ABOUT US</div>
+          {/* <div className="left_aboutus">ABOUT US</div> */}
           <div>
             <Image src={image} className="left_image" />
           </div>
         </div>
         <div className="laminate-right">
           <div className="heading_text">
+            <div className="laminate_header">About Us </div>
             <div className="heading">{heading}</div>
             <div className="text">{text}</div>
             <div className="text">{text}</div>
