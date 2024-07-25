@@ -37,7 +37,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"/about-us"} text={"About Us"} fontSize={"16px"} />
+            <LinkHover url={"/about-us"} text={"About Us"} fontSize={"16px"} isHomePage={isHome}/>
           </motion.li>
           <motion.li
             initial={{
@@ -51,7 +51,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"/products"} text={"Products"} fontSize={"16px"} />
+            <LinkHover url={"/products"} text={"Products"} fontSize={"16px"} isHomePage={isHome}/>
           </motion.li>
           <motion.li
             initial={{
@@ -65,7 +65,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"#"} text={"What's New"} fontSize={"16px"} />
+            <LinkHover url={"#"} text={"What's New"} fontSize={"16px"} isHomePage={isHome}/>
           </motion.li>
         </ul>
         <motion.div
@@ -102,7 +102,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"#"} text={"Catalogue"} fontSize={"16px"} />
+            <LinkHover url={"#"} text={"Catalogue"} fontSize={"16px"} isHomePage={isHome}/>
           </motion.li>
           <motion.li
             initial={{
@@ -116,7 +116,7 @@ const Header = () => {
             }}
             viewport={{ once: true }}
           >
-            <LinkHover url={"#"} text={"Laminate Library"} fontSize={"16px"} />
+            <LinkHover url={"#"} text={"Laminate Library"} fontSize={"16px"} isHomePage={isHome}/>
           </motion.li>
           <div className="side_logo">
             {isHome ? (
