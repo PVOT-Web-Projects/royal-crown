@@ -10,6 +10,7 @@ import AboutUsEstablishment from "@/components/aboutUs_Establishment/aboutUs_Est
 import AboutUs_Texture from "@/components/aboutUs_Texture/aboutUs_Texture";
 import Establish from "@/components/establish/establish";
 import { useEffect, useRef } from "react";
+import AboutUsHero from "@/components/aboutUsHero.jsx/aboutUsHero";
 const AboutUs = () => {
   const section1 = useRef();
   const section2 = useRef();
@@ -19,6 +20,9 @@ const AboutUs = () => {
   }
   return (
     <div className="abous_us">
+      <div>
+        <AboutUsHero/>
+      </div>
       <div ref={section1}>
         <AboutLaminate
           heading={"Royal Crown Laminates"}

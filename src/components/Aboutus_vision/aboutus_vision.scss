@@ -144,13 +144,13 @@
       border: none;
     }
 
-    .headerText{
+    .headerText {
       font-size: 60px;
       font-weight: 600;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50% , -50%);
+      transform: translate(-50%, -50%);
       background-color: rgb(28, 33, 30);
       padding: 0 20px;
     }
@@ -161,7 +161,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 80px 0;
-    gap: 3rem;
+    // gap: 3rem;
 
 
 
@@ -170,56 +170,91 @@
       padding: 60px 0;
     }
 
-    .vision_video {
-      padding-top: 2rem;
-      position: relative;
+    // .vision_video {
+    //   padding-top: 2rem;
+    //   position: relative;
 
-      .video_iframe {
-        width: 100%;
-        height: 40vh;
-        object-fit: cover;
-      }
+    //   .video_iframe {
+    //     width: 100%;
+    //     height: 40vh;
+    //     object-fit: cover;
+    //   }
 
 
-      .vision_image_outer {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-      }
+    //   .vision_image_outer {
+    //     max-width: 100%;
+    //     height: auto;
+    //     display: block;
+    //     text-align: center;
+    //     margin: 0 auto;
+    //   }
 
-      .vision_playButton {
-        display: block;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        cursor: pointer;
-        transform: translate(-50%, -50%);
+    //   .vision_playButton {
+    //     display: block;
+    //     width: 100px;
+    //     height: 100px;
+    //     position: absolute;
+    //     left: 50%;
+    //     top: 50%;
+    //     cursor: pointer;
+    //     transform: translate(-50%, -50%);
 
-        @media (max-width : 991px) {
-          width: 60px;
-          height: 60px;
+    //     @media (max-width : 991px) {
+    //       width: 60px;
+    //       height: 60px;
+    //     }
+    //   }
+
+    // }
+
+    // .video_description {
+    //   padding: 10px;
+
+    //   .title {
+    //     font-size: 50px;
+
+    //     @media (max-width : 991px) {
+    //       font-size: 40px;
+    //     }
+    //   }
+    // }
+
+    .video_section {
+      .vision_video {
+        padding-top: 2rem;
+        position: relative;
+
+
+        .vision_image_outer {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          text-align: center;
+          margin: 0 auto;
         }
-      }
 
+        .vision_playButton {
+          display: block;
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          cursor: pointer;
+          transform: translate(-50%, -50%);
+        }
+
+      }
     }
-
-    .video_description {
-      padding: 10px;
-
-      .title {
+    .video_description{
+      width: 50%;
+      text-align: center;
+      
+      .title{
         font-size: 50px;
-
-        @media (max-width : 991px) {
-          font-size: 40px;
-        }
       }
-
-      .description {
-        // font-size: 20px;
+      .description{
+        font-size: 30px;
       }
     }
   }
